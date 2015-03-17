@@ -20,7 +20,7 @@ Blueline runs on the CSS framework [Foundation](http://foundation.zurb.com/). Th
   * Add [bower-foundation](https://github.com/NUKnightLab/bower-foundation) as a submodule named `foundation`: `git submodule add -f git@github.com:NUKnightLab/bower-foundation.git foundation`
   * Compile CSS with Compass: `compass watch`
 
-DO NOT commit `bower_components/foundation`.
+DO NOT commit `bower_components/foundation`. ([See here](http://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository) for helpful information on how to remove files that have already been committed.)
 
 ## Modifying Blueline
 TK, notes on which files to modify and which to leave alone
