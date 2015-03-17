@@ -1,4 +1,6 @@
 /bower_components/*
+/bower_components/foundation
 /.sass-cache/*
 *.DS_Store
 /stylesheets/*
+.gitmodules
