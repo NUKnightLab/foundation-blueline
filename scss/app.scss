@@ -1,33 +1,35 @@
 @import "settings";
 
-// Basic structure & functionality
+// Basic structure
  @import
-//   "foundation/components/reveal", // modals
-   "foundation/components/alert-boxes",
    "foundation/components/block-grid",
    "foundation/components/grid",
    "foundation/components/inline-lists",
    "foundation/components/keystrokes", // special highlighting for keyboard shortcuts
-   "foundation/components/labels",
-   "foundation/components/panels", // content wells
-   "foundation/components/tables",
-   "foundation/components/tooltips",
    "foundation/components/type", // typography
    "foundation/components/visibility"; // classes to display elements based on screen size
+
+// Content organization
+@import
+   "foundation/components/labels",
+   "foundation/components/reveal", // modals
+   "foundation/components/alert-boxes",
+   "foundation/components/tables",
+   "foundation/components/panels", // content wells
+   "foundation/components/tooltips";
 
 // Navigation
 @import
 //   "foundation/components/joyride",
 //   "foundation/components/magellan",
 //   "foundation/components/side-nav",
-//   "foundation/components/sub-nav",
 //   "foundation/components/pagination",
 //   "foundation/components/offcanvas", // slide-in menu
    "foundation/components/top-bar", // navbar, requires foundation.topbar.js
+   "foundation/components/sub-nav",
    "foundation/components/tabs",
    "foundation/components/accordion",
    "foundation/components/breadcrumbs";
-
 
 // Inputs
 @import
@@ -41,14 +43,12 @@
    "foundation/components/dropdown-buttons",
    "foundation/components/forms";
 
-
 // Media
 @import
 //   "foundation/components/flex-video", // responsive video
 //   "foundation/components/clearing", // responsive lightboxes, requires foundation.clearing.js
 //   "foundation/components/orbit", // image slider
    "foundation/components/thumbs"; // image anchor tags
-
 
 // Misc
 //   "foundation/components/pricing-tables", // price listings
