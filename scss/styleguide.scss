@@ -1,0 +1,10 @@
+@import "settings";
+#change-view dd { cursor: pointer; }
+#style-guide {
+    transition: width 0.8s;
+    width: auto;
+    &.small-view { width: 380px; }
+    &.medium-view { width: 680px; }
+    &.large-view { width: 1024px; }
+    &.auto-view { width: auto; }
+}
