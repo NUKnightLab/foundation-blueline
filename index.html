@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blueline Style Guide -- Northwestern University Knight Lab</title>
     <link href="http://cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="stylesheets/blueline.css" />
+    <!-- TODO: Figure out how to not import all of the settings in all of the partial SCSS files. -->
+    <!-- Example: navigation.css contains typography settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/navigation.css" />
+    <link rel="stylesheet" href="stylesheets/blueline.css" />
     <link rel="stylesheet" href="stylesheets/styleguide.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -39,35 +41,76 @@
       <dd class="large-view">Large</dd>
       <dd class="auto-view">Auto</dd>
     </dl>
-<div class="off-canvas-wrap" data-offcanvas>
-    <div class="row inner-wrap">
-          <a class="left-off-canvas-toggle" href="#" >menu</a>
-          <aside class="left-off-canvas-menu">
-            <ul class="side-nav" role="navigation">
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li class="divider"></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-              <li role="menuitem"><a href="#">Item 1</a></li>
-            </ul>
-          </aside>
-        <div class="large-12 columns">
-          <div class="row">
-            <div class="large-8 columns">
-              <p>Blueline is the style guide for Knight Lab web pages, apps and projects. It is based on <a href="http://foundation.zurb.com/docs/">Foundation 5</a>. This page itself is built with Blueline and Foundation.</p>
-              <p>To use Blueline in your project, simply include the below links in your project. See the rest of this guide for proper usage of the included components.</p>
-              <p>[links]</p>
-              <p>To develop Blueline, see the README on GitHub.</p>
-            </div>
-            <div class="large-4 columns panel">
-              <p>There are some advanced features available. You will need to include files for these separately.</p>
-              <p>[links]</p>
-            </div>
+    <div class="row">
+      <div class="medium-3 columns">
+          <ul class="side-nav" role="navigation">
+            <li>TYPOGRAPHY</li>
+            <li role="menuitem"><a href="#headlines">Headlines</a></li>
+            <li role="menuitem"><a href="#">Paragraph Style</a></li>
+            <li role="menuitem"><a href="#">Paragraph Lead Style</a></li>
+            <li role="menuitem"><a href="#">Block Quote</a></li>
+            <li role="menuitem"><a href="#">Pull Quote</a></li>
+            <li role="menuitem"><a href="#">Editor's Note</a></li>
+            <li role="menuitem"><a href="#">Lists</a></li>
+            <li role="menuitem"><a href="#">Icons</a></li>
+            <li role="menuitem"><a href="#">Horizontal Rule</a></li>
+
+            <li class="divider"></li>
+            <li>LAYOUT</li>
+            <li role="menuitem"><a href="#grid-system">Grid system</a></li>
+            <li role="menuitem"><a href="#">Pre-header</a></li>
+            <li role="menuitem"><a href="#">Footer</a></li>
+            <li role="menuitem"><a href="#">Navigation</a></li>
+            <li role="menuitem"><a href="#">Templates</a></li>
+
+            <li class="divider"></li>
+
+            <li>MODULES</li>
+            <li role="menuitem"><a href="#">Byline</a></li>
+            <li role="menuitem"><a href="#">Thumbnail grid</a></li>
+            <li role="menuitem"><a href="#">Buttons</a></li>
+            <li role="menuitem"><a href="#">Accordion</a></li>
+
+            <li class="divider"></li>
+
+            <li>BRAND</li>
+            <li role="menuitem"><a href="#">Colors</a></li>
+            <li role="menuitem"><a href="#">Horizontal logos</a></li>
+            <li role="menuitem"><a href="#">Vertical logos</a></li>
+            <li role="menuitem"><a href="#">Diamond logo</a></li>
+            <li role="menuitem"><a href="#">Product Logo Mark</a></li>
+          </ul>
+      </div>
+      <div class="medium-9 columns">
+        <div class="row">
+          <div class="medium-8 columns">
+            <p>Blueline is the style guide for Knight Lab web pages, apps and projects. It is based on <a href="http://foundation.zurb.com/docs/">Foundation 5</a>. This page itself is built with Blueline and Foundation.</p>
+            <p>To use Blueline in your project, simply include the below links in your project. See the rest of this guide for proper usage of the included components.</p>
+            <p>[links]</p>
+            <p>To develop Blueline, see the README on GitHub.</p>
           </div>
-          <div id="style-guide">
+          <div class="medium-4 columns panel">
+            <p>There are some advanced features available. You will need to include files for these separately.</p>
+            <p>[links]</p>
+          </div>
+        </div>
+        <div class="row" id="style-guide">
+          <div class="small-12 columns">
+            <!-- TYPOGRAPHY -->
+            <h2>Typography</h2>
+            <h3 id="headlines">Headlines</h3>
+            <div class="style-example panel">
+              <h1>h1. Used on the homepage, no more than two lines long.</h1>
+              <h2>h2. Used for section breaks within articles. </h2>
+              <h3>h3. Used for calls to action.</h3>
+              <h4>h4. Used for smaller subheads.</h4>
+              <h5>h5. Heading 5</h5>
+              <h6>h6. Heading 6</h6>
+            </div>
+            <h2>Layout</h2>
+            <h3 id="grid-system">Grid system</h3>
+            <p><a href=http://foundation.zurb.com/docs/components/grid.html">Foundation's grid system</a> is based on rows and columns. *Blueline's rows have a <code>max-width</code> of <code>1200px</code>. If you want to allow your content to be wider than 1200px, simply omit the use of the <code>row</code> div and use only the column classes. You do not need to use columns within rows. *However, you may find it helpful to use <code>.row.full-width</code> if you are having difficulty aligning columns.</p>
+
             <h5>Here&rsquo;s your basic grid:</h5>
             <!-- Grid Example -->
             <div class="row">
@@ -107,18 +150,7 @@
               </div>
             </div>
           </div>
-          <!-- TYPOGRAPHY -->
-          <div class="style-example">
-            <h1>h1. Used on the homepage, no more than two lines long.</h1>
-            <h2>h2. Used for section breaks within articles. </h2>
-            <h3>h3. Used for calls to action.</h3>
-            <h4>h4. Used for smaller subheads.</h4>
-            <h5>h5. Heading 5</h5>
-            <h6>h6. Heading 6</h6>
-          </div>
-        </div><!-- #style-guide -->
-        <!-- close the off-canvas menu -->
-        <a class="exit-off-canvas"></a>
+        </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

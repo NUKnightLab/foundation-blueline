@@ -37,3 +37,23 @@
 // Media
 @import
    "foundation/components/thumbs"; // image anchor tags
+
+
+// BLUE LINE COMING THROUGH
+//  __   __   __    ___ ___  |  ,----\
+// |__| |__| |__|  | O | O | |  ||____\
+//                 |___|___| |         )
+//___________________________|________/
+
+.row.full-width {
+    @include grid-row($behavior: nest);
+    margin: ($column-gutter/2);
+}
+
+// Blueline overrides of components/_type.scss
+
+h1 { font-style: italic; }
+h1, h2, h3 { font-family: $primary-header-font-family; }
+h4, h5, h6 { font-family: $secondary-header-font-family; font-weight: bold;}
+h2, h3, h4, h5, h6 { font-style: normal; }
+h6 { text-transform: uppercase; }
