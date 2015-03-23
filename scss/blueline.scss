@@ -1,0 +1,39 @@
+@import "settings";
+
+// Basic structure/styling
+ @import
+   "foundation/components/block-grid",
+   "foundation/components/grid",
+   "foundation/components/inline-lists",
+   "foundation/components/type", // typography
+   "foundation/components/visibility"; // classes to display elements based on screen size
+
+// Content organization
+@import
+   "foundation/components/labels",
+   "foundation/components/reveal", // modals
+   "foundation/components/alert-boxes",
+   "foundation/components/tables",
+   "foundation/components/panels", // content wells
+   "foundation/components/tooltips";
+
+// Navigation
+@import
+   "foundation/components/top-bar", // navbar, requires foundation.topbar.js
+   "foundation/components/magellan", // sticky nav
+   "foundation/components/sub-nav",
+   "foundation/components/tabs",
+   "foundation/components/accordion",
+   "foundation/components/breadcrumbs";
+
+// Inputs
+@import
+   "foundation/components/buttons",
+   "foundation/components/button-groups",
+   "foundation/components/progress-bars",
+   "foundation/components/dropdown",
+   "foundation/components/forms";
+
+// Media
+@import
+   "foundation/components/thumbs"; // image anchor tags
