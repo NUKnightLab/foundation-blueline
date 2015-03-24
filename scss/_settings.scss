@@ -106,7 +106,7 @@ $font-weight-normal: normal;
 // $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
 // $silver      : #EFEFEF;
- $smoke       : #EEEEEE;
+$smoke       : #EEEEEE;
 // $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
@@ -220,12 +220,12 @@ $medium-blue: #0f9bd1;
 
 
 // We use these to control header font sizes
-// $h1-font-size: rem-calc(44);
-// $h2-font-size: rem-calc(37);
-// $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
-// $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+ $h1-font-size: rem-calc(44);
+ $h2-font-size: rem-calc(30);
+ $h3-font-size: rem-calc(27.2);
+ $h4-font-size: rem-calc(20);
+ $h5-font-size: 1rem;
+ $h6-font-size: rem-calc(13.6);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);

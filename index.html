@@ -4,13 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blueline Style Guide -- Northwestern University Knight Lab</title>
+    <!-- fonts -->
     <link href="http://cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
     <!-- TODO: Figure out how to not import all of the settings in all of the partial SCSS files. -->
     <!-- Example: navigation.css contains typography settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/navigation.css" />
     <link rel="stylesheet" href="stylesheets/blueline.css" />
     <link rel="stylesheet" href="stylesheets/styleguide.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
     <nav class="top-bar" data-topbar role="navigation">
@@ -46,16 +47,16 @@
           <ul class="side-nav" role="navigation">
             <li>TYPOGRAPHY</li>
             <li role="menuitem"><a href="#headlines">Headlines</a></li>
-            <li role="menuitem"><a href="#">Paragraph Style</a></li>
-            <li role="menuitem"><a href="#">Paragraph Lead Style</a></li>
-            <li role="menuitem"><a href="#">Block Quote</a></li>
-            <li role="menuitem"><a href="#">Pull Quote</a></li>
-            <li role="menuitem"><a href="#">Editor's Note</a></li>
+            <li role="menuitem"><a href="#paragraph-styles">Paragraphs</a></li>
             <li role="menuitem"><a href="#">Lists</a></li>
             <li role="menuitem"><a href="#">Icons</a></li>
             <li role="menuitem"><a href="#">Horizontal Rule</a></li>
+            <li role="menuitem"><a href="#">Block Quote</a></li>
+            <li role="menuitem"><a href="#">Pull Quote</a></li>
+            <li role="menuitem"><a href="#">Editor's Note</a></li>
 
             <li class="divider"></li>
+
             <li>LAYOUT</li>
             <li role="menuitem"><a href="#grid-system">Grid system</a></li>
             <li role="menuitem"><a href="#">Pre-header</a></li>
@@ -97,58 +98,98 @@
         <div class="row" id="style-guide">
           <div class="small-12 columns">
             <!-- TYPOGRAPHY -->
-            <h2>Typography</h2>
-            <h3 id="headlines">Headlines</h3>
-            <div class="style-example panel">
-              <h1>h1. Used on the homepage, no more than two lines long.</h1>
-              <h2>h2. Used for section breaks within articles. </h2>
-              <h3>h3. Used for calls to action.</h3>
-              <h4>h4. Used for smaller subheads.</h4>
-              <h5>h5. Heading 5</h5>
-              <h6>h6. Heading 6</h6>
-            </div>
-            <h2>Layout</h2>
-            <h3 id="grid-system">Grid system</h3>
-            <p><a href=http://foundation.zurb.com/docs/components/grid.html">Foundation's grid system</a> is based on rows and columns. *Blueline's rows have a <code>max-width</code> of <code>1200px</code>. If you want to allow your content to be wider than 1200px, simply omit the use of the <code>row</code> div and use only the column classes. You do not need to use columns within rows. *However, you may find it helpful to use <code>.row.full-width</code> if you are having difficulty aligning columns.</p>
+            <section>
+              <h2>Typography</h2>
+              <h4 id="headlines">Headlines</h4>
+              <p>See the <a href="soundcite.knightlab.com">Soundcite project page</a> for an example of how to use each heading.</p>
+              <div class="panel">
+                <h6 class="label">Rendered HTML</h6>
+                <h1>h1. Used on the homepage, no more than two lines long.</h1>
+                <h2>h2. Used for section breaks within articles. </h2>
+                <h3>h3. Used for calls to action.</h3>
+                <h4>h4. Used for smaller subheads.</h4>
+                <h5>h5. Heading 5</h5>
+                <h6>h6. Heading 6</h6>
+  <h6 class="label">HTML</h6>
+  <pre><code class="html">
+  &lt;h1&gt;h1. Used on the homepage, no more than two lines long.&lt;/h1&gt;
+  &lt;h2&gt;h2. Used for section breaks within articles. &lt;/h2&gt;
+  &lt;h3&gt;h3. Used for calls to action.&lt;/h3&gt;
+  &lt;h4&gt;h4. Used for smaller subheads.&lt;/h4&gt;
+  &lt;h5&gt;h5. Heading 5&lt;/h5&gt;
+  &lt;h6&gt;h6. Heading 6&lt;/h6&gt;
+  </code></pre>
+              </div>
+            </section>
+            <section>
+              <h4 id="paragraph-styles">Paragraph styles</h4>
+              <p>By default body text, like this, is <code>16px</code>. Foundation calculates sizes in <code>rem</code>s, or root ems, so this base size is what all font sizes are calculated from. Media queries shrink the body text size and, by relation, all other font sizes.</p>
+              <div class="panel">
+                <h6 class="label">Rendered HTML</h6>
+               <p>By default body text, like this, is <code>16px</code>.</p>
+  <h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p&gt;By default body text, like this, is 16px.&lt;/p&gt;
 
-            <h5>Here&rsquo;s your basic grid:</h5>
-            <!-- Grid Example -->
-            <div class="row">
-              <div class="large-12 columns">
-                <div class="callout panel">
-                  <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-                </div>
+</code></pre>
+
               </div>
-            </div>
-            <div class="row">
-              <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                  <p>Six columns</p>
-                </div>
+              <div class="panel">
+                <h6 class="label">Rendered HTML</h6>
+                <p class="lead">Lead paragraphs are used as introductions to projects or other large pages.</p>
+  <h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p class="lead"&gt;Lead paragraphs are used as introductions to projects or other large pages.&lt;/p&gt;
+
+</code></pre>
+
               </div>
-              <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                  <p>Six columns</p>
+            </section>
+            <section>
+              <h2>Layout</h2>
+              <h4 id="grid-system">Grid system</h4>
+              <p><a href=http://foundation.zurb.com/docs/components/grid.html">Foundation's grid system</a> is based on rows and columns. *Blueline's rows have a <code>max-width</code> of <code>1200px</code>. If you want to allow your content to be wider than 1200px, simply omit the use of the <code>row</code> div and use only the column classes. You do not need to use columns within rows. *However, you may find it helpful to use <code>.row.full-width</code> if you are having difficulty aligning columns.</p>
+
+              <h5>Here&rsquo;s your basic grid:</h5>
+              <pre><code>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <div class="callout panel">
+                      <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
+                <div class="row">
+                  <div class="large-6 medium-6 columns">
+                    <div class="callout panel">
+                      <p>Six columns</p>
+                    </div>
+                  </div>
+                  <div class="large-6 medium-6 columns">
+                    <div class="callout panel">
+                      <p>Six columns</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
+                <div class="row">
+                  <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                      <p>Four columns</p>
+                    </div>
+                  </div>
+                  <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                      <p>Four columns</p>
+                    </div>
+                  </div>
+                  <div class="large-4 medium-4 small-4 columns">
+                    <div class="callout panel">
+                      <p>Four columns</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
-                </div>
-              </div>
-            </div>
+              </pre></code>
+            </section>
           </div>
         </div>
       </div>
@@ -158,5 +199,8 @@
     <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
     <script src="js/app.js"></script>
+    <!-- code syntax highlighting -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
