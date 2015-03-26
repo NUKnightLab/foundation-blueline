@@ -10,6 +10,7 @@
     <!-- Example: navigation.css contains typography settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/navigation.css" />
     <link rel="stylesheet" href="stylesheets/blueline.css" />
+    <link rel="stylesheet" href="stylesheets/font-awesome/font-awesome.css" />
     <link rel="stylesheet" href="stylesheets/styleguide.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
@@ -48,12 +49,12 @@
             <li>TYPOGRAPHY</li>
             <li role="menuitem"><a href="#headlines">Headlines</a></li>
             <li role="menuitem"><a href="#paragraph-styles">Paragraphs</a></li>
-            <li role="menuitem"><a href="#">Lists</a></li>
-            <li role="menuitem"><a href="#">Icons</a></li>
-            <li role="menuitem"><a href="#">Horizontal Rule</a></li>
-            <li role="menuitem"><a href="#">Block Quote</a></li>
-            <li role="menuitem"><a href="#">Pull Quote</a></li>
-            <li role="menuitem"><a href="#">Editor's Note</a></li>
+            <li role="menuitem"><a href="#lists">Lists</a></li>
+            <li role="menuitem"><a href="#icons">Icons</a></li>
+            <li role="menuitem"><a href="#horizontal-rule">Horizontal Rule</a></li>
+            <li role="menuitem"><a href="#blockquotes">Block Quote</a></li>
+            <li role="menuitem"><a href="#pullquotes">Pull Quote</a></li>
+            <li role="menuitem"><a href="#ed-note">Editor's Note</a></li>
 
             <li class="divider"></li>
 
@@ -102,10 +103,12 @@
               <h2>Typography</h2>
               <h4 id="headlines">Headlines</h4>
               <p>See the <a href="soundcite.knightlab.com">Soundcite project page</a> for an example of how to use each heading.</p>
+              <p>Use the "intro" <code>h2</code> in conjunction with the <a>logo mark</a> for project taglines.</p>
               <div class="panel">
-                <h6 class="label">Rendered HTML</h6>
+                <h6 class="label">Headline styles</h6>
                 <h1>h1. Used on the homepage, no more than two lines long.</h1>
                 <h2>h2. Used for section breaks within articles. </h2>
+                <h2 class="intro">h2.intro Catchy intro that's less than ten words.</h2>
                 <h3>h3. Used for calls to action.</h3>
                 <h4>h4. Used for smaller subheads.</h4>
                 <h5>h5. Heading 5</h5>
@@ -114,6 +117,7 @@
   <pre><code class="html">
   &lt;h1&gt;h1. Used on the homepage, no more than two lines long.&lt;/h1&gt;
   &lt;h2&gt;h2. Used for section breaks within articles. &lt;/h2&gt;
+  &lt;h2 class="intro"&gt;h2.intro Catchy intro that's less than ten words. &lt;/h2&gt;
   &lt;h3&gt;h3. Used for calls to action.&lt;/h3&gt;
   &lt;h4&gt;h4. Used for smaller subheads.&lt;/h4&gt;
   &lt;h5&gt;h5. Heading 5&lt;/h5&gt;
@@ -123,28 +127,158 @@
             </section>
             <section>
               <h4 id="paragraph-styles">Paragraph styles</h4>
-              <p>By default body text, like this, is <code>16px</code>. Foundation calculates sizes in <code>rem</code>s, or root ems, so this base size is what all font sizes are calculated from. Media queries shrink the body text size and, by relation, all other font sizes.</p>
+              <p>Foundation calculates font sizes, margins, padding and other attributes in <code>rem</code>s, or <em>root ems</em>. By default, Foundation defines <code>1 rem</code> as 16px. All attributes calculated as <code>rem</code>s are derived from this 16px base size. [Add note about how media queries shrink the body text size and, by relation, all other sizes of everything.]</p>
               <div class="panel">
-                <h6 class="label">Rendered HTML</h6>
-               <p>By default body text, like this, is <code>16px</code>.</p>
-  <h6 class="label">HTML</h6>
-<pre><code class="html">
-  &lt;p&gt;By default body text, like this, is 16px.&lt;/p&gt;
-
-</code></pre>
-
-              </div>
-              <div class="panel">
-                <h6 class="label">Rendered HTML</h6>
+                <h6 class="label">Paragraph styles</h6>
                 <p class="lead">Lead paragraphs are used as introductions to projects or other large pages.</p>
+                 <p>By default, body text (like this) is 16px. This 16px base size is what all font sizes are calculated from.</p>
   <h6 class="label">HTML</h6>
 <pre><code class="html">
   &lt;p class="lead"&gt;Lead paragraphs are used as introductions to projects or other large pages.&lt;/p&gt;
+  &lt;p&gt;By default body text, like this, is 16px. This 16px base size is what all font sizes are calculated from.&lt;/p&gt;
 
 </code></pre>
 
               </div>
             </section>
+            <section>
+              <h4 id="lists">Lists</h4>
+              <div class="medium-6 columns panel">
+                <h6 class="label">Unordered lists</h6>
+                <ul>
+                  <li>This is an unordered list.</li>
+                  <li>Use it for bullet points in a story.</li>
+                  <li>This is still an unordered list.</li>
+                </ul>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;ul&gt;
+    &lt;li&gt;This is an unordered list.&lt;/li&gt;
+    &lt;li&gt;Use it for bullet points in a story.&lt;/li&gt;
+    &lt;li&gt;This is still an unordered list.&lt;/li&gt;
+  &lt;/ul&gt;
+
+</code></pre>
+              </div>
+              <div class="medium-6 columns panel">
+                <h6 class="label">Ordered lists</h6>
+                <ol>
+                  <li>This is an ordered list.</li>
+                  <li>Use it for steps in a process.</li>
+                  <li>Please don't make listicles.</li>
+                </ol>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;ul&gt;
+    &lt;li&gt;This is an ordered list.&lt;/li&gt;
+    &lt;li&gt;Use it for steps in a process.&lt;/li&gt;
+    &lt;li&gt;Please don't make listicles.&lt;/li&gt;
+  &lt;/ul&gt;
+
+</code></pre>
+              </div>
+            </section>
+            <section>
+              <h4 id="icons">Icons</h4>
+              <p>Blueline uses FontAwesome icons. <a href="http://fortawesome.github.io/Font-Awesome/examples/">Details on available icons and how to use them can be found on the FontAwesome website</a>. Some of the Knight Lab's commonly used icons are below.</p>
+              <div class="medium-6 columns panel">
+                <h6 class="label">Icon examples</h6>
+                <i class="fa fa-chevron-right"></i>
+                <i class="fa fa-chevron-left"></i>
+                <i class="fa fa-plus"></i>
+                <i class="fa fa-minus"></i>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;i class="fa fa-chevron-right"&gt;&lt;/i&gt;
+  &lt;i class="fa fa-chevron-left"&gt;&lt;/i&gt;
+  &lt;i class="fa fa-plus"&gt;&lt;/i&gt;
+  &lt;i class="fa fa-minus"&gt;&lt;/i&gt;
+
+</code></pre>
+              </div>
+              <div class="medium-6 columns panel">
+                <h6 class="label">Social media icon grouping</h6>
+                <ul class="contact-icons">
+                  <li><a title="follow @knightlab on Twitter" href="http://www.twitter.com/knightlab"><i class="fa fa-twitter"></i></a></li>
+                  <li><a title="Knight Lab on Facebook" href="https://www.facebook.com/knightlab"><i class="fa fa-facebook"></i></a></li>
+                  <li><a title="email Knight Lab" href="mailto:Knightlab@northwestern.edu"><i class="fa fa-envelope-o"></i></a></li>
+                  <li><a title="Knight Lab on GitHub" href="https://github.com/NUKnightLab/"><i class="fa fa-github-alt"></i></a></li>
+                </ul>
+
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;ul class="contact-icons"&gt;
+    &lt;li&gt;&lt;a title="follow @knightlab on Twitter" href="http://www.twitter.com/knightlab"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a title="Knight Lab on Facebook" href="https://www.facebook.com/knightlab"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a title="email Knight Lab" href="mailto:Knightlab@northwestern.edu"&gt;&lt;i class="fa fa-envelope-o"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a title="Knight Lab on GitHub" href="https://github.com/NUKnightLab/"&gt;&lt;i class="fa fa-github-alt"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+</code></pre>
+              </div>
+            </section>
+            <section>
+              <h4 id="horizontal-rule">Horizontal rule</h4>
+              <div class="panel">
+                <h6 class="label">Horizontal rule</h6>
+                <hr />
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;hr /&gt;
+</code></pre>
+              </div>
+            </section>
+            <section>
+              <h4 id="blockquote">Quotes</h4>
+              <p>Quotes come in two varieties: the inline quote (<code>q</code>)and the <code>blockquote</code>.</p>
+              <p>Use <code>q</code> for short quotes less than a paragraph long. This is not necessary when quoting an interview you've done, but should be used to point back to source material that lives elsewhere on the Internet. Note that <code>q</code> will insert quotation marks for you but does not create a link back to the original source.</p>
+              <div class="panel">
+                <h6 class="label">Inline quote</h6>
+                <p><q cite="http://michelleminkoff.com/2013/07/17/why-i-develop-in-the-newsroom/">Journalists love learning and sharing,</q> wrote Michelle Minkoff in a blog post about why she develops in a newsroom.</p>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p&gt;&lt;q cite="http://michelleminkoff.com/2013/07/17/why-i-develop-in-the-newsroom/"&gt;Journalists love learning and sharing,&lt;/q&gt; wrote Michelle Minkoff in a blog post about why she develops in a newsroom.&lt;/p&gt;
+</code></pre>
+              </div>
+              <p>Use <code>blockquote</code> to set apart a long quote. If applicable, include the <code>cite</code> attribute to link back to the original source. Always include the source in the text, whether in the <code>blockquote</code> itself or in the surrounding text.</p>
+              <div class="panel white">
+                <h6 class="label">Blockquote</h6>
+                  <blockquote cite="http://michelleminkoff.com/2013/07/17/why-i-develop-in-the-newsroom/"><p>Journalists love learning and sharing. While, yes, there is a certain extent of sitting quietly and writing at one’s desk, there’s also a lot of fervent collaboration. No detail is too small to merit a second (or hundredth) glance. When you get excited over an intricate problem you solved, you’ll have people to share it with. And you’ll hear interesting stories from them.</p>
+                  <p class="source">—Michelle Minkoff</p></blockquote>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;blockquote cite="http://michelleminkoff.com/2013/07/17/why-i-develop-in-the-newsroom/"&gt;&lt;p&gt;Journalists love learning and sharing. While, yes, there is a certain extent of sitting quietly and writing at one’s desk, there’s also a lot of fervent collaboration. No detail is too small to merit a second (or hundredth) glance. When you get excited over an intricate problem you solved, you’ll have people to share it with. And you’ll hear interesting stories from them.&lt;/p&gt;
+  &lt;p&gt;—Michelle Minkoff&lt;/p&gt;&lt;/blockquote&gt;
+</code></pre>
+              </div>
+
+            </section>
+            <section>
+              <h4 id="pullquotes">Pull quotes</h4>
+              <p data-pullquote="This is some content that will show up as a pull quote.">Pull quotes are formed with <code>data</code> attributes. Advantages to this method include no duplicated HTML, and being able to separate the pull quote from its physical location. (You can <a href="http://themindfulbit.com/blog/css-pullquotes">read more about the advantages of this method here</a>.) Simply paste your pull quote text into a <code>data-pullquote</code> attribute (you can use any element).</p>
+              <p>Note that pull quotes will not show up on mobile screens.</p>
+              <div class="panel">
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p data-pullquote="This is some content that will show up as a pull quote."&gt;Pull quotes are formed with data attributes.&lt;/p&gt;
+</code></pre>
+              </div>
+            </section>
+            <section>
+              <h4 id="ed-note">Editor's note</h4>
+              <p>Mostly used on the blog. Note that the words "Editor's Note:" are prepended to the content.</p>
+              <div class="panel">
+                <h6 class="label">Editor's note</h6>
+                <p class="editors-note">Occasionally we’ll do a Q&A with an impressive maker or strategist from media and its fringes. Each person brings a unique perspective on journalism, publishing and technology. Catch up and/or follow the series here.</p>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p class="editors-note"&gt;Occasionally we’ll do a Q&A with an impressive maker or strategist from media and its fringes. Each person brings a unique perspective on journalism, publishing and technology. Catch up and/or follow the series here.&lt;/p&gt;
+
+</code></pre>
+              </div>
+            </section>
+
+
             <section>
               <h2>Layout</h2>
               <h4 id="grid-system">Grid system</h4>

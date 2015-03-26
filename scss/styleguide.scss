@@ -8,7 +8,7 @@
     &.large-view { width: 1024px; }
     &.auto-view { width: auto; }
     .panel { padding-bottom: 0; }
-    section { margin: rem-calc(60) 0; }
+    section { margin: rem-calc(60) 0; clear: both; }
 }
 .side-nav { background: $smoke; padding: $column-gutter; }
 
@@ -19,6 +19,9 @@ h6.label {
   text-align: left;
   background-color: $light-green;
 }
+
+.panel { background-color: #F9F9F9; border-color: $smoke; }
+.panel.white { background-color: #FFF; }
 .panel > h6.label:first-child{ margin-top: -20px; }
 .panel pre {
     margin: -21px;

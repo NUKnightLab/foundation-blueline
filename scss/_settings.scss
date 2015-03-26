@@ -101,20 +101,20 @@ $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
 // $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
+ $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
+$white-smoke : #F3F3F3; // modified from #F5F5F5
 // $silver      : #EFEFEF;
 $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
+ $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
 // $base        : #AAAAAA;
 // $aluminum    : #999999;
 // $jumbo       : #888888;
 // $monsoon     : #777777;
 // $steel       : #666666;
-// $charcoal    : #555555;
+$charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
 // $jet         : #222222;
@@ -296,7 +296,7 @@ $medium-blue: #0f9bd1;
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
 // $blockquote-padding: rem-calc(9 20 0 19);
-// $blockquote-border: 1px solid $gainsboro;
+ $blockquote-border: 4px solid $white-smoke;
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
