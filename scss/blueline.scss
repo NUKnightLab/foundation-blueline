@@ -134,6 +134,7 @@ blockquote {
 // Blueline overrides of components/_type.scss
 
 h1 { font-style: italic; margin: rem-calc(11) 0; }
+h2.intro { color: $orange; font-family: $font-family-sans-serif; }
 h1, h2, h3 { font-family: $primary-header-font-family; line-height: rem-calc(44); }
 h4, h5, h6 { font-family: $secondary-header-font-family; font-weight: bold; line-height: rem-calc(22); }
 h2, h3, h4, h5, h6 { font-style: normal; margin: rem-calc(11) 0; }

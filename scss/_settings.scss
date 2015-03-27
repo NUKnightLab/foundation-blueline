@@ -126,6 +126,7 @@ $dark-orange: #c34528;
 $light-green: #eae34a;
 $light-blue: #1dacd6;
 $medium-blue: #0f9bd1;
+$dark-blue: #147693;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -270,8 +271,8 @@ $medium-blue: #0f9bd1;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+ $anchor-font-color: $light-blue;
+ $anchor-font-color-hover: $dark-blue;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
