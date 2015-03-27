@@ -27,6 +27,23 @@ h6.label {
     margin: -21px;
 }
 
+.paint-chip {
+    width: 90px;
+    height: 140px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 20px 10px 0;
+    border: 1px solid $smoke;
+    .lighter-orange { background: $lighter-orange; }
+    .light-orange { background: $light-orange; }
+    .orange { background: $orange; }
+    .dark-orange { background: $dark-orange; }
+    .yellow { background: $light-green; }
+    .light-blue { background: $light-blue; }
+    .medium-blue { background: $medium-blue; }
+    .dark-blue { background: $dark-blue; }
+}
+
 /* Tomorrow Night Theme */
 /* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
 /* Original theme - https://github.com/chriskempson/tomorrow-theme */
