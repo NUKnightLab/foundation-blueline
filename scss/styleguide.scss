@@ -26,22 +26,27 @@ h6.label {
 .panel pre {
     margin: -21px;
 }
+.panel .paint-chip:last-child { margin-bottom: 10px; }
 
 .paint-chip {
-    width: 90px;
-    height: 140px;
+    width: 24.5%;
+    height: 160px;
     display: inline-block;
     position: relative;
-    margin: 10px 20px 10px 0;
+    margin: 10px 0;
     border: 1px solid $smoke;
-    .lighter-orange { background: $lighter-orange; }
-    .light-orange { background: $light-orange; }
-    .orange { background: $orange; }
-    .dark-orange { background: $dark-orange; }
-    .yellow { background: $light-green; }
-    .light-blue { background: $light-blue; }
-    .medium-blue { background: $medium-blue; }
-    .dark-blue { background: $dark-blue; }
+
+    .color-deets {
+        padding: 0 5px;
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $smoke;
+        border-top: 1px solid $gainsboro;
+        p { margin: 2px 0; font-size: rem-calc(12); font-family: $font-family-monospace; }
+    }
 }
 
 /* Tomorrow Night Theme */

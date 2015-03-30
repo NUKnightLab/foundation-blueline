@@ -45,6 +45,23 @@
 //                 |___|___| |         )
 //___________________________|________/
 
+.lightest-orange-bg { background: $lighter-orange; }
+.lightest-orange-text { color: $lighter-orange; }
+.light-orange-bg { background: $light-orange; }
+.light-orange-text { color: $light-orange; }
+.orange-bg { background: $orange; }
+.orange-text { color: $orange; }
+.dark-orange-bg { background: $dark-orange; }
+.dark-orange-text { color: $dark-orange; }
+.yellow-bg { background: $light-green; }
+.yellow-text { color: $light-green; }
+.light-blue-bg { background: $light-blue; }
+.light-blue-text { color: $light-blue; }
+.medium-blue-bg { background: $medium-blue; }
+.medium-blue-text { color: $medium-blue; }
+.dark-blue-bg { background: $dark-blue; }
+.dark-blue-text { color: $dark-blue; }
+
 .row.full-width {
     @include grid-row($behavior: nest);
     margin: ($column-gutter/2);
