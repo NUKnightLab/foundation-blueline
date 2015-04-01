@@ -6,10 +6,10 @@
     <title>Blueline Style Guide -- Northwestern University Knight Lab</title>
     <!-- fonts -->
     <link href="http://cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
-    <!-- TODO: Figure out how to not import all of the settings in all of the partial SCSS files. -->
-    <!-- Example: navigation.css contains typography settings that blueline.css has to override. YUCK. -->
-    <link rel="stylesheet" href="stylesheets/navigation.css" />
+    <!-- TODO: Figure out how $include-html-classes: false is supposed to work. -->
+    <!-- Right now all partial SCSS files contain settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/blueline.css" />
+    <link rel="stylesheet" href="stylesheets/navigation.css" />
     <link rel="stylesheet" href="stylesheets/font-awesome/font-awesome.css" />
     <link rel="stylesheet" href="stylesheets/styleguide.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -374,14 +374,47 @@
 
 
             <section>
-              <h2>Modules</h2>
-              <h4 id="byline">Byline</h4>
+              <h2>Common design patterns</h2>
+              <h4 id="story-headings">Story headings</h4>
+              <p>Story headings on the blog use three components.</p>
+              <h6>Drop heds</h6>
+              <p>A <code>p</code> tag with a class of <code>.drop-hed</code>. Usually used before an <code>h1</code> story heading to display the date and/or blog category. Outside of story headings, use above <code>h1</code>, <code>h2</code> or <code>h3</code> to provide context.</p>
+              <h6>Hed</h6>
+              <p>Create story headlines with <code>h1.post-title</code>. Note that the <code>h1</code> is not italicized, as it is in other cases.</p>
+              <h6>Byline</h6>
+              <p>The author, designated with <code>.byline</code>. If possible, the name should link to the author's WordPress archive page.</p>
+              <div class="panel">
+                <h6 class="label">Story headings</h6>
+                <p class="drop-hed"><a href="knightlab.com/profiles">Profiles</a> | March 16, 2015</p>
+                <h1 class="post-title">Andrew Golis on launching This.cm and creating a social "magazine experience" on the web</h1>
+                <p class="byline">Posted by <a href="knightlab.com/nicole-zhu">Nicole Zhu</a></p>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;p class="drop-hed"&gt;&lt;a href="knightlab.com/profiles"&gt;Profiles&lt;/a&gt; | March 16, 2015&lt;/p&gt;
+  &lt;h1 class="post-title"&gt;Andrew Golis on launching This.cm and creating a social "magazine experience" on the web&lt;/h1&gt;
+  &lt;p class="byline"&gt;Posted by &lt;a href="knightlab.com/nicole-zhu"&gt;Nicole Zhu&lt;/a&gt;&lt;/p&gt;
+
+</code></pre>
+              </div>
+
             </section>
             <section>
               <h4 id="thumbnail-grid">Thumbnail grid</h4>
             </section>
             <section>
               <h4 id="buttons">Buttons</h4>
+              <p>You can create a button in two ways: with the <code>button</code> element or by adding the <code>.button</code> class to an <code>a</code> tag. See Foundation's <a href="http://foundation.zurb.com/docs/components/buttons.html">documentation about buttons</a> for more. Especially note the accessibility information.</p>
+              <div class="panel">
+                <a href="#" class="button"><span>Default Button</span></a>
+                <a href="#" class="button success" role="button"><span>Success Button</span></a>
+                <a href="#" class="button alert" role="button"><span>Alert Button</span></a>
+                <a href="#" class="button warning" role="button"><span>Warning Button</span></a>
+                <a href="#" class="button info" role="button"><span>Info Button</span></a>
+                <a href="#" class="button disabled" role="button"><span>Disabled Button</span></a>
+              </div>
+              <h6>Split and dropdown buttons</h6>
+              <p>Requires inclusion of <code>inputs.css</code> after <code>blueline.css</code> in the <code>head</code> of your document.</p>
+              <h4>[EXAMPLE]</h4>
             </section>
             <section>
               <h4 id="accordion">Accordion</h4>
