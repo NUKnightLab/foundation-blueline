@@ -178,6 +178,24 @@ blockquote {
     text-transform: uppercase;
     color: $jumbo;
 }
+
+@media screen and (min-width: 728px) {
+    *[data-pullquote]:before {
+        border-bottom: medium double $gainsboro;
+        border-top: medium double $gainsboro;
+        color: $orange;
+        content: attr(data-pullquote);
+        float: right;
+        font-family: $font-family-display-serif;
+        font-size: rem-calc(25);
+        font-style: italic;
+        line-height: 1.3;
+        margin: 7px 0 .5em 35px;
+        padding: 22px 1px 20px;
+        width: 34%;
+    }
+}
+
 // Knight Lab utilities
 
 .row.full-width {
@@ -206,6 +224,21 @@ hr {
   }
 }
 
+// Hide weird little arrows on dropdown menus
+.f-dropdown:before,
+.f-dropdown:after { display: none; }
+
+
+
+// Blueline overrides of components/_type.scss
+h1 { font-style: italic; margin: rem-calc(11) 0; }
+h2.intro { color: $orange; font-family: $font-family-sans-serif; }
+h1, h2, h3 { font-family: $primary-header-font-family; line-height: rem-calc(44); }
+h4, h5, h6 { font-family: $secondary-header-font-family; font-weight: bold; line-height: rem-calc(22); }
+h2, h3, h4, h5, h6 { font-style: normal; margin: rem-calc(11) 0; }
+h6 { text-transform: uppercase; }
+
+// Blueline overrides of components/_buttons.scss
 button,
 .button {
     @include button($radius: true);
@@ -239,35 +272,41 @@ button,
         span { color: $oil; text-shadow: none;}
     }
 }
+// Blueline overrides of components/_forms.scss
 
-.f-dropdown:before,
-.f-dropdown:after { display: none; }
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="color"],
+textarea { border-radius: $global-radius; }
 
-@media screen and (min-width: 728px) {
-    *[data-pullquote]:before {
-        border-bottom: medium double $gainsboro;
-        border-top: medium double $gainsboro;
-        color: $orange;
-        content: attr(data-pullquote);
-        float: right;
-        font-family: $font-family-display-serif;
-        font-size: rem-calc(25);
-        font-style: italic;
-        line-height: 1.3;
-        margin: 7px 0 .5em 35px;
-        padding: 22px 1px 20px;
-        width: 34%;
+// Blueline overrides of components/_accordion.scss
+.accordion {
+    @include accordion-navigation ($bg: $white-smoke);
+    li {
+        border: 1px solid $gainsboro;
+        border-radius: $global-radius;
+        margin-top: $global-radius;
+        a:before {
+            content: "\f067 \0000a0\0000a0";
+            font-size: .7em;
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: inherit;
+            -webkit-font-smoothing: antialiased;
+            color: #ca4d1d;
+        }
+        &.active a:before { content: "\f068 \0000a0\0000a0"; }
     }
 }
-
-// Blueline overrides of components/_type.scss
-h1 { font-style: italic; margin: rem-calc(11) 0; }
-h2.intro { color: $orange; font-family: $font-family-sans-serif; }
-h1, h2, h3 { font-family: $primary-header-font-family; line-height: rem-calc(44); }
-h4, h5, h6 { font-family: $secondary-header-font-family; font-weight: bold; line-height: rem-calc(22); }
-h2, h3, h4, h5, h6 { font-style: normal; margin: rem-calc(11) 0; }
-h6 { text-transform: uppercase; }
-
-// Blueline overrides of components/_buttons.scss
-// is this actually a rule in there?
- /*box-shadow: -1px -1px 0 $button-border-color inset;*/

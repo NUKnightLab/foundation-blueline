@@ -10,6 +10,7 @@
     <!-- Right now all partial SCSS files contain settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/blueline.css" />
     <link rel="stylesheet" href="stylesheets/navigation.css" />
+    <link rel="stylesheet" href="stylesheets/inputs.css" />
     <link rel="stylesheet" href="stylesheets/font-awesome/font-awesome.css" />
     <link rel="stylesheet" href="stylesheets/styleguide.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -71,6 +72,7 @@
             <li role="menuitem"><a href="#byline">Byline</a></li>
             <li role="menuitem"><a href="#thumbnail-grid">Thumbnail grid</a></li>
             <li role="menuitem"><a href="#buttons">Buttons</a></li>
+            <li role="menuitem"><a href="#forms">Forms</a></li>
             <li role="menuitem"><a href="#accordion">Accordion</a></li>
 
             <li class="divider"></li>
@@ -403,21 +405,230 @@
             </section>
             <section>
               <h4 id="buttons">Buttons</h4>
-              <p>You can create a button in two ways: with the <code>button</code> element or by adding the <code>.button</code> class to an <code>a</code> tag. See Foundation's <a href="http://foundation.zurb.com/docs/components/buttons.html">documentation about buttons</a> for more. Especially note the accessibility information.</p>
+              <p>You can create a button in two ways: with the <code>button</code> element or by adding the <code>.button</code> class to an <code>a</code> tag. With either variation, the button text should be wrapped in <code>span</code> See Foundation's <a href="http://foundation.zurb.com/docs/components/buttons.html">documentation about buttons</a> for more. Especially note the accessibility information.</p>
               <div class="panel">
-                <a href="#" class="button"><span>Default Button</span></a>
+                <h6 class="label">Buttons</h6>
+                <button><span>Default Button</span></button>
                 <a href="#" class="button success" role="button"><span>Success Button</span></a>
                 <a href="#" class="button alert" role="button"><span>Alert Button</span></a>
                 <a href="#" class="button warning" role="button"><span>Warning Button</span></a>
                 <a href="#" class="button info" role="button"><span>Info Button</span></a>
                 <a href="#" class="button disabled" role="button"><span>Disabled Button</span></a>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+   &lt;!-- Button syntax --&gt;
+  &lt;button&gt;&lt;span&gt;Default Button&lt;/span&gt;&lt;/button&gt;
+  &lt;!-- Anchor tag syntax --&gt;
+  &lt;a href="#" class="button success" role="button"&gt;&lt;span&gt;Success Button&lt;/span&gt;&lt;/a&gt;
+  &lt;a href="#" class="button alert" role="button"&gt;&lt;span&gt;Alert Button&lt;/span&gt;&lt;/a&gt;
+  &lt;a href="#" class="button warning" role="button"&gt;&lt;span&gt;Warning Button&lt;/span&gt;&lt;/a&gt;
+  &lt;a href="#" class="button info" role="button"&gt;&lt;span&gt;Info Button&lt;/span&gt;&lt;/a&gt;
+  &lt;a href="#" class="button disabled" role="button"&gt;&lt;span&gt;Disabled Button&lt;/span&gt;&lt;/a&gt;
+
+</code></pre>
+            </div>
+            <p>Buttons can also be rendered in different sizes.</p>
+              <div class="panel">
+                <h6 class="label">Buttons</h6>
+                <button class="expand"><span>Full-width Button</span></button>
+                <button class="large"><span>Large Button</span></button><br/>
+                <button><span>Default Button</span></button><br/>
+                <button class="small"><span>Small Button</span></button><br/>
+                <button class="tiny"><span>Tiny Button</span></button><br/>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;button class="expand"&gt;&lt;span&gt;Full-width Button&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="large"&gt;&lt;span&gt;Large Button&lt;/span&gt;&lt;/button&gt;
+  &lt;button&gt;&lt;span&gt;Default Button&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="small"&gt;&lt;span&gt;Small Button&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="tiny"&gt;&lt;span&gt;Tiny Button&lt;/span&gt;&lt;/button&gt;
+
+</code></pre>
+
               </div>
               <h6>Split and dropdown buttons</h6>
               <p>Requires inclusion of <code>inputs.css</code> after <code>blueline.css</code> in the <code>head</code> of your document.</p>
-              <h4>[EXAMPLE]</h4>
+              <div class="panel">
+                <h6 class="label">Split and dropdown buttons</h6>
+                  <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+                  <ul id="drop" class="f-dropdown" data-dropdown-content>
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                  </ul>
+                  <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
+                  <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                    <li><a href="#">This is a link</a></li>
+                    <li><a href="#">This is another</a></li>
+                    <li><a href="#">Yet another</a></li>
+                  </ul>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;a href="#" class="button split"&gt;Split Button &lt;span data-dropdown="drop"&gt;&lt;/span&gt;&lt;/a&gt;&lt;br&gt;
+  &lt;ul id="drop" class="f-dropdown" data-dropdown-content&gt;
+    &lt;li&gt;&lt;a href="#"&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;This is another&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown"&gt;Dropdown Button&lt;/button&gt;&lt;br&gt;
+  &lt;ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;This is a link&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;This is another&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Yet another&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+            </div>
+            </section>
+            <section>
+              <h4 id="forms">Forms</h4>
+              <div class="panel">
+              <h6 class="label">Sample fields</h6>
+              <form>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-12.columns" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-4 medium-4 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-4.columns" />
+                  </div>
+                  <div class="large-4 medium-4 columns">
+                    <label>Input Label</label>
+                    <input type="text" placeholder="large-4.columns" />
+                  </div>
+                  <div class="large-4 medium-4 columns">
+                    <div class="row collapse">
+                      <label>Input Label</label>
+                      <div class="small-9 columns">
+                        <input type="text" placeholder="small-9.columns" />
+                      </div>
+                      <div class="small-3 columns">
+                        <span class="postfix">.com</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Select Box</label>
+                    <select>
+                      <option value="husker">Husker</option>
+                      <option value="starbuck">Starbuck</option>
+                      <option value="hotdog">Hot Dog</option>
+                      <option value="apollo">Apollo</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-6 medium-6 columns">
+                    <label>Choose Your Favorite</label>
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+                  </div>
+                  <div class="large-6 medium-6 columns">
+                    <label>Check these out</label>
+                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <label>Textarea Label</label>
+                    <textarea placeholder="small-12.columns"></textarea>
+                  </div>
+                </div>
+              </form>
+
+
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;form&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="large-12 columns"&gt;
+        &lt;label&gt;Input Label&lt;/label&gt;
+        &lt;input type="text" placeholder="large-12.columns" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="large-4 medium-4 columns"&gt;
+        &lt;label&gt;Input Label&lt;/label&gt;
+        &lt;input type="text" placeholder="large-4.columns" /&gt;
+      &lt;/div&gt;
+      &lt;div class="large-4 medium-4 columns"&gt;
+        &lt;label&gt;Input Label&lt;/label&gt;
+        &lt;input type="text" placeholder="large-4.columns" /&gt;
+      &lt;/div&gt;
+      &lt;div class="large-4 medium-4 columns"&gt;
+        &lt;div class="row collapse"&gt;
+          &lt;label&gt;Input Label&lt;/label&gt;
+          &lt;div class="small-9 columns"&gt;
+            &lt;input type="text" placeholder="small-9.columns" /&gt;
+          &lt;/div&gt;
+          &lt;div class="small-3 columns"&gt;
+            &lt;span class="postfix"&gt;.com&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="large-12 columns"&gt;
+        &lt;label&gt;Select Box&lt;/label&gt;
+        &lt;select&gt;
+          &lt;option value="husker"&gt;Husker&lt;/option&gt;
+          &lt;option value="starbuck"&gt;Starbuck&lt;/option&gt;
+          &lt;option value="hotdog"&gt;Hot Dog&lt;/option&gt;
+          &lt;option value="apollo"&gt;Apollo&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="large-6 medium-6 columns"&gt;
+        &lt;label&gt;Choose Your Favorite&lt;/label&gt;
+        &lt;input type="radio" name="pokemon" value="Red" id="pokemonRed"&gt;&lt;label for="pokemonRed"&gt;Radio 1&lt;/label&gt;
+        &lt;input type="radio" name="pokemon" value="Blue" id="pokemonBlue"&gt;&lt;label for="pokemonBlue"&gt;Radio 2&lt;/label&gt;
+      &lt;/div&gt;
+      &lt;div class="large-6 medium-6 columns"&gt;
+        &lt;label&gt;Check these out&lt;/label&gt;
+        &lt;input id="checkbox1" type="checkbox"&gt;&lt;label for="checkbox1"&gt;Checkbox 1&lt;/label&gt;
+        &lt;input id="checkbox2" type="checkbox"&gt;&lt;label for="checkbox2"&gt;Checkbox 2&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="large-12 columns"&gt;
+        &lt;label&gt;Textarea Label&lt;/label&gt;
+        &lt;textarea placeholder="small-12.columns"&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+</code></pre>
+              </div>
             </section>
             <section>
               <h4 id="accordion">Accordion</h4>
+              <ul class="accordion" data-accordion>
+                <li class="accordion-navigation active">
+                  <a href="#panel1a">Accordion 1</a>
+                  <div id="panel1a" class="content active">
+                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel2a">Accordion 2</a>
+                  <div id="panel2a" class="content">
+                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+                <li class="accordion-navigation">
+                  <a href="#panel3a">Accordion 3</a>
+                  <div id="panel3a" class="content">
+                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </div>
+                </li>
+              </ul>
             </section>
             <section>
               <h4 id="">Other Foundation modules</h4>
