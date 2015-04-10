@@ -469,7 +469,7 @@ $dark-blue: #147693;
  /*$button-border-style: solid;*/
  $button-bg-color: $gainsboro;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
- $button-border-color: scale-color($button-bg-color, $lightness: -40%);
+ $button-border-color: scale-color($button-bg-color, $lightness: -20%);
  $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
  $secondary-button-border-color: scale-color($secondary-button-bg-hover, $lightness: -20%);
  $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
