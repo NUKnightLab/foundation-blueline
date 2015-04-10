@@ -100,7 +100,7 @@ $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 $font-weight-normal: normal;
 // $font-weight-bold: bold;
 
-// $white       : #FFFFFF;
+ $white       : #FFFFFF;
  $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -109,7 +109,7 @@ $white-smoke : #F3F3F3; // modified from #F5F5F5
 $smoke       : #EEEEEE;
  $gainsboro   : #DDDDDD;
 // $iron        : #CCCCCC;
-// $base        : #AAAAAA;
+ $base        : #AAAAAA;
 // $aluminum    : #999999;
  $jumbo       : #888888;
 // $monsoon     : #777777;
@@ -465,21 +465,21 @@ $dark-blue: #147693;
  $button-function-factor: -15%;
 
 // We use these to control button border styles.
-// $button-border-width: 0;
-// $button-border-style: solid;
+ /*$button-border-width: 3px;*/
+ /*$button-border-style: solid;*/
  $button-bg-color: $gainsboro;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
  $button-border-color: scale-color($button-bg-color, $lightness: -40%);
  $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
- $secondary-button-border-color: scale-color($secondary-button-bg-hover, $lightness: -40%);
+ $secondary-button-border-color: scale-color($secondary-button-bg-hover, $lightness: -20%);
  $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
- $success-button-border-color: scale-color($success-button-bg-hover, $lightness: -40%);
+ $success-button-border-color: scale-color($success-button-bg-hover, $lightness: -20%);
  $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
- $alert-button-border-color: scale-color($alert-button-bg-hover, $lightness: -40%);
+ $alert-button-border-color: scale-color($alert-button-bg-hover, $lightness: -20%);
  $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor);
- $warning-button-border-color: scale-color($warning-button-bg-hover, $lightness: -40%);
+ $warning-button-border-color: scale-color($warning-button-bg-hover, $lightness: -20%);
  $info-button-bg-hover: scale-color($info-color, $lightness: $button-function-factor);
- $info-button-border-color: scale-color($info-button-bg-hover, $lightness: -40%);
+ $info-button-border-color: scale-color($info-button-bg-hover, $lightness: -20%);
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;

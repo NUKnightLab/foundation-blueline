@@ -6,8 +6,6 @@
     <title>Blueline Style Guide -- Northwestern University Knight Lab</title>
     <!-- fonts -->
     <link href="http://cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
-    <!-- TODO: Figure out how $include-html-classes: false is supposed to work. -->
-    <!-- Right now all partial SCSS files contain settings that blueline.css has to override. YUCK. -->
     <link rel="stylesheet" href="stylesheets/blueline.css" />
     <link rel="stylesheet" href="stylesheets/navigation.css" />
     <link rel="stylesheet" href="stylesheets/inputs.css" />
@@ -19,7 +17,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">Blueline Style Guide</a></h1>
+          <h1><a href="#">Blueline</a></h1>
         </li>
          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
         <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -33,6 +31,9 @@
 
         <!-- Left Nav Section -->
         <ul class="left">
+          <li><a href="/index.html">Components</a></li>
+          <li><a href="/templates.html">Project templates</a></li>
+          <li><a href="/usage.html">Style guide</a></li>
           <li class="active"><a href="http://foundation.zurb.com/docs/">Foundation docs</a></li>
         </ul>
       </section>
@@ -61,11 +62,9 @@
 
             <li>LAYOUT</li>
             <li role="menuitem"><a href="#grid-system">Grid system</a></li>
-            <li role="menuitem"><a href="#navigation">Navigation</a></li>
-            <li role="menuitem"><a href="#pre-header">Pre-header</a></li>
-            <li role="menuitem"><a href="#footer">Footer</a></li>
-            <li role="menuitem"><a href="#templates">Templates</a></li>
-
+            <li role="menuitem">x <a href="#navigation">Navigation</a></li>
+            <li role="menuitem">x <a href="#pre-header">Pre-header</a></li>
+            <li role="menuitem">x <a href="#footer">Footer</a></li>
             <li class="divider"></li>
 
             <li>MODULES</li>
@@ -79,10 +78,10 @@
 
             <li>BRAND</li>
             <li role="menuitem"><a href="#colors">Colors</a></li>
-            <li role="menuitem"><a href="#horizontal-logos">Horizontal logos</a></li>
-            <li role="menuitem"><a href="#vertical-logos">Vertical logos</a></li>
-            <li role="menuitem"><a href="#diamond">Diamond logo</a></li>
-            <li role="menuitem"><a href="#logo-mark">Product Logo Mark</a></li>
+            <li role="menuitem">x <a href="#horizontal-logos">Horizontal logos</a></li>
+            <li role="menuitem">x <a href="#vertical-logos">Vertical logos</a></li>
+            <li role="menuitem">x <a href="#diamond">Diamond logo</a></li>
+            <li role="menuitem">x <a href="#logo-mark">Product Logo Mark</a></li>
           </ul>
       </div>
       <div class="medium-9 columns">
@@ -285,7 +284,8 @@
               <h2>Layout</h2>
               <h4 id="grid-system">Grid system</h4>
               <p><a href=http://foundation.zurb.com/docs/components/grid.html">Foundation's grid system</a> is based on rows and columns. *Blueline's rows have a <code>max-width</code> of <code>1200px</code>. If you want to allow your content to be wider than 1200px, simply omit the use of the <code>row</code> div and use only the column classes. You do not need to use columns within rows. *However, you may find it helpful to use <code>.row.full-width</code> if you are having difficulty aligning columns.</p>
-
+            <div class="panel">
+              <h6 class="label">Grid system</h6>
                 <div class="row">
                   <div class="large-12 columns">
                     <div class="callout panel">
@@ -322,47 +322,104 @@
                     </div>
                   </div>
                 </div>
-              <pre><code>
-                &lt;div class="row"&gt;
-                  &lt;div class="large-12 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;&lt;strong&gt;This is a twelve column section in a row.&lt;/strong&gt; Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="row"&gt;
-                  &lt;div class="large-6 medium-6 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;Six columns&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class="large-6 medium-6 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;Six columns&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class="row"&gt;
-                  &lt;div class="large-4 medium-4 small-4 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;Four columns&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class="large-4 medium-4 small-4 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;Four columns&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                  &lt;div class="large-4 medium-4 small-4 columns"&gt;
-                    &lt;div class="callout panel"&gt;
-                      &lt;p&gt;Four columns&lt;/p&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              </pre></code>
+<h6 class="label">HTML</h6>
+<pre><code>
+  &lt;div class="row"&gt;
+    &lt;div class="large-12 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;&lt;strong&gt;This is a twelve column section in a row.&lt;/strong&gt; Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-6 medium-6 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;Six columns&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="large-6 medium-6 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;Six columns&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="large-4 medium-4 small-4 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;Four columns&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="large-4 medium-4 small-4 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;Four columns&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="large-4 medium-4 small-4 columns"&gt;
+      &lt;div class="callout panel"&gt;
+        &lt;p&gt;Four columns&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</pre></code>
+              </div>
             </section>
             <section>
               <h4 id="navigation">Navigation</h4>
+              <h6>Top bar</h6>
+              <div id="panel">
+                <h6 class="label">Top bar</h6>
+                    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Blueline</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section" style="margin: 0; clear: none;">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="http://knightlab.northwestern.edu/">Northwestern University Knight Lab</a></li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="active"><a href="/index.html">Components</a></li>
+          <li><a href="/usage.html">Style & usage guide</a></li>
+        </ul>
+      </section>
+    </nav>
+<h6 class="label" style="clear: both;">HTML</h6>
+<pre><code class="html">
+  &lt;nav class="top-bar" data-topbar role="navigation"&gt;
+    &lt;ul class="title-area"&gt;
+      &lt;li class="name"&gt;
+        &lt;h1&gt;&lt;a href="#"&gt;Blueline&lt;/a&gt;&lt;/h1&gt;
+      &lt;/li&gt;
+       &lt;!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --&gt;
+      &lt;li class="toggle-topbar menu-icon"&gt;&lt;a href="#"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;section class="top-bar-section"&gt;
+      &lt;!-- Right Nav Section --&gt;
+      &lt;ul class="right"&gt;
+        &lt;li&gt;&lt;a href="http://knightlab.northwestern.edu/"&gt;Northwestern University Knight Lab&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+
+      &lt;!-- Left Nav Section --&gt;
+      &lt;ul class="left"&gt;
+        &lt;li class="active"&gt;&lt;a href="/index.html"&gt;Components&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/usage.html"&gt;Style guide&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/nav&gt;
+</code></pre>
+              </div>
+              <h6>Sub nav</h6>
+              <h6>Side nav</h6>
+              <h6>Off-canvas nav</h6>
+              <h6>Icon bar</h6>
             </section>
             <section>
               <h4 id="pre-header">Pre-header</h4>
@@ -402,6 +459,24 @@
             </section>
             <section>
               <h4 id="thumbnail-grid">Thumbnail grid</h4>
+              <p>Used to create showcases on product pages (see <a href="http://timeline.knightlab.com/">TimelineJS</a> for an example). Make sure to add <code>.th</code> to each image to create the border.</p>
+              <p>It is also possible to specify breakpoints at which the number of items per row changes. To learn more, <a href="http://foundation.zurb.com/docs/components/block_grid.html">see the Foundation docs</a>.</p>
+              <div class="panel">
+              <h6 class="label">Block grids for thumbnails</h6>
+              <ul class="small-block-grid-3">
+                <li><img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_lemonde.jpg"</li>
+                <li><img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_mandela.jpg"></li>
+                <li><img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_aljazeera.jpg"></li>
+              </ul>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;ul class="small-block-grid-3"&gt;
+    &lt;li&gt;&lt;img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_lemonde.jpg"&lt;/li&gt;
+    &lt;li&gt;&lt;img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_mandela.jpg"&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img class="th" src="http://timeline.knightlab.com/static/img/examples/thumbs/thumb_aljazeera.jpg"&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+</div>
             </section>
             <section>
               <h4 id="buttons">Buttons</h4>
@@ -409,6 +484,7 @@
               <div class="panel">
                 <h6 class="label">Buttons</h6>
                 <button><span>Default Button</span></button>
+                <button class="inverse"><span>Inverse Button</span></button>
                 <a href="#" class="button success" role="button"><span>Success Button</span></a>
                 <a href="#" class="button alert" role="button"><span>Alert Button</span></a>
                 <a href="#" class="button warning" role="button"><span>Warning Button</span></a>
@@ -447,16 +523,16 @@
 
               </div>
               <h6>Split and dropdown buttons</h6>
-              <p>Requires inclusion of <code>inputs.css</code> after <code>blueline.css</code> in the <code>head</code> of your document.</p>
+              <p>If not using <code>foundation.min.js</code>, requires inclusion of <code>foundation.dropdown.js</code> after <code>foundation.js</code> in at the end of your document's <code>body</code>.</p>
               <div class="panel">
                 <h6 class="label">Split and dropdown buttons</h6>
-                  <a href="#" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
+                  <a href="#buttons" class="button split">Split Button <span data-dropdown="drop"></span></a><br>
                   <ul id="drop" class="f-dropdown" data-dropdown-content>
                     <li><a href="#">This is a link</a></li>
                     <li><a href="#">This is another</a></li>
                     <li><a href="#">Yet another</a></li>
                   </ul>
-                  <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
+                  <button href="#buttons" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown">Dropdown Button</button><br>
                   <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
                     <li><a href="#">This is a link</a></li>
                     <li><a href="#">This is another</a></li>
@@ -609,26 +685,53 @@
             </section>
             <section>
               <h4 id="accordion">Accordion</h4>
-              <ul class="accordion" data-accordion>
-                <li class="accordion-navigation active">
-                  <a href="#panel1a">Accordion 1</a>
-                  <div id="panel1a" class="content active">
-                    Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                </li>
-                <li class="accordion-navigation">
-                  <a href="#panel2a">Accordion 2</a>
-                  <div id="panel2a" class="content">
-                    Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                </li>
-                <li class="accordion-navigation">
-                  <a href="#panel3a">Accordion 3</a>
-                  <div id="panel3a" class="content">
-                    Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </div>
-                </li>
-              </ul>
+              <p>Frequently used for FAQ sections. Sections are collapsed by default, but adding the class <code>active</code> to the desired <code>li.accordion-navigation</code> element and the corresponding child <code>div.content</code> will open it on load. (Only one accordion component can be open at a time.)</p>
+              <div class="panel">
+                <h6 class="label">Accordion</h6>
+                <ul class="accordion" data-accordion>
+                  <li class="accordion-navigation active">
+                    <a href="#panel1a">Accordion 1</a>
+                    <div id="panel1a" class="content active">
+                      Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel2a">Accordion 2</a>
+                    <div id="panel2a" class="content">
+                      Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </li>
+                  <li class="accordion-navigation">
+                    <a href="#panel3a">Accordion 3</a>
+                    <div id="panel3a" class="content">
+                      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                  </li>
+                </ul>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;ul class="accordion" data-accordion&gt;
+    &lt;li class="accordion-navigation active"&gt;
+      &lt;a href="#panel1a"&gt;Accordion 1&lt;/a&gt;
+      &lt;div id="panel1a" class="content active"&gt;
+        Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="accordion-navigation"&gt;
+      &lt;a href="#panel2a"&gt;Accordion 2&lt;/a&gt;
+      &lt;div id="panel2a" class="content"&gt;
+        Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="accordion-navigation"&gt;
+      &lt;a href="#panel3a"&gt;Accordion 3&lt;/a&gt;
+      &lt;div id="panel3a" class="content"&gt;
+        Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+</div>
             </section>
             <section>
               <h4 id="">Other Foundation modules</h4>
@@ -722,6 +825,7 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.magellan.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.offcanvas.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
     <script src="js/app.js"></script>
     <!-- code syntax highlighting -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>

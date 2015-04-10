@@ -24,16 +24,14 @@ $include-html-joyride-classes: false;
 $include-html-off-canvas-classes: false;
 $include-html-media-classes: false;
 $include-html-orbit-classes: false;
+$include-html-button-classes: false;
 
-// Forms & buttons
+// Forms
 $include-html-form-classes: true;
 $include-html-range-slider-classes: true;
-$include-html-button-classes: true;
 
 @import "settings";
 
 @import
     "foundation/components/range-slider", // min-max slider controls
-    "foundation/components/switches", // sliding form controls
-    "foundation/components/split-buttons", // buttons with dropdowns
-    "foundation/components/dropdown-buttons";
+    "foundation/components/switches"; // sliding form controls
