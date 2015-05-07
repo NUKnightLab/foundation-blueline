@@ -117,7 +117,7 @@ $smoke       : #EEEEEE;
 $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
-// $jet         : #222222;
+ $jet         : #222222;
 // $black       : #000000;
 $lighter-orange: #f7ccb2;
 $light-orange: #e35a25;
@@ -1399,11 +1399,11 @@ $dark-blue: #147693;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: $oil;
-// $topbar-bg: $topbar-bg-color;
+ $topbar-bg-color: $ghost;
+ $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+ $topbar-height: rem-calc(45);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1411,15 +1411,15 @@ $dark-blue: #147693;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: $white;
-// $topbar-link-color-hover: $white;
-// $topbar-link-color-active: $white;
-// $topbar-link-color-active-hover: $white;
+ $topbar-link-color: $jet;
+ $topbar-link-color-hover: $jumbo;
+ $topbar-link-color-active: $jumbo;
+ $topbar-link-color-active-hover: $jumbo;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: $oil;
+ $topbar-link-bg: transparent;
+ $topbar-link-bg-hover: $gainsboro;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);

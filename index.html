@@ -14,7 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
-    <nav class="top-bar" data-topbar role="navigation">
+  <div data-magellan-expedition="fixed">
+    <nav class="top-bar sticky" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
           <h1><a href="#">Blueline</a></h1>
@@ -38,13 +39,15 @@
         </ul>
       </section>
     </nav>
-    <dl id="change-view" class="sub-nav" data-magellan-expedition="fixed">
+    <dl id="change-view" class="sub-nav">
       <dt>Preview viewport size:</dt>
       <dd class="small-view">Small</dd>
       <dd class="medium-view">Medium</dd>
       <dd class="large-view">Large</dd>
       <dd class="auto-view">Auto</dd>
     </dl>
+    </div>
+
     <div class="row">
       <div class="medium-3 columns">
           <ul class="side-nav" role="navigation">
@@ -366,6 +369,8 @@
             <section>
               <h4 id="navigation">Navigation</h4>
               <h6>Top bar</h6>
+              <p>You must include the <a href="http://foundation.zurb.com/docs/components/magellan.html">Magellan JavaScript library</a> in order to create a sticky navbar (or any other sticky element.</p>
+              <p>To make the top bar sticky, wrap the code below in a div with the attribute <code>data-magellan-expedition="fixed"</code>. Then add the class <code>sticky</code> to the <code>nav</code> element.</p>
               <div id="panel">
                 <h6 class="label">Top bar</h6>
                     <nav class="top-bar" data-topbar role="navigation">
@@ -392,28 +397,32 @@
     </nav>
 <h6 class="label" style="clear: both;">HTML</h6>
 <pre><code class="html">
-  &lt;nav class="top-bar" data-topbar role="navigation"&gt;
-    &lt;ul class="title-area"&gt;
-      &lt;li class="name"&gt;
-        &lt;h1&gt;&lt;a href="#"&gt;Blueline&lt;/a&gt;&lt;/h1&gt;
-      &lt;/li&gt;
-       &lt;!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --&gt;
-      &lt;li class="toggle-topbar menu-icon"&gt;&lt;a href="#"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-    &lt;section class="top-bar-section"&gt;
-      &lt;!-- Right Nav Section --&gt;
-      &lt;ul class="right"&gt;
-        &lt;li&gt;&lt;a href="http://knightlab.northwestern.edu/"&gt;Northwestern University Knight Lab&lt;/a&gt;&lt;/li&gt;
+   &lt;div data-magellan-expedition="fixed"&gt; &lt;!-- Use this to make the navbar stick to the top. --&gt;
+     &lt;!-- Add the class "sticky" to "top-bar" to make the navbar sticky. --&gt;
+     &lt;nav class="top-bar" data-topbar role="navigation"&gt;
+      &lt;ul class="title-area"&gt;
+        &lt;li class="name"&gt;
+          &lt;h1&gt;&lt;a href="#"&gt;Blueline&lt;/a&gt;&lt;/h1&gt;
+        &lt;/li&gt;
+         &lt;!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --&gt;
+        &lt;li class="toggle-topbar menu-icon"&gt;&lt;a href="#"&gt;&lt;span&gt;Menu&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
 
-      &lt;!-- Left Nav Section --&gt;
-      &lt;ul class="left"&gt;
-        &lt;li class="active"&gt;&lt;a href="/index.html"&gt;Components&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="/usage.html"&gt;Style guide&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/section&gt;
-  &lt;/nav&gt;
+      &lt;section class="top-bar-section"&gt;
+        &lt;!-- Right Nav Section --&gt;
+        &lt;ul class="right"&gt;
+          &lt;li&gt;&lt;a href="http://knightlab.northwestern.edu/"&gt;Northwestern University Knight Lab&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;!-- Left Nav Section --&gt;
+        &lt;ul class="left"&gt;
+          &lt;li class="active"&gt;&lt;a href="/index.html"&gt;Components&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="/usage.html"&gt;Style guide&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/section&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+
 </code></pre>
               </div>
               <h6>Sub nav</h6>

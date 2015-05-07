@@ -230,6 +230,51 @@ hr {
 .f-dropdown:before,
 .f-dropdown:after { display: none; }
 
+// Knight Lab navigation
+
+.top-bar {
+    color: $jet;
+  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
+  background-image: -o-linear-gradient(top,#fff,#f2f2f2);
+  background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
+  border: 1px solid #d4d4d4;
+
+}
+.sub-nav {
+    clear: both;
+    background: $white-smoke;
+    padding: 10px 0;
+}
+
+.top-bar-section {
+    li {
+        &.active:not(.has-form) a:not(.button) {
+            color: $white;
+            &:hover,
+            &:active,
+            &:focus { color: $smoke; }
+        }
+        &:not(.has-form) a:not(.button) {
+            background-color: $ghost;
+            background-image: -moz-linear-gradient(top,#fff,#f2f2f2);
+            background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f2f2f2));
+            background-image: -webkit-linear-gradient(top,#fff,#f2f2f2);
+            background-image: -o-linear-gradient(top,#fff,#f2f2f2);
+            background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+            background-repeat: repeat-x;
+            border-bottom: 1px solid #d4d4d4;
+            height: rem-calc(44);
+          }
+      }
+  }
+  .top-bar-section li.active:not(.has-form) a:not(.button)
 // Blueline overrides of components/_type.scss
 h1 { font-style: italic; margin: rem-calc(11) 0; }
 h2.intro { color: $orange; font-family: $font-family-sans-serif; }
@@ -314,3 +359,11 @@ textarea { border-radius: $global-radius; }
         &.active a:before { content: "\f068 \0000a0\0000a0"; }
     }
 }
+
+// Blueline overrides of components/_magellean.scss
+[data-magellan-expedition],
+[data-magellan-expedition-clone] { padding: 0; }
+
+[data-magellan-expedition] + .row,
+[data-magellan-expedition-clone] + .row { margin-top: 50px; }
+
