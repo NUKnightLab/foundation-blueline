@@ -233,7 +233,7 @@ hr {
 // Knight Lab navigation
 
 .top-bar {
-    color: $jet;
+  color: $jet;
   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
   -moz-box-shadow: 0 1px 10px rgba(0,0,0,.1);
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
@@ -274,7 +274,15 @@ hr {
           }
       }
   }
-  .top-bar-section li.active:not(.has-form) a:not(.button)
+
+  // Blueline overrides components/_sub_nav.scss
+  .sub-nav dt,
+  .sub-nav dd,
+  .sub-nav li {
+    color: $jet;
+    font-size: 0.8125rem;
+  }
+
 // Blueline overrides of components/_type.scss
 h1 { font-style: italic; margin: rem-calc(11) 0; }
 h2.intro { color: $orange; font-family: $font-family-sans-serif; }
