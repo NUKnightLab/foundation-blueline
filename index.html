@@ -65,7 +65,7 @@
 
             <li>LAYOUT</li>
             <li role="menuitem"><a href="#grid-system">Grid system</a></li>
-            <li role="menuitem">x <a href="#navigation">Navigation</a></li>
+            <li role="menuitem"><a href="#navigation">Navigation</a></li>
             <li role="menuitem">x <a href="#footer">Footer</a></li>
             <li class="divider"></li>
 
@@ -459,17 +459,16 @@
                   <li role="menuitem"><a href="#lists">Lists</a></li>
                   <li role="menuitem"><a href="#icons">Icons</a></li>
                 </ul>
-                <h6 class="label">Side nav</h6>
 <h6 class="label">HTML</h6>
 <pre><code class="html">
-  &lt;ul class="side-nav">
-    &lt;li>TYPOGRAPHY&lt;/li>
-    &lt;li class="divider">&lt;/li>
-    &lt;li role="menuitem">&lt;a href="#headlines">Headlines&lt;/a>&lt;/li>
-    &lt;li role="menuitem">&lt;a href="#paragraph-styles">Paragraphs&lt;/a>&lt;/li>
-    &lt;li role="menuitem">&lt;a href="#lists">Lists&lt;/a>&lt;/li>
-    &lt;li role="menuitem">&lt;a href="#icons">Icons&lt;/a>&lt;/li>
-  &lt;/ul>
+  &lt;ul class="side-nav"&gt;
+    &lt;li&gt;TYPOGRAPHY&lt;/li&gt;
+    &lt;li class="divider"&gt;&lt;/li&gt;
+    &lt;li role="menuitem"&gt;&lt;a href="#headlines"&gt;Headlines&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="menuitem"&gt;&lt;a href="#paragraph-styles"&gt;Paragraphs&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="menuitem"&gt;&lt;a href="#lists"&gt;Lists&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="menuitem"&gt;&lt;a href="#icons"&gt;Icons&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
 </code></pre>
               </div>
               <h6>Off-canvas nav</h6>
@@ -478,12 +477,85 @@
               <p>Primarily used for mobile devices, <a href="http://foundation.zurb.com/docs/components/icon-bar.html">Foundation's icon bar</a> provides an icon-driven menu with a mobile-native feel. It has yet to be styled for Blueline.  Guidelines for usage can be found on the "Usage" page.</p>
             </section>
             <section>
-              <h4 id="footer">Footer</h4>
+              <h4 id="footer-example">Footer</h4>
+              <p>The footer used on all Knight Lab pages and products. Usually created as a partial template.</p>
+              <div class="panel">
+                <h6 class="label">Footer</h6>
+                  <footer>
+                    <div class="about-knightlab">
+                      <div id="knightlab-logo-column">
+                        <a href="http://knightlab.northwestern.edu" target="_blank"><img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/logo_stacked.png" class="img-responsive"></a>
+                        <ul class="social list-inline">
+                           <li><a href="http://www.twitter.com/knightlab" target="_blank" title="Knight Lab on Twitter"><span class="icon-twitter"></span></a></li>
+                          <li><a href="https://www.facebook.com/knightlab" target="_blank" title="Knight Lab on Facebook"><span class="icon-facebook"></span></a></li>
+                          <li><a href="https://github.com/NUKnightLab/" target="_blank" title="Knight Lab on GitHub"><span class="icon-github"></span></a></li>
+                        </ul>
+                      </div>
+                      <div id="knightlab-description">
+                        <p>The <a title="Northwestern University" href="http://www.northwestern.edu/" target="_blank">Northwestern University</a> Knight Lab is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.</p>
+                        <p>A joint initiative of the <a href="http://www.mccormick.northwestern.edu/" target="_blank">Robert R. McCormick School of Engineering and Applied Science</a> and the<a href="http://www.medill.northwestern.edu/" target="_blank"> Medill School of Journalism, Media, Integrated Marketing Communications</a>.</p><img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/Logos-Horizontal.png" class="img-responsive logos">
+                      </div>
+                      <div class="contact">
+                        <address itemscope="" itemtype="http://data-vocabulary.org/Organization">
+                          <span style="display:none;" itemprop="name" title="Knight Lab | Advancing news media innovation through exploration and experimentation." class="address-name">Knight Lab</span>
+                          <span itemprop="tel" class="tel">(847) 467-4971 | </span>
+                          <span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="address">
+                            <span itemprop="street-address" class="street-address"><a href="https://maps.google.com/maps?q=1845+Sheridan+Road+Evanston+IL+6020&amp;hl=en&amp;ll=42.050942,-87.673511&amp;spn=0.003059,0.004898&amp;sll=42.050647,-87.674246&amp;sspn=0.012237,0.019591&amp;gl=us&amp;hnear=1845+Sheridan+Rd,+Evanston,+Cook,+Illinois+60201&amp;t=m&amp;z=18&amp;iwloc=A" target="_blank">1845 Sheridan Road Fisk #109 & #111</span>, 
+                            <span itemprop="locality">Evanston,</span> 
+                            <span itemprop="region">IL</span> 
+                            <span itemprop="postal-code">60208 |</span> 
+                            <span itemprop="country-name" class="address-country">United States</span>
+                          </span>
+                          <span style="display:none;" itemprop="geo" itemscope="" itemtype="http://www.data-vocabulary.org/Geo/" class="geo">
+                            Latitude: <span itemprop="latitude">42.056893</span><br>
+                            Longitude: <span itemprop="longitude">-87.676735</span>
+                          </span>
+                          <a style="display:none;" href="http://knightlab.northwestern.edu" itemprop="url" class="url">Northwestern University Knight Lab | Advancing media innovation through exploration and experimentation.</a>
+                        </address>
+                        <span class="copyright">| Copyright 2015, Northwestern University</span>
+                      </div>
+                    </div><!-- end .about-knightlab -->
+                  </footer>
+<h6 class="label">HTML</h6>
+<pre><code class="html">
+  &lt;footer&gt;
+    &lt;div class="about-knightlab"&gt;
+      &lt;div id="knightlab-logo-column"&gt;
+        &lt;a href="http://knightlab.northwestern.edu" target="_blank"&gt;&lt;img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/logo_stacked.png" class="img-responsive"&gt;&lt;/a&gt;
+        &lt;ul class="social list-inline"&gt;
+           &lt;li&gt;&lt;a href="http://www.twitter.com/knightlab" target="_blank" title="Knight Lab on Twitter"&gt;&lt;span class="icon-twitter"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="https://www.facebook.com/knightlab" target="_blank" title="Knight Lab on Facebook"&gt;&lt;span class="icon-facebook"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="https://github.com/NUKnightLab/" target="_blank" title="Knight Lab on GitHub"&gt;&lt;span class="icon-github"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div id="knightlab-description"&gt;
+        &lt;p&gt;The &lt;a title="Northwestern University" href="http://www.northwestern.edu/" target="_blank"&gt;Northwestern University&lt;/a&gt; Knight Lab is a team of technologists and journalists working at advancing news media innovation through exploration and experimentation.&lt;/p&gt;
+        &lt;p&gt;A joint initiative of the &lt;a href="http://www.mccormick.northwestern.edu/" target="_blank"&gt;Robert R. McCormick School of Engineering and Applied Science&lt;/a&gt; and the&lt;a href="http://www.medill.northwestern.edu/" target="_blank"&gt; Medill School of Journalism, Media, Integrated Marketing Communications&lt;/a&gt;.&lt;/p&gt;&lt;img src="http://knightlab.northwestern.edu/wp-content/uploads/2014/12/Logos-Horizontal.png" class="img-responsive logos"&gt;
+      &lt;/div&gt;
+      &lt;div class="contact"&gt;
+        &lt;address itemscope="" itemtype="http://data-vocabulary.org/Organization"&gt;
+          &lt;span style="display:none;" itemprop="name" title="Knight Lab | Advancing news media innovation through exploration and experimentation." class="address-name"&gt;Knight Lab&lt;/span&gt;
+          &lt;span itemprop="tel" class="tel"&gt;(847) 467-4971 | &lt;/span&gt;
+          &lt;span itemprop="address" itemscope="" itemtype="http://data-vocabulary.org/Address" class="address"&gt;
+            &lt;span itemprop="street-address" class="street-address"&gt;&lt;a href="https://maps.google.com/maps?q=1845+Sheridan+Road+Evanston+IL+6020&amp;hl=en&amp;ll=42.050942,-87.673511&amp;spn=0.003059,0.004898&amp;sll=42.050647,-87.674246&amp;sspn=0.012237,0.019591&amp;gl=us&amp;hnear=1845+Sheridan+Rd,+Evanston,+Cook,+Illinois+60201&amp;t=m&amp;z=18&amp;iwloc=A" target="_blank"&gt;1845 Sheridan Road Fisk #109 & #111&lt;/span&gt;, 
+            &lt;span itemprop="locality"&gt;Evanston,&lt;/span&gt; 
+            &lt;span itemprop="region"&gt;IL&lt;/span&gt; 
+            &lt;span itemprop="postal-code"&gt;60208 |&lt;/span&gt; 
+            &lt;span itemprop="country-name" class="address-country"&gt;United States&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;span style="display:none;" itemprop="geo" itemscope="" itemtype="http://www.data-vocabulary.org/Geo/" class="geo"&gt;
+            Latitude: &lt;span itemprop="latitude"&gt;42.056893&lt;/span&gt;&lt;br&gt;
+            Longitude: &lt;span itemprop="longitude"&gt;-87.676735&lt;/span&gt;
+          &lt;/span&gt;
+          &lt;a style="display:none;" href="http://knightlab.northwestern.edu" itemprop="url" class="url"&gt;Northwestern University Knight Lab | Advancing media innovation through exploration and experimentation.&lt;/a&gt;
+        &lt;/address&gt;
+        &lt;span class="copyright"&gt;| Copyright 2015, Northwestern University&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;&lt;!-- end .about-knightlab --&gt;
+  &lt;/footer&gt;
+</pre></code>
+              </div>
             </section>
-            <section>
-              <h4 id="templates">Templates</h4>
-            </section>
-
 
             <section>
               <h2>Common design patterns</h2>
