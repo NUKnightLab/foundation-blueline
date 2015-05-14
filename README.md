@@ -1,11 +1,11 @@
-# Local Blueline development
+# Local PurpleLine development
 
-For developing and deploying new Blueline styles. If you want to use Blueline in a project, all you need to do is include a link to it in the `head`. See docs for more info.
+For developing and deploying new PurpleLine styles. If you want to use PurpleLine in a project, all you need to do is include a link to it in the `head`. See docs for more info.
 
 
-## Setting up Blueline
+## Setting up PurpleLine
 
-Blueline runs on the CSS framework [Foundation](http://foundation.zurb.com/). These instructions are adapted from Foundation's [manual install process.](http://foundation.zurb.com/docs/sass.html#nocli)
+PurpleLine runs on the CSS framework [Foundation](http://foundation.zurb.com/). These instructions are adapted from Foundation's [manual install process.](http://foundation.zurb.com/docs/sass.html#nocli)
 
 ### Requirements
 
@@ -17,19 +17,19 @@ Blueline runs on the CSS framework [Foundation](http://foundation.zurb.com/). Th
 ### Procedure
   * Clone this repo and `cd` into it.
   * Create a `bower_components` directory and `cd` into it.
-  * Add [bower-foundation](https://github.com/NUKnightLab/bower-foundation) as a submodule named `foundation`: `git submodule add -f git@github.com:NUKnightLab/bower-foundation.git foundation`
+  * Add [purpleline-foundation](https://github.com/NUKnightLab/purpleline-foundation) as a submodule named `foundation`: `git submodule add -f git@github.com:NUKnightLab/purpleline-foundation.git foundation`
   * Compile CSS with Compass: `compass watch`
 
 DO NOT commit `bower_components/foundation`. ([See here](http://stackoverflow.com/questions/1139762/ignore-files-that-have-already-been-committed-to-a-git-repository) for helpful information on how to remove files that have already been committed.)
 
-## Modifying Blueline
+## Modifying PurpleLine
 TK, notes on which files to modify and which to leave alone
 
-## Deploying new versions of Blueline
+## Deploying new versions of PurpleLine
 TK, how to deploy to Github Pages (probably) and conventions for updating version number when needed.
 
 ## Upgrading Foundation
-**Note: untested with Blueline**
+**Note: untested with PurpleLine**
 If you'd like to upgrade to a newer version of Foundation down the road just run:
 
 ```bash
