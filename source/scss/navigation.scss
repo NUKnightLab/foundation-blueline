@@ -1,0 +1,39 @@
+// $include-html-classes: false should work as of Foundation 4, but it doesn't. Each module must be set. Ugh.
+$include-html-grid-classes: false;
+$include-html-type-classes: false;
+$include-html-accordion-classes: false;
+$include-html-alert-classes: false;
+$include-html-block-grid-classes: false;
+$include-html-button-classes: false;
+$include-html-clearing-classes: false;
+$include-html-media-classes: false;
+$include-html-form-classes: false;
+$include-html-inline-list-classes: false; // maybe needed for side-nav?
+$include-html-keystroke-classes: false;
+$include-html-label-classes: false;
+$include-html-magellan-classes: false; // in blueline -- factor out?
+$include-html-orbit-classes: false;
+$include-pagination-classes: false;
+$include-html-panel-classes: false;
+$include-html-pricing-classes: false;
+$include-html-range-slider-classes: false;
+$include-html-reveal-classes: false;
+$include-html-table-classes: false;
+$include-html-tabs-classes: false; // in blueline
+$include-html-tooltip-classes: false;
+$include-html-top-bar-classes: false; // in blueline
+$include-html-visibility-classes: false;
+
+// Navigation
+$include-html-nav-classes: true;
+$include-html-dropdown-classes: true;
+$include-html-joyride-classes: true;
+$include-html-off-canvas-classes: true;
+
+@import "settings";
+
+@import
+   "foundation/components/joyride", // page tour
+   "foundation/components/side-nav", // left-side nav
+   "foundation/components/pagination",
+   "foundation/components/offcanvas"; // slide-in menu

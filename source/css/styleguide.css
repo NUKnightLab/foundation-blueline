@@ -1,0 +1,210 @@
+/*$button-border-width: 3px;*/
+/*$button-border-style: solid;*/
+/* line 2, ../scss/styleguide.scss */
+#change-view dd {
+  cursor: pointer;
+}
+
+/* line 3, ../scss/styleguide.scss */
+#style-guide {
+  transition: width 0.8s;
+  width: auto;
+}
+/* line 6, ../scss/styleguide.scss */
+#style-guide.small-view {
+  width: 380px;
+}
+/* line 7, ../scss/styleguide.scss */
+#style-guide.medium-view {
+  width: 680px;
+}
+/* line 8, ../scss/styleguide.scss */
+#style-guide.large-view {
+  width: 1024px;
+}
+/* line 9, ../scss/styleguide.scss */
+#style-guide.auto-view {
+  width: auto;
+}
+/* line 10, ../scss/styleguide.scss */
+#style-guide .panel {
+  padding-bottom: 0;
+}
+/* line 11, ../scss/styleguide.scss */
+#style-guide section {
+  margin: 3.75rem 0;
+  clear: both;
+}
+
+/* line 13, ../scss/styleguide.scss */
+.side-nav {
+  background: #EEEEEE;
+  padding: 1.875rem;
+}
+
+/* line 15, ../scss/styleguide.scss */
+h6.label {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: left;
+  background-color: #eae34a;
+}
+
+/* line 23, ../scss/styleguide.scss */
+.panel {
+  background-color: #F9F9F9;
+  border-color: #EEEEEE;
+}
+
+/* line 24, ../scss/styleguide.scss */
+.panel.white {
+  background-color: #FFF;
+}
+
+/* line 25, ../scss/styleguide.scss */
+.panel > h6.label:first-child {
+  margin-top: -20px;
+}
+
+/* line 26, ../scss/styleguide.scss */
+.panel pre {
+  margin: -21px;
+}
+
+/* line 29, ../scss/styleguide.scss */
+.panel .paint-chip:last-child {
+  margin-bottom: 10px;
+}
+
+/* line 31, ../scss/styleguide.scss */
+.paint-chip {
+  width: 24.5%;
+  height: 160px;
+  display: inline-block;
+  position: relative;
+  margin: 10px 0;
+  border: 1px solid #EEEEEE;
+}
+/* line 39, ../scss/styleguide.scss */
+.paint-chip .color-deets {
+  padding: 0 5px;
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #EEEEEE;
+  border-top: 1px solid #DDDDDD;
+}
+/* line 48, ../scss/styleguide.scss */
+.paint-chip .color-deets p {
+  margin: 2px 0;
+  font-size: 0.75rem;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Tomorrow Comment */
+/* line 58, ../scss/styleguide.scss */
+.hljs-comment {
+  color: #969896;
+}
+
+/* Tomorrow Red */
+/* line 63, ../scss/styleguide.scss */
+.hljs-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-regexp,
+.ruby .hljs-constant,
+.xml .hljs-tag .hljs-title,
+.xml .hljs-pi,
+.xml .hljs-doctype,
+.html .hljs-doctype,
+.css .hljs-id,
+.css .hljs-class,
+.css .hljs-pseudo {
+  color: #cc6666;
+}
+
+/* Tomorrow Orange */
+/* line 79, ../scss/styleguide.scss */
+.hljs-number,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-built_in,
+.hljs-literal,
+.hljs-params,
+.hljs-constant {
+  color: #de935f;
+}
+
+/* Tomorrow Yellow */
+/* line 90, ../scss/styleguide.scss */
+.ruby .hljs-class .hljs-title,
+.css .hljs-rules .hljs-attribute {
+  color: #f0c674;
+}
+
+/* Tomorrow Green */
+/* line 96, ../scss/styleguide.scss */
+.hljs-string,
+.hljs-value,
+.hljs-inheritance,
+.hljs-header,
+.ruby .hljs-symbol,
+.xml .hljs-cdata {
+  color: #b5bd68;
+}
+
+/* Tomorrow Aqua */
+/* line 106, ../scss/styleguide.scss */
+.hljs-title,
+.css .hljs-hexcolor {
+  color: #8abeb7;
+}
+
+/* Tomorrow Blue */
+/* line 112, ../scss/styleguide.scss */
+.hljs-function,
+.python .hljs-decorator,
+.python .hljs-title,
+.ruby .hljs-function .hljs-title,
+.ruby .hljs-title .hljs-keyword,
+.perl .hljs-sub,
+.javascript .hljs-title,
+.coffeescript .hljs-title {
+  color: #81a2be;
+}
+
+/* Tomorrow Purple */
+/* line 124, ../scss/styleguide.scss */
+.hljs-keyword,
+.javascript .hljs-function {
+  color: #b294bb;
+}
+
+/* line 129, ../scss/styleguide.scss */
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+}
+
+/* line 138, ../scss/styleguide.scss */
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}

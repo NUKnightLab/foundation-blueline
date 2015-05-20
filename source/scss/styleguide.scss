@@ -1,0 +1,146 @@
+@import "settings";
+#change-view dd { cursor: pointer; }
+#style-guide {
+    transition: width 0.8s;
+    width: auto;
+    &.small-view { width: 380px; }
+    &.medium-view { width: 680px; }
+    &.large-view { width: 1024px; }
+    &.auto-view { width: auto; }
+    .panel { padding-bottom: 0; }
+    section { margin: rem-calc(60) 0; clear: both; }
+}
+.side-nav { background: $smoke; padding: $column-gutter; }
+
+h6.label {
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+  text-align: left;
+  background-color: $light-green;
+}
+
+.panel { background-color: #F9F9F9; border-color: $smoke; }
+.panel.white { background-color: #FFF; }
+.panel > h6.label:first-child{ margin-top: -20px; }
+.panel pre {
+    margin: -21px;
+}
+.panel .paint-chip:last-child { margin-bottom: 10px; }
+
+.paint-chip {
+    width: 24.5%;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+    border: 1px solid $smoke;
+
+    .color-deets {
+        padding: 0 5px;
+        text-align: right;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $smoke;
+        border-top: 1px solid $gainsboro;
+        p { margin: 2px 0; font-size: rem-calc(12); font-family: $font-family-monospace; }
+    }
+}
+
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+
+/* Tomorrow Comment */
+.hljs-comment {
+  color: #969896;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-regexp,
+.ruby .hljs-constant,
+.xml .hljs-tag .hljs-title,
+.xml .hljs-pi,
+.xml .hljs-doctype,
+.html .hljs-doctype,
+.css .hljs-id,
+.css .hljs-class,
+.css .hljs-pseudo {
+  color: #cc6666;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-built_in,
+.hljs-literal,
+.hljs-params,
+.hljs-constant {
+  color: #de935f;
+}
+
+/* Tomorrow Yellow */
+.ruby .hljs-class .hljs-title,
+.css .hljs-rules .hljs-attribute {
+  color: #f0c674;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-value,
+.hljs-inheritance,
+.hljs-header,
+.ruby .hljs-symbol,
+.xml .hljs-cdata {
+  color: #b5bd68;
+}
+
+/* Tomorrow Aqua */
+.hljs-title,
+.css .hljs-hexcolor {
+  color: #8abeb7;
+}
+
+/* Tomorrow Blue */
+.hljs-function,
+.python .hljs-decorator,
+.python .hljs-title,
+.ruby .hljs-function .hljs-title,
+.ruby .hljs-title .hljs-keyword,
+.perl .hljs-sub,
+.javascript .hljs-title,
+.coffeescript .hljs-title {
+  color: #81a2be;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.javascript .hljs-function {
+  color: #b294bb;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0.5em;
+  -webkit-text-size-adjust: none;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.5;
+}
