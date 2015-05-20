@@ -1,0 +1,3 @@
+[submodule "source/bower_components/foundation"]
+	path = source/bower_components/foundation
+	url = git@github.com:NUKnightLab/purpleline-foundation.git
