@@ -1,6 +1,8 @@
 /bower_components/*
 /bower_components/foundation
-/.sass-cache/*
+source/.sass-cache/*
 *.DS_Store
 /stylesheets/*
 .gitmodules
+build
+build_test
