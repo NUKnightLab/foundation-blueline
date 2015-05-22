@@ -267,7 +267,7 @@ hr {
   display: block;
   padding: 4px;
   line-height: 22px;
-  border: 1px solid #ddd;
+  border: 1px solid $gainsboro;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -537,6 +537,7 @@ h6 { text-transform: uppercase; }
 button,
 .button {
     @include button($radius: true);
+    line-height: inherit;
     border-width: 1px;
     border-style: solid;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
