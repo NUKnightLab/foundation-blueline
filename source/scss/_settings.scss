@@ -1403,7 +1403,7 @@ $dark-blue: #147693;
  $topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: rem-calc(45);
+ $topbar-height: rem-calc(50);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1418,9 +1418,9 @@ $dark-blue: #147693;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
- $topbar-link-bg: $topbar-bg;
+ $topbar-link-bg: transparent;
  $topbar-link-bg-hover: $gainsboro;
-// $topbar-link-bg-color-hover: $charcoal;
+ $topbar-link-bg-color-hover: $gainsboro;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
  $topbar-link-font-family: $font-family-sans-serif;
@@ -1432,7 +1432,7 @@ $dark-blue: #147693;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
+ $topbar-dropdown-bg: $ghost;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 // $topbar-dropdown-link-bg: $oil;

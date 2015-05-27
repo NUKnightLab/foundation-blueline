@@ -300,20 +300,30 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
   border: 1px solid #d4d4d4;
 
+  .row { max-width: rem-calc(1200); }
+  .name { margin-top: -1px; } // to adjust for border bottom
+  ul li { padding: 0; }
 }
 .sub-nav {
     clear: both;
     background: $white-smoke;
     padding: 10px 0;
 }
-
 .top-bar-section {
     li {
-        &.active:not(.has-form) a:not(.button) {
-            color: $white;
-            &:hover,
-            &:active,
-            &:focus { color: $smoke; }
+        padding: 0;
+        &.logo:hover > a:not(.button):hover {
+                background: transparent;
+                background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+
+        }
+        &.active:not(.has-form) {
+            a:not(.button) {
+                color: $white;
+                &:hover,
+                &:active,
+                &:focus { color: $smoke; }
+            }
         }
         &:not(.has-form) a:not(.button) {
             background-color: $ghost;
@@ -324,7 +334,7 @@ hr {
             background-image: linear-gradient(to bottom,#fff,#f2f2f2);
             background-repeat: repeat-x;
             border-bottom: 1px solid #d4d4d4;
-            height: rem-calc(44);
+            height: rem-calc(49); // 1px less than $topbar-height in _settings.scss to adjust for border bottom
           }
     }
 }
