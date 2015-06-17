@@ -566,6 +566,22 @@ color: $jet;
 font-size: 0.8125rem;
 }
 
+// Blueline overrides of components/_tabs.scss
+.tabs {
+    li {
+        padding: 0;
+        margin-right: 10px;
+        &.active {
+            border-left: 1px solid $base;
+            border-top: 1px solid $base;
+            border-right: 1px solid $base;
+        }
+    }
+}
+.tabs-content {
+    border-top: 1px solid $base;
+    margin-top: -1px;
+}
 // Blueline overrides of components/_type.scss
 h1 { font-style: italic; margin: rem-calc(11) 0; }
 h2.intro { color: $orange; font-family: $font-family-sans-serif; }
@@ -630,6 +646,10 @@ input[type="time"],
 input[type="url"],
 input[type="color"],
 textarea { border-radius: $global-radius; }
+
+label,
+.prefix,
+.postfix { font-family: $font-family-sans-serif; }
 
 // Blueline overrides of components/_accordion.scss
 .accordion {

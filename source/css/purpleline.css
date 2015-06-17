@@ -4545,7 +4545,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
-  font-family: inherit;
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   height: 2.3125rem;
   margin: 0 0 1rem 0;
@@ -4691,7 +4691,7 @@ select {
   border-width: 1px;
   border-color: #cccccc;
   color: rgba(0, 0, 0, 0.75);
-  font-family: inherit;
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   line-height: normal;
   padding: 0.5rem;
@@ -5756,15 +5756,15 @@ meta.foundation-mq-topbar {
 /* line 39, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs dd > a, .tabs .tab-title > a {
   display: block;
-  background-color: #EFEFEF;
+  background-color: #FFFFFF;
   color: #222222;
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
+  font-size: 0.875rem;
   padding: 1rem 2rem;
 }
 /* line 48, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs dd > a:hover, .tabs .tab-title > a:hover {
-  background-color: #e1e1e1;
+  background-color: #EEEEEE;
 }
 /* line 54, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
 .tabs dd.active a, .tabs .tab-title.active a {
@@ -5836,7 +5836,7 @@ meta.foundation-mq-topbar {
   /* line 98, ../bower_components/foundation/scss/foundation/components/_tabs.scss */
   .tabs.vertical {
     float: left;
-    margin: 0 0 1.25rem;
+    margin: 0 0 0;
     max-width: 20%;
     width: 20%;
   }
@@ -7532,8 +7532,8 @@ hr {
 /* line 296, ../scss/purpleline.scss */
 .polaroid {
   padding: 4px;
-  background-color: #white;
-  border: 1px solid #gainsboro;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
   border: 1px solid rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -7864,43 +7864,61 @@ footer address span.tel {
   font-size: 0.8125rem;
 }
 
-/* line 570, ../scss/purpleline.scss */
+/* line 571, ../scss/purpleline.scss */
+.tabs li {
+  padding: 0;
+  margin-right: 10px;
+}
+/* line 574, ../scss/purpleline.scss */
+.tabs li.active {
+  border-left: 1px solid #AAAAAA;
+  border-top: 1px solid #AAAAAA;
+  border-right: 1px solid #AAAAAA;
+}
+
+/* line 581, ../scss/purpleline.scss */
+.tabs-content {
+  border-top: 1px solid #AAAAAA;
+  margin-top: -1px;
+}
+
+/* line 586, ../scss/purpleline.scss */
 h1 {
   font-style: italic;
   margin: 0.6875rem 0;
 }
 
-/* line 571, ../scss/purpleline.scss */
+/* line 587, ../scss/purpleline.scss */
 h2.intro {
   color: #ce4d28;
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 572, ../scss/purpleline.scss */
+/* line 588, ../scss/purpleline.scss */
 h1, h2, h3 {
   font-family: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
   line-height: 2.75rem;
 }
 
-/* line 573, ../scss/purpleline.scss */
+/* line 589, ../scss/purpleline.scss */
 h4, h5, h6 {
   font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 1.375rem;
 }
 
-/* line 574, ../scss/purpleline.scss */
+/* line 590, ../scss/purpleline.scss */
 h2, h3, h4, h5, h6 {
   font-style: normal;
   margin: 0.6875rem 0;
 }
 
-/* line 575, ../scss/purpleline.scss */
+/* line 591, ../scss/purpleline.scss */
 h6 {
   text-transform: uppercase;
 }
 
-/* line 578, ../scss/purpleline.scss */
+/* line 594, ../scss/purpleline.scss */
 button,
 .button {
   -webkit-appearance: none;
@@ -7941,19 +7959,19 @@ button:hover, button:focus,
 .button:focus {
   color: #333333;
 }
-/* line 585, ../scss/purpleline.scss */
+/* line 601, ../scss/purpleline.scss */
 button:focus,
 .button:focus {
   outline: none;
 }
-/* line 586, ../scss/purpleline.scss */
+/* line 602, ../scss/purpleline.scss */
 button:hover, button:active, button:focus,
 .button:hover,
 .button:active,
 .button:focus {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, 0pt -10px 10pt rgba(0, 0, 0, 0.075) inset;
 }
-/* line 590, ../scss/purpleline.scss */
+/* line 606, ../scss/purpleline.scss */
 button:hover span, button:active span, button:focus span,
 .button:hover span,
 .button:active span,
@@ -7961,14 +7979,14 @@ button:hover span, button:active span, button:focus span,
   color: #fff;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
-/* line 596, ../scss/purpleline.scss */
+/* line 612, ../scss/purpleline.scss */
 button.success, button.alert, button.info,
 .button.success,
 .button.alert,
 .button.info {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 }
-/* line 600, ../scss/purpleline.scss */
+/* line 616, ../scss/purpleline.scss */
 button.inverse,
 .button.inverse {
   -webkit-appearance: none;
@@ -8006,17 +8024,17 @@ button.inverse:hover, button.inverse:focus,
 .button.inverse:focus {
   color: #FFFFFF;
 }
-/* line 605, ../scss/purpleline.scss */
+/* line 621, ../scss/purpleline.scss */
 button.warning span,
 .button.warning span {
   color: #333333;
 }
-/* line 606, ../scss/purpleline.scss */
+/* line 622, ../scss/purpleline.scss */
 button.warning:hover span,
 .button.warning:hover span {
   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.6);
 }
-/* line 608, ../scss/purpleline.scss */
+/* line 624, ../scss/purpleline.scss */
 button.disabled, button.disabled:hover,
 .button.disabled,
 .button.disabled:hover {
@@ -8024,7 +8042,7 @@ button.disabled, button.disabled:hover,
   box-shadow: none;
   border-color: transparent;
 }
-/* line 613, ../scss/purpleline.scss */
+/* line 629, ../scss/purpleline.scss */
 button.disabled span, button.disabled:hover span,
 .button.disabled span,
 .button.disabled:hover span {
@@ -8032,7 +8050,7 @@ button.disabled span, button.disabled:hover span,
   text-shadow: none;
 }
 
-/* line 618, ../scss/purpleline.scss */
+/* line 634, ../scss/purpleline.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -8051,7 +8069,14 @@ textarea {
   border-radius: 2px;
 }
 
-/* line 635, ../scss/purpleline.scss */
+/* line 650, ../scss/purpleline.scss */
+label,
+.prefix,
+.postfix {
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 655, ../scss/purpleline.scss */
 .accordion {
   display: block;
   margin-bottom: 0 !important;
@@ -8073,13 +8098,13 @@ textarea {
 .accordion > a:hover {
   background: #f2f2f2;
 }
-/* line 637, ../scss/purpleline.scss */
+/* line 657, ../scss/purpleline.scss */
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   margin-top: 2px;
 }
-/* line 641, ../scss/purpleline.scss */
+/* line 661, ../scss/purpleline.scss */
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
   font-size: .7em;
@@ -8090,18 +8115,18 @@ textarea {
   -webkit-font-smoothing: antialiased;
   color: #ca4d1d;
 }
-/* line 651, ../scss/purpleline.scss */
+/* line 671, ../scss/purpleline.scss */
 .accordion li.active a:before {
   content: "\f068 \0000a0\0000a0";
 }
 
-/* line 656, ../scss/purpleline.scss */
+/* line 676, ../scss/purpleline.scss */
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0;
 }
 
-/* line 659, ../scss/purpleline.scss */
+/* line 679, ../scss/purpleline.scss */
 [data-magellan-expedition] + .row,
 [data-magellan-expedition-clone] + .row {
   margin-top: 50px;
