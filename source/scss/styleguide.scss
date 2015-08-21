@@ -1,5 +1,7 @@
 @import "settings";
+
 #change-view dd { cursor: pointer; }
+
 #style-guide {
     transition: width 0.8s;
     width: auto;
@@ -10,6 +12,7 @@
     .panel { padding-bottom: 0; }
     section { margin: rem-calc(60) 0; clear: both; }
 }
+
 .side-nav { background: $smoke; padding: $column-gutter; }
 
 h6.label {
@@ -46,6 +49,29 @@ h6.label {
         background: $smoke;
         border-top: 1px solid $gainsboro;
         p { margin: 2px 0; font-size: rem-calc(12); font-family: $font-family-monospace; }
+    }
+}
+.fa-external-link {
+    font-size: 70%;
+    vertical-align: super;
+}
+i.fa-link {
+    color: #ce4d28;
+}
+
+label[for="code-snippet"] {
+    position: relative;
+    padding-left:25px;
+    margin-bottom:10px;
+    i {
+        font-size: 150%;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        /*font-size: 150%;*/
+        /*color: white;*/
+        /*background-color: $orange;*/
+        /*padding: 5px;*/
     }
 }
 

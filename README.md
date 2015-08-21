@@ -26,7 +26,19 @@ DO NOT commit `bower_components/foundation`. ([See here](http://stackoverflow.co
 TK, notes on which files to modify and which to leave alone
 
 ## Deploying new versions of PurpleLine
-TK, how to deploy to Github Pages (probably) and conventions for updating version number when needed.
+<!--Add: difference between deploying CDN and PL website; conventions for updating version number when needed.-->
+```bash
+fab build
+fab stage stage_latest
+[update version number]
+```
+change to cdn repo
+
+```bash
+pull
+push
+fab deploy
+```
 
 ## Upgrading Foundation
 **Note: untested with PurpleLine**

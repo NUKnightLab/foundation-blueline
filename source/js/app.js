@@ -4,6 +4,13 @@ $(document).ready(function(){
   $('#change-view.sub-nav dd').click(function(){
     $('#style-guide').removeClass().addClass($(this).attr('class'));
   });
+
+  // Select everything in input boxes on click
+  $('.code-snippet input').on("click", function(){
+    $(this).select();
+  });
+
+  // NOTE: Does this need to be in the main purpleline JS?
   $(".accordion").on("click", "li", function (event) {
         event.preventDefault();
         if($(this).hasClass('active')){
