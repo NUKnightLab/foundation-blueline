@@ -4,20 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PurpleLine Style Guide -- Northwestern University Knight Lab</title>
+    <link rel="icon" type="image/png" href="//cdn.knightlab.com/libs/purpleline/latest/img/favicon.ico">
     <!-- for local dev -->
-    <link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
+    <!--<link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="source/css/purpleline.css" />
     <link rel="stylesheet" href="source/css/navigation.css" />
     <link rel="stylesheet" href="source/css/inputs.css" />
     <link rel="stylesheet" href="source/css/font-awesome/font-awesome.css" />
-    <link rel="stylesheet" href="source/css/styleguide.css" />
+    <link rel="stylesheet" href="source/css/styleguide.css" />-->
     <!-- for production -->
-    <!--<link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
+    <link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/purpleline.min.css" />
     <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/navigation.css" />
     <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/inputs.css" />
     <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/font-awesome/font-awesome.css" />
-    <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/styleguide.css" />-->
+    <link rel="stylesheet" href="//cdn.knightlab.com/libs/purpleline/latest/css/styleguide.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   </head>
   <body>
@@ -111,10 +112,11 @@
 
             <li>BRAND</li>
             <li role="menuitem"><a href="#colors">Colors</a></li>
-            <!--<li role="menuitem"><a href="#horizontal-logos">Horizontal logos</a></li>
-            <li role="menuitem"><a href="#vertical-logos">Vertical logos</a></li>
-            <li role="menuitem"><a href="#diamond">Diamond logo</a></li>-->
-            <li role="menuitem"><a href="#logo-mark">Product Logo Mark</a></li>
+            <li role="menuitem"><a href="#favicon">Favicon <i class="fa fa-link"></i></a></li>
+            <li role="menuitem"><a href="#horizontal-logos">Horizontal logos <i class="fa fa-link"></i></a></li>
+            <li role="menuitem"><a href="#vertical-logos">Vertical logos <i class="fa fa-link"></i></a></li>
+            <li role="menuitem"><a href="#diamond">Diamond logo <i class="fa fa-link"></i></a></li>
+            <li role="menuitem"><a href="#logo-mark">Product Logo Mark <i class="fa fa-link"></i></a></li>
           </ul">
       </div>
       <div class="medium-9 columns">
@@ -126,7 +128,13 @@
             <p>When you include PurpleLine on your page, you will have access to most of the things listed in the menu to your left. Those features not part of the core library are marked with an icon.</p>
             <h4>What's not included</h4>
             <p>In an effort to keep PurpleLine as lightweight as possible, some less-used JavaScript and CSS libraries are factored out of the core PurpleLine library. These are denoted with a <i class="fa fa-link"></i> icon. The JavaScript components are also available in the "Complete JavaScript" include.</p>
-
+            <h4>Versions</h4>
+            <p>PurpleLine is available in the following versions. The most recent changes will be in both the highest version number and in <code>latest</code>. You should almost always use the most recent version number, though all of the URLs used throughout this guide reference the <code>latest</code> branch.</p>
+            <ul>
+              <li><a href="">latest</a></li>
+              <li><a href="">1.0.1</a></li>
+              <li><a href="">1.0.0</a></li>
+            </ul>
             <h6>CSS</h6>
               <div class="row collapse code-snippet">
               <div class="small-3 medium-2 columns"><span class="prefix">Full version</span></div>
@@ -1223,14 +1231,178 @@
                 </div>
               </div>
             </section>
-            <section class="clearfix"><hr />
+            <section class="clearfix">
+              <hr />
+              <h4 id="favicon">Favicon</h4>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/favicon.ico"></input>
+                </div>
+              </div>
+              <p>The favicon is the small icon that appears in the browser tab containing your website. Include it in the <code>head</code> of your document as shown below.</p>
+              <div class="panel">
+                <h6 class="label">Favicon</h6>
+                  <img src="//cdn.knightlab.com/libs/purpleline/latest/img/favicon.png">
+                <h6 class="label">HTML</h6>
+<pre><code class="html">
+   &lt;link rel="icon" type="image/png" href="//cdn.knightlab.com/libs/purpleline/latest/img/favicon.ico"&gt;
+</code></pre>
+</div>
+
+            </section>
+            <section class="clearfix">
+              <hr />
               <h4 id="horizontal-logos">Horizontal logos</h4>
+              <p>Available with and without taglines, padding (useful for colored backgrounds or crowded layouts), and transparent backgrounds.</p>
+              <h6>With tagline</h6>
+              <p><img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_400x120_transparent_NOpadding.png"></p>
+              <label>Transparent background, no padding, 400px by 120px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_400x120_transparent_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, no padding, 691px by 206px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_691x206_transparent_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, padding, 800px by 300px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_800x300_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>White background, no padding, 691px by 206px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_691x206_white_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>White background, padding, 800px by 300px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_800x300_white_padded.png"></input>
+                </div>
+              </div>
+              <h6>Without tagline</h6>
+              <p><img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_383x91_transparent_NOpadding.png"></p>
+              <label>Transparent background, no padding, 383px by 91px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_383x91_transparent_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, no padding, 542px by 130px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_542x130_transparent_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, padding, 615px by 205px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_615x205_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>White background, no padding, 542px by 130px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_542x130_white_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>White background, padding, 615px by 205px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_horizontal_NOtagline_615x205_white_padded.png"></input>
+                </div>
+              </div>
+
             </section>
-            <section class="clearfix"><hr />
+            <section class="clearfix">
+              <hr />
               <h4 id="vertical-logos">Vertical logos</h4>
+              <p>Available with and without taglines, padding (useful for colored backgrounds or crowded layouts), and transparent backgrounds.</p>
+              <h6>With tagline</h6>
+              <p><img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_320x350_transparent_padded.png"></p>
+              <label>Transparent background, padding, 320px by 350px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_320x350_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, no padding, 505px by 394px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_505x394_transparent_NOpadding.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, no padding, 600px by 548px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_600x548_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>White background, no padding, 600px by 548px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_600x548_white_padded.png"></input>
+                </div>
+              </div>
+
+              <h6>Without tagline</h6>
+              <p><img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_256x256_NOtagline_transparent_padded.png"></p>
+              <label>Transparent background, padding, 256px by 256px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_256x256_NOtagline_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>Transparent background, padding, 600px by 600px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_600x600_NOtagline_transparent_padded.png"></input>
+                </div>
+              </div>
+              <label>White background, padding, 600px by 600px</label>
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_stacked_600x600_NOtagline_white_padded.png"></input>
+                </div>
+              </div>
+
             </section>
-            <section class="clearfix"><hr />
+            <section class="clearfix">
+              <hr />
               <h4 id="diamond">Diamond logo</h4>
+              <p>Available in one size, 256px square. This logo has a transparent background.</p>
+              <img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_diamond_256x256_transparent_padded.png">
+              <div class="row collapse code-snippet">
+                <div class="small-3 medium-2 columns"><span class="prefix">Image SRC</span></div>
+                <div class="small-9 medium-10 columns">
+                  <input type="text" value="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_diamond_256x256_transparent_padded.png"></input>
+                </div>
+              </div>
+
             </section>
             <section class="clearfix"><hr />
               <h4 id="logo-mark">Product logo mark</h4>
