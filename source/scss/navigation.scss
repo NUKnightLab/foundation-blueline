@@ -37,3 +37,15 @@ $include-html-off-canvas-classes: true;
    "foundation/components/side-nav", // left-side nav
    "foundation/components/pagination",
    "foundation/components/offcanvas"; // slide-in menu
+
+// Overrides for side nav
+.side-nav {
+    padding: 1.875rem;
+    @media screen and (max-width: 880px) {
+        padding: 1.5rem;
+        li a:not(.button){
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

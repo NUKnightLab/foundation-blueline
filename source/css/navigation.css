@@ -984,3 +984,19 @@ ul.off-canvas-list li a:active {
   margin-right: .5rem;
   display: inline;
 }
+
+/* line 42, ../scss/navigation.scss */
+.side-nav {
+  padding: 1.875rem;
+}
+@media screen and (max-width: 880px) {
+  /* line 42, ../scss/navigation.scss */
+  .side-nav {
+    padding: 1.5rem;
+  }
+  /* line 46, ../scss/navigation.scss */
+  .side-nav li a:not(.button) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -4,53 +4,14 @@
 //                 |___|___| |         )
 //___________________________|________/
 
-// Overrides + additions for foundation/_settings.scss
-/*$white-smoke : #F3F3F3;
-$gainsboro   : #DDDDDD;
-$lighter-orange: #f7ccb2;
-$light-orange: #e35a25;
-$orange: #ce4d28;
-$dark-orange: #c34528;
-$light-green: #eae34a;
-$light-blue: #1dacd6;
-$medium-blue: #0f9bd1;
-$dark-blue: #147693;
-
-// We use these as default colors throughout
-$primary-color: $medium-blue;
-$secondary-color: $gainsboro;
-$alert-color: $orange;
-$success-color: #5bb75b;
-$warning-color: $light-green;
-$info-color: $medium-blue;
-
-// Grid
-$row-width: rem-calc(1200);
-$column-gutter: rem-calc(30);
-
-// We use these to define default font stacks
-$font-family-sans-serif: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: 'Turnip RE', Georgia, 'Times New Roman', Times, serif;
-$font-family-display-serif: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
-
-// We use these to control header font styles
-$primary-header-font-family: $font-family-display-serif;
-$secondary-header-font-family: $font-family-serif;
-$header-font-weight: normal;
-
-// We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(30);
-$h3-font-size: rem-calc(27.2);
-$h4-font-size: rem-calc(20);
-$h5-font-size: 1rem;
-$h6-font-size: rem-calc(13.6);
-
-$body-font-family: $font-family-serif;
+/* BREAKPOINTS
+ * 1200px
+ * 880px
+ * 767px
+ * 728px
+ * */
 
 
-@import "foundation/settings"; */
 @import "settings";
 
 // Basic structure/styling
@@ -250,8 +211,14 @@ blockquote {
 }
 
 // Knight Lab utilities
-
+.row {
+    @media screen and (max-width: 1200px) {
+        //override Foundation's default row width of 100% -- it is too wide for small screens
+        width: 95%;
+    }
+}
 .row.full-width {
+    // using $behavior: nest removes the outer margins of columns
     @include grid-row($behavior: nest);
     margin: ($column-gutter/2);
 }
@@ -392,16 +359,17 @@ footer {
             text-align: center;
             padding: 10px 0;
             /* override for old Bootstrap blueline */
-            margin: 0 0 0 -20px;
+            margin: 0 auto;
             float: none;
             width: 100%;
             li{
                 float: none;
                 display: inline;
-                font-size: 24px;
+                font-size: 18px;
                 line-height: 1.4em;
                 padding-bottom: 3px;
                 margin: 0 10px;
+                color: $jet;
                 a:hover{
                     text-decoration: none;
                     opacity: .9;

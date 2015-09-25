@@ -1,49 +1,9 @@
-/*$white-smoke : #F3F3F3;
-$gainsboro   : #DDDDDD;
-$lighter-orange: #f7ccb2;
-$light-orange: #e35a25;
-$orange: #ce4d28;
-$dark-orange: #c34528;
-$light-green: #eae34a;
-$light-blue: #1dacd6;
-$medium-blue: #0f9bd1;
-$dark-blue: #147693;
-
-// We use these as default colors throughout
-$primary-color: $medium-blue;
-$secondary-color: $gainsboro;
-$alert-color: $orange;
-$success-color: #5bb75b;
-$warning-color: $light-green;
-$info-color: $medium-blue;
-
-// Grid
-$row-width: rem-calc(1200);
-$column-gutter: rem-calc(30);
-
-// We use these to define default font stacks
-$font-family-sans-serif: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-serif: 'Turnip RE', Georgia, 'Times New Roman', Times, serif;
-$font-family-display-serif: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
-$font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
-
-// We use these to control header font styles
-$primary-header-font-family: $font-family-display-serif;
-$secondary-header-font-family: $font-family-serif;
-$header-font-weight: normal;
-
-// We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(30);
-$h3-font-size: rem-calc(27.2);
-$h4-font-size: rem-calc(20);
-$h5-font-size: 1rem;
-$h6-font-size: rem-calc(13.6);
-
-$body-font-family: $font-family-serif;
-
-
-@import "foundation/settings"; */
+/* BREAKPOINTS
+ * 1200px
+ * 880px
+ * 767px
+ * 728px
+ * */
 /*$button-border-width: 3px;*/
 /*$button-border-style: solid;*/
 /* line 348, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -7207,120 +7167,120 @@ meta.foundation-mq-topbar {
   border-radius: 2px;
 }
 
-/* line 97, ../scss/purpleline.scss */
+/* line 58, ../scss/purpleline.scss */
 .lightest-orange-bg {
   background: #f7ccb2;
 }
 
-/* line 98, ../scss/purpleline.scss */
+/* line 59, ../scss/purpleline.scss */
 .lightest-orange-text {
   color: #f7ccb2;
 }
 
-/* line 99, ../scss/purpleline.scss */
+/* line 60, ../scss/purpleline.scss */
 .light-orange-bg {
   background: #e35a25;
 }
 
-/* line 100, ../scss/purpleline.scss */
+/* line 61, ../scss/purpleline.scss */
 .light-orange-text {
   color: #e35a25;
 }
 
-/* line 101, ../scss/purpleline.scss */
+/* line 62, ../scss/purpleline.scss */
 .orange-bg {
   background: #ce4d28;
 }
 
-/* line 102, ../scss/purpleline.scss */
+/* line 63, ../scss/purpleline.scss */
 .orange-text {
   color: #ce4d28;
 }
 
-/* line 103, ../scss/purpleline.scss */
+/* line 64, ../scss/purpleline.scss */
 .dark-orange-bg {
   background: #c34528;
 }
 
-/* line 104, ../scss/purpleline.scss */
+/* line 65, ../scss/purpleline.scss */
 .dark-orange-text {
   color: #c34528;
 }
 
-/* line 105, ../scss/purpleline.scss */
+/* line 66, ../scss/purpleline.scss */
 .yellow-bg {
   background: #eae34a;
 }
 
-/* line 106, ../scss/purpleline.scss */
+/* line 67, ../scss/purpleline.scss */
 .yellow-text {
   color: #eae34a;
 }
 
-/* line 107, ../scss/purpleline.scss */
+/* line 68, ../scss/purpleline.scss */
 .light-blue-bg {
   background: #1dacd6;
 }
 
-/* line 108, ../scss/purpleline.scss */
+/* line 69, ../scss/purpleline.scss */
 .light-blue-text {
   color: #1dacd6;
 }
 
-/* line 109, ../scss/purpleline.scss */
+/* line 70, ../scss/purpleline.scss */
 .medium-blue-bg {
   background: #0f9bd1;
 }
 
-/* line 110, ../scss/purpleline.scss */
+/* line 71, ../scss/purpleline.scss */
 .medium-blue-text {
   color: #0f9bd1;
 }
 
-/* line 111, ../scss/purpleline.scss */
+/* line 72, ../scss/purpleline.scss */
 .dark-blue-bg {
   background: #147693;
 }
 
-/* line 112, ../scss/purpleline.scss */
+/* line 73, ../scss/purpleline.scss */
 .dark-blue-text {
   color: #147693;
 }
 
-/* line 115, ../scss/purpleline.scss */
+/* line 76, ../scss/purpleline.scss */
 h1.post-title {
   font-style: normal;
   line-height: 1.1;
 }
 
-/* line 116, ../scss/purpleline.scss */
+/* line 77, ../scss/purpleline.scss */
 .logo-mark {
   font-size: 60px;
   white-space: nowrap;
   line-height: 1em;
 }
-/* line 120, ../scss/purpleline.scss */
+/* line 81, ../scss/purpleline.scss */
 .logo-mark.xl, .logo-mark.xxl {
   font-size: 4.0625rem;
   margin-top: 5px;
 }
 @media all and (min-width: 767px) {
-  /* line 128, ../scss/purpleline.scss */
+  /* line 89, ../scss/purpleline.scss */
   .logo-mark.xl {
     font-size: 5.625rem;
     margin-top: 35px;
   }
-  /* line 132, ../scss/purpleline.scss */
+  /* line 93, ../scss/purpleline.scss */
   .logo-mark.xxl {
     font-size: 7.5rem;
     margin-top: 35px;
   }
 }
-/* line 136, ../scss/purpleline.scss */
+/* line 97, ../scss/purpleline.scss */
 .logo-mark.bg-white span:before {
   border-color: #0f9bd1 #fff;
 }
-/* line 137, ../scss/purpleline.scss */
+/* line 98, ../scss/purpleline.scss */
 .logo-mark span {
   background: none repeat scroll 0 0 #0f9bd1;
   border-radius: 3px 0px 3px 3px;
@@ -7334,7 +7294,7 @@ h1.post-title {
   vertical-align: text-top;
   display: inline-block;
 }
-/* line 149, ../scss/purpleline.scss */
+/* line 110, ../scss/purpleline.scss */
 .logo-mark span:before {
   border-color: #0f9bd1 #f3f3f3;
   border-style: solid;
@@ -7345,22 +7305,22 @@ h1.post-title {
   top: -1px;
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 160, ../scss/purpleline.scss */
+  /* line 121, ../scss/purpleline.scss */
   .logo-mark span {
     padding: 0.35em .47em .3em .36em;
   }
 }
 
-/* line 163, ../scss/purpleline.scss */
+/* line 124, ../scss/purpleline.scss */
 a {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 165, ../scss/purpleline.scss */
+/* line 126, ../scss/purpleline.scss */
 ul {
   list-style-type: square;
 }
-/* line 167, ../scss/purpleline.scss */
+/* line 128, ../scss/purpleline.scss */
 ul.contact-icons {
   list-style-type: none;
   margin-left: 0;
@@ -7369,7 +7329,7 @@ ul.contact-icons {
   content: "";
   clear: both;
 }
-/* line 174, ../scss/purpleline.scss */
+/* line 135, ../scss/purpleline.scss */
 ul.contact-icons li {
   display: inline-block;
   float: left;
@@ -7378,33 +7338,33 @@ ul.contact-icons li {
   padding: 8px 12px 0 0px;
   margin: 0 -1px;
 }
-/* line 181, ../scss/purpleline.scss */
+/* line 142, ../scss/purpleline.scss */
 ul.contact-icons li:first-child {
   padding-left: 12px;
 }
-/* line 182, ../scss/purpleline.scss */
+/* line 143, ../scss/purpleline.scss */
 ul.contact-icons li a,
 ul.contact-icons li a:link,
 ul.contact-icons li a:visited {
   color: #555555;
 }
-/* line 185, ../scss/purpleline.scss */
+/* line 146, ../scss/purpleline.scss */
 ul.contact-icons li a:hover,
 ul.contact-icons li a:active {
   color: #1dacd6;
 }
-/* line 187, ../scss/purpleline.scss */
+/* line 148, ../scss/purpleline.scss */
 ul.contact-icons li i {
   width: 1.25rem;
   text-align: center;
 }
-/* line 190, ../scss/purpleline.scss */
+/* line 151, ../scss/purpleline.scss */
 ul li {
   line-height: 22px;
   padding: 2px 0 6px;
 }
 
-/* line 196, ../scss/purpleline.scss */
+/* line 157, ../scss/purpleline.scss */
 blockquote {
   padding: 1em 1em 0;
   margin: 0 0 22px;
@@ -7413,18 +7373,18 @@ blockquote {
   font-style: italic;
   background-color: #FAFAFA;
 }
-/* line 203, ../scss/purpleline.scss */
+/* line 164, ../scss/purpleline.scss */
 blockquote p {
   font-size: 1.09375rem;
   line-height: 1.65625rem;
   color: #555555;
 }
-/* line 207, ../scss/purpleline.scss */
+/* line 168, ../scss/purpleline.scss */
 blockquote p.source {
   text-align: right;
 }
 
-/* line 211, ../scss/purpleline.scss */
+/* line 172, ../scss/purpleline.scss */
 .drop-hed,
 .panel .drop-hed {
   color: #c34528;
@@ -7432,20 +7392,20 @@ blockquote p.source {
   font-size: 1.125rem;
   text-transform: uppercase;
 }
-/* line 218, ../scss/purpleline.scss */
+/* line 179, ../scss/purpleline.scss */
 .drop-hed a:link, .drop-hed a:visited,
 .panel .drop-hed a:link,
 .panel .drop-hed a:visited {
   color: #c34528;
 }
-/* line 222, ../scss/purpleline.scss */
+/* line 183, ../scss/purpleline.scss */
 .drop-hed a:hover, .drop-hed a:active,
 .panel .drop-hed a:hover,
 .panel .drop-hed a:active {
   color: #e35a25;
 }
 
-/* line 228, ../scss/purpleline.scss */
+/* line 189, ../scss/purpleline.scss */
 .byline,
 .panel .byline {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -7454,7 +7414,7 @@ blockquote p.source {
 }
 
 @media screen and (min-width: 728px) {
-  /* line 236, ../scss/purpleline.scss */
+  /* line 197, ../scss/purpleline.scss */
   *[data-pullquote]:before {
     border-bottom: medium double #DDDDDD;
     border-top: medium double #DDDDDD;
@@ -7470,7 +7430,14 @@ blockquote p.source {
     width: 34%;
   }
 }
-/* line 254, ../scss/purpleline.scss */
+@media screen and (max-width: 1200px) {
+  /* line 214, ../scss/purpleline.scss */
+  .row {
+    width: 95%;
+  }
+}
+
+/* line 220, ../scss/purpleline.scss */
 .row.full-width {
   margin: 0 -0.9375rem;
   max-width: none;
@@ -7487,14 +7454,14 @@ blockquote p.source {
   clear: both;
 }
 
-/* line 259, ../scss/purpleline.scss */
+/* line 226, ../scss/purpleline.scss */
 hr {
   margin: 22px 0;
   border: none;
   border-top: 4px double #EEEEEE;
 }
 
-/* line 265, ../scss/purpleline.scss */
+/* line 232, ../scss/purpleline.scss */
 .editors-note {
   background-color: #F3F3F3;
   border-top: 4px solid #ce4d28;
@@ -7504,14 +7471,14 @@ hr {
   padding: 18px 24px;
   margin: 1.4em 0 1.6em;
 }
-/* line 273, ../scss/purpleline.scss */
+/* line 240, ../scss/purpleline.scss */
 .editors-note:before {
   padding-right: 3px;
   color: #ce4d28;
   content: "Editor's Note: ";
 }
 
-/* line 280, ../scss/purpleline.scss */
+/* line 247, ../scss/purpleline.scss */
 .thumbnail {
   display: block;
   padding: 4px;
@@ -7529,7 +7496,7 @@ hr {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 296, ../scss/purpleline.scss */
+/* line 263, ../scss/purpleline.scss */
 .polaroid {
   padding: 4px;
   background-color: #FFFFFF;
@@ -7540,13 +7507,13 @@ hr {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* line 307, ../scss/purpleline.scss */
+/* line 274, ../scss/purpleline.scss */
 .f-dropdown:before,
 .f-dropdown:after {
   display: none;
 }
 
-/* line 312, ../scss/purpleline.scss */
+/* line 279, ../scss/purpleline.scss */
 .top-bar {
   color: #222222;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
@@ -7561,44 +7528,44 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff',endColorstr='#fff2f2f2',GradientType=0);
   border: 1px solid #d4d4d4;
 }
-/* line 326, ../scss/purpleline.scss */
+/* line 293, ../scss/purpleline.scss */
 .top-bar .row {
   max-width: 75rem;
 }
-/* line 327, ../scss/purpleline.scss */
+/* line 294, ../scss/purpleline.scss */
 .top-bar .name {
   margin-top: -1px;
 }
-/* line 328, ../scss/purpleline.scss */
+/* line 295, ../scss/purpleline.scss */
 .top-bar ul li {
   padding: 0;
 }
 
-/* line 330, ../scss/purpleline.scss */
+/* line 297, ../scss/purpleline.scss */
 .sub-nav {
   clear: both;
   background: #F3F3F3;
   padding: 10px 0;
 }
 
-/* line 336, ../scss/purpleline.scss */
+/* line 303, ../scss/purpleline.scss */
 .top-bar-section li {
   padding: 0;
 }
-/* line 338, ../scss/purpleline.scss */
+/* line 305, ../scss/purpleline.scss */
 .top-bar-section li.logo:hover > a:not(.button):hover {
   background: transparent;
   background-image: linear-gradient(to bottom, #fff, #f2f2f2);
 }
-/* line 344, ../scss/purpleline.scss */
+/* line 311, ../scss/purpleline.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button) {
   color: #FFFFFF;
 }
-/* line 346, ../scss/purpleline.scss */
+/* line 313, ../scss/purpleline.scss */
 .top-bar-section li.active:not(.has-form) a:not(.button):hover, .top-bar-section li.active:not(.has-form) a:not(.button):active, .top-bar-section li.active:not(.has-form) a:not(.button):focus {
   color: #EEEEEE;
 }
-/* line 351, ../scss/purpleline.scss */
+/* line 318, ../scss/purpleline.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background-color: #FAFAFA;
   background-image: -moz-linear-gradient(top, #fff, #f2f2f2);
@@ -7612,7 +7579,7 @@ hr {
 }
 
 /* Footer */
-/* line 368, ../scss/purpleline.scss */
+/* line 335, ../scss/purpleline.scss */
 footer,
 #footer {
   padding: 10px 80px 0;
@@ -7622,7 +7589,7 @@ footer,
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 377, ../scss/purpleline.scss */
+/* line 344, ../scss/purpleline.scss */
 footer a,
 footer a:link,
 footer a:visited {
@@ -7631,64 +7598,65 @@ footer a:visited {
   border: none;
   display: inline;
 }
-/* line 385, ../scss/purpleline.scss */
+/* line 352, ../scss/purpleline.scss */
 footer .col-940 {
   display: none;
 }
-/* line 388, ../scss/purpleline.scss */
+/* line 355, ../scss/purpleline.scss */
 footer ul {
   list-style: none outside none;
   margin: 0;
 }
-/* line 391, ../scss/purpleline.scss */
+/* line 358, ../scss/purpleline.scss */
 footer ul.social {
   text-align: center;
   padding: 10px 0;
   /* override for old Bootstrap blueline */
-  margin: 0 0 0 -20px;
+  margin: 0 auto;
   float: none;
   width: 100%;
 }
-/* line 398, ../scss/purpleline.scss */
+/* line 365, ../scss/purpleline.scss */
 footer ul.social li {
   float: none;
   display: inline;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.4em;
   padding-bottom: 3px;
   margin: 0 10px;
+  color: #222222;
 }
-/* line 405, ../scss/purpleline.scss */
+/* line 373, ../scss/purpleline.scss */
 footer ul.social li a:hover {
   text-decoration: none;
   opacity: .9;
 }
-/* line 410, ../scss/purpleline.scss */
+/* line 378, ../scss/purpleline.scss */
 footer ul.social a {
   border: none;
   text-decoration: none;
 }
-/* line 415, ../scss/purpleline.scss */
+/* line 383, ../scss/purpleline.scss */
 footer ul.logos {
   margin-top: 25px;
   border-left: 1px solid #CCCCCC;
 }
-/* line 418, ../scss/purpleline.scss */
+/* line 386, ../scss/purpleline.scss */
 footer ul.logos li {
   display: block;
   float: right;
 }
-/* line 421, ../scss/purpleline.scss */
+/* line 389, ../scss/purpleline.scss */
 footer ul.logos li:hover {
   opacity: .85;
 }
-/* line 424, ../scss/purpleline.scss */
+/* line 392, ../scss/purpleline.scss */
 footer ul.logos li a {
   background: url("images/footer-logosheet.png") no-repeat scroll center top transparent;
   display: block;
   text-indent: -9999px;
 }
-/* line 428, ../scss/purpleline.scss */
+/* line 396, ../scss/purpleline.scss */
 footer ul.logos li a.northwestern {
   background-position: -42px -106px;
   height: 174px;
@@ -7696,7 +7664,7 @@ footer ul.logos li a.northwestern {
   margin-left: 30px;
   width: 290px;
 }
-/* line 435, ../scss/purpleline.scss */
+/* line 403, ../scss/purpleline.scss */
 footer ul.logos li a.knightfoundation {
   background-position: 22px -283px;
   height: 83px;
@@ -7704,7 +7672,7 @@ footer ul.logos li a.knightfoundation {
   margin-top: 14px;
   width: 383px;
 }
-/* line 442, ../scss/purpleline.scss */
+/* line 410, ../scss/purpleline.scss */
 footer ul.logos li a.medill {
   background-position: -221px -385px;
   height: 52px;
@@ -7712,7 +7680,7 @@ footer ul.logos li a.medill {
   margin-left: 11px;
   width: 111px;
 }
-/* line 449, ../scss/purpleline.scss */
+/* line 417, ../scss/purpleline.scss */
 footer ul.logos li a.mccormick {
   background-position: -19px -385px;
   float: right;
@@ -7720,7 +7688,7 @@ footer ul.logos li a.mccormick {
   margin-bottom: 20px;
   width: 185px;
 }
-/* line 456, ../scss/purpleline.scss */
+/* line 424, ../scss/purpleline.scss */
 footer ul.logos li a.mccormickfound {
   background-position: -6px -462px;
   height: 68px;
@@ -7729,7 +7697,7 @@ footer ul.logos li a.mccormickfound {
   margin-top: 23px;
   width: 218px;
 }
-/* line 464, ../scss/purpleline.scss */
+/* line 432, ../scss/purpleline.scss */
 footer ul.logos li a.nsf {
   background-position: right -448px;
   float: right;
@@ -7737,7 +7705,7 @@ footer ul.logos li a.nsf {
   margin: 0;
   width: 131px;
 }
-/* line 475, ../scss/purpleline.scss */
+/* line 443, ../scss/purpleline.scss */
 footer .contact,
 footer .copyright {
   clear: both;
@@ -7747,12 +7715,12 @@ footer .copyright {
   padding-top: 70px;
   text-align: center;
 }
-/* line 484, ../scss/purpleline.scss */
+/* line 452, ../scss/purpleline.scss */
 footer .contact a {
   color: #a8a4a3;
   text-decoration: none;
 }
-/* line 488, ../scss/purpleline.scss */
+/* line 456, ../scss/purpleline.scss */
 footer address,
 footer address span.address,
 footer address span.tel {
@@ -7764,14 +7732,14 @@ footer address span.tel {
   color: #a8a4a3;
 }
 
-/* line 499, ../scss/purpleline.scss */
+/* line 467, ../scss/purpleline.scss */
 #knightlab-logo-column {
   width: 25%;
   float: left;
   margin-right: 30px;
 }
 
-/* line 504, ../scss/purpleline.scss */
+/* line 472, ../scss/purpleline.scss */
 #knightlab-description {
   width: 65%;
   float: left;
@@ -7779,7 +7747,7 @@ footer address span.tel {
   padding-left: 20px;
 }
 
-/* line 510, ../scss/purpleline.scss */
+/* line 478, ../scss/purpleline.scss */
 #footer-outer {
   border-top: 4px solid #474748;
   background-image: linear-gradient(top, #32213f 14%, #530063 66%, #530063 44%);
@@ -7791,37 +7759,37 @@ footer address span.tel {
   height: 14px;
 }
 
-/* line 528, ../scss/purpleline.scss */
+/* line 496, ../scss/purpleline.scss */
 .ie9 #footer-outer {
   background-image: none;
   background-color: #530063;
 }
 
-/* line 533, ../scss/purpleline.scss */
+/* line 501, ../scss/purpleline.scss */
 .about-knightlab {
   max-width: 840px;
   margin: auto;
   padding-top: 60px;
 }
 @media (max-width: 767px) {
-  /* line 533, ../scss/purpleline.scss */
+  /* line 501, ../scss/purpleline.scss */
   .about-knightlab {
     padding-top: 30px;
   }
 }
 
 @media (max-width: 767px) {
-  /* line 543, ../scss/purpleline.scss */
+  /* line 511, ../scss/purpleline.scss */
   footer {
     padding: 10px 30px;
   }
 
-  /* line 544, ../scss/purpleline.scss */
+  /* line 512, ../scss/purpleline.scss */
   footer p {
     font-size: 12px;
   }
 
-  /* line 545, ../scss/purpleline.scss */
+  /* line 513, ../scss/purpleline.scss */
   #knightlab-logo-column,
   #knightlab-description {
     width: 100%;
@@ -7829,34 +7797,34 @@ footer address span.tel {
     text-align: center;
   }
 
-  /* line 551, ../scss/purpleline.scss */
+  /* line 519, ../scss/purpleline.scss */
   #knightlab-logo-column img {
     max-width: 100px;
     margin: auto;
   }
 
-  /* line 552, ../scss/purpleline.scss */
+  /* line 520, ../scss/purpleline.scss */
   #knightlab-description {
     border-left: 0;
     text-align: left;
   }
 
-  /* line 556, ../scss/purpleline.scss */
+  /* line 524, ../scss/purpleline.scss */
   address {
     display: none;
   }
 
-  /* line 557, ../scss/purpleline.scss */
+  /* line 525, ../scss/purpleline.scss */
   footer ul.contact-icons {
     margin: 10px auto;
   }
 
-  /* line 558, ../scss/purpleline.scss */
+  /* line 526, ../scss/purpleline.scss */
   footer .contact {
     padding-top: 20px;
   }
 }
-/* line 562, ../scss/purpleline.scss */
+/* line 530, ../scss/purpleline.scss */
 .sub-nav dt,
 .sub-nav dd,
 .sub-nav li {
@@ -7864,61 +7832,61 @@ footer address span.tel {
   font-size: 0.8125rem;
 }
 
-/* line 571, ../scss/purpleline.scss */
+/* line 539, ../scss/purpleline.scss */
 .tabs li {
   padding: 0;
   margin-right: 10px;
 }
-/* line 574, ../scss/purpleline.scss */
+/* line 542, ../scss/purpleline.scss */
 .tabs li.active {
   border-left: 1px solid #AAAAAA;
   border-top: 1px solid #AAAAAA;
   border-right: 1px solid #AAAAAA;
 }
 
-/* line 581, ../scss/purpleline.scss */
+/* line 549, ../scss/purpleline.scss */
 .tabs-content {
   border-top: 1px solid #AAAAAA;
   margin-top: -1px;
 }
 
-/* line 586, ../scss/purpleline.scss */
+/* line 554, ../scss/purpleline.scss */
 h1 {
   font-style: italic;
   margin: 0.6875rem 0;
 }
 
-/* line 587, ../scss/purpleline.scss */
+/* line 555, ../scss/purpleline.scss */
 h2.intro {
   color: #ce4d28;
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 588, ../scss/purpleline.scss */
+/* line 556, ../scss/purpleline.scss */
 h1, h2, h3 {
   font-family: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
   line-height: 2.75rem;
 }
 
-/* line 589, ../scss/purpleline.scss */
+/* line 557, ../scss/purpleline.scss */
 h4, h5, h6 {
   font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 1.375rem;
 }
 
-/* line 590, ../scss/purpleline.scss */
+/* line 558, ../scss/purpleline.scss */
 h2, h3, h4, h5, h6 {
   font-style: normal;
   margin: 0.6875rem 0;
 }
 
-/* line 591, ../scss/purpleline.scss */
+/* line 559, ../scss/purpleline.scss */
 h6 {
   text-transform: uppercase;
 }
 
-/* line 594, ../scss/purpleline.scss */
+/* line 562, ../scss/purpleline.scss */
 button,
 .button {
   -webkit-appearance: none;
@@ -7959,19 +7927,19 @@ button:hover, button:focus,
 .button:focus {
   color: #333333;
 }
-/* line 601, ../scss/purpleline.scss */
+/* line 569, ../scss/purpleline.scss */
 button:focus,
 .button:focus {
   outline: none;
 }
-/* line 602, ../scss/purpleline.scss */
+/* line 570, ../scss/purpleline.scss */
 button:hover, button:active, button:focus,
 .button:hover,
 .button:active,
 .button:focus {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, 0pt -10px 10pt rgba(0, 0, 0, 0.075) inset;
 }
-/* line 606, ../scss/purpleline.scss */
+/* line 574, ../scss/purpleline.scss */
 button:hover span, button:active span, button:focus span,
 .button:hover span,
 .button:active span,
@@ -7979,14 +7947,14 @@ button:hover span, button:active span, button:focus span,
   color: #fff;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
-/* line 612, ../scss/purpleline.scss */
+/* line 580, ../scss/purpleline.scss */
 button.success, button.alert, button.info,
 .button.success,
 .button.alert,
 .button.info {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 }
-/* line 616, ../scss/purpleline.scss */
+/* line 584, ../scss/purpleline.scss */
 button.inverse,
 .button.inverse {
   -webkit-appearance: none;
@@ -8024,17 +7992,17 @@ button.inverse:hover, button.inverse:focus,
 .button.inverse:focus {
   color: #FFFFFF;
 }
-/* line 621, ../scss/purpleline.scss */
+/* line 589, ../scss/purpleline.scss */
 button.warning span,
 .button.warning span {
   color: #333333;
 }
-/* line 622, ../scss/purpleline.scss */
+/* line 590, ../scss/purpleline.scss */
 button.warning:hover span,
 .button.warning:hover span {
   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.6);
 }
-/* line 624, ../scss/purpleline.scss */
+/* line 592, ../scss/purpleline.scss */
 button.disabled, button.disabled:hover,
 .button.disabled,
 .button.disabled:hover {
@@ -8042,7 +8010,7 @@ button.disabled, button.disabled:hover,
   box-shadow: none;
   border-color: transparent;
 }
-/* line 629, ../scss/purpleline.scss */
+/* line 597, ../scss/purpleline.scss */
 button.disabled span, button.disabled:hover span,
 .button.disabled span,
 .button.disabled:hover span {
@@ -8050,7 +8018,7 @@ button.disabled span, button.disabled:hover span,
   text-shadow: none;
 }
 
-/* line 634, ../scss/purpleline.scss */
+/* line 602, ../scss/purpleline.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -8069,14 +8037,14 @@ textarea {
   border-radius: 2px;
 }
 
-/* line 650, ../scss/purpleline.scss */
+/* line 618, ../scss/purpleline.scss */
 label,
 .prefix,
 .postfix {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 655, ../scss/purpleline.scss */
+/* line 623, ../scss/purpleline.scss */
 .accordion {
   display: block;
   margin-bottom: 0 !important;
@@ -8098,13 +8066,13 @@ label,
 .accordion > a:hover {
   background: #f2f2f2;
 }
-/* line 657, ../scss/purpleline.scss */
+/* line 625, ../scss/purpleline.scss */
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   margin-top: 2px;
 }
-/* line 661, ../scss/purpleline.scss */
+/* line 629, ../scss/purpleline.scss */
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
   font-size: .7em;
@@ -8115,18 +8083,18 @@ label,
   -webkit-font-smoothing: antialiased;
   color: #ca4d1d;
 }
-/* line 671, ../scss/purpleline.scss */
+/* line 639, ../scss/purpleline.scss */
 .accordion li.active a:before {
   content: "\f068 \0000a0\0000a0";
 }
 
-/* line 676, ../scss/purpleline.scss */
+/* line 644, ../scss/purpleline.scss */
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0;
 }
 
-/* line 679, ../scss/purpleline.scss */
+/* line 647, ../scss/purpleline.scss */
 [data-magellan-expedition] + .row,
 [data-magellan-expedition-clone] + .row {
   margin-top: 50px;
