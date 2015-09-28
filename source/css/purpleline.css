@@ -8024,6 +8024,26 @@ button.disabled span, button.disabled:hover span,
 }
 
 /* line 606, ../scss/purpleline.scss */
+table {
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 610, ../scss/purpleline.scss */
+th,
+td {
+  padding: 0.5625em 0.625em;
+}
+
+/* line 615, ../scss/purpleline.scss */
+table code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: #ce4d28;
+}
+
+/* line 624, ../scss/purpleline.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -8042,27 +8062,32 @@ textarea {
   border-radius: 2px;
 }
 
-/* line 622, ../scss/purpleline.scss */
+/* line 640, ../scss/purpleline.scss */
 label,
 .prefix,
 .postfix {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 627, ../scss/purpleline.scss */
+/* line 644, ../scss/purpleline.scss */
+.label {
+  padding: 3px 5px 2px;
+}
+
+/* line 647, ../scss/purpleline.scss */
 .collapse .postfix.button,
 .collapse .postfix button {
   border-radius: 0 2px 2px 0;
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 632, ../scss/purpleline.scss */
+/* line 652, ../scss/purpleline.scss */
 .collapse .prefix.button,
 .collapse .prefix button {
   border-radius: 0 2px 2px 0;
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 640, ../scss/purpleline.scss */
+/* line 660, ../scss/purpleline.scss */
 .accordion {
   display: block;
   margin-bottom: 0 !important;
@@ -8084,13 +8109,13 @@ label,
 .accordion > a:hover {
   background: #f2f2f2;
 }
-/* line 642, ../scss/purpleline.scss */
+/* line 662, ../scss/purpleline.scss */
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   margin-top: 2px;
 }
-/* line 646, ../scss/purpleline.scss */
+/* line 666, ../scss/purpleline.scss */
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
   font-size: .7em;
@@ -8101,18 +8126,18 @@ label,
   -webkit-font-smoothing: antialiased;
   color: #ca4d1d;
 }
-/* line 656, ../scss/purpleline.scss */
+/* line 676, ../scss/purpleline.scss */
 .accordion li.active a:before {
   content: "\f068 \0000a0\0000a0";
 }
 
-/* line 661, ../scss/purpleline.scss */
+/* line 681, ../scss/purpleline.scss */
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0;
 }
 
-/* line 664, ../scss/purpleline.scss */
+/* line 684, ../scss/purpleline.scss */
 [data-magellan-expedition] + .row,
 [data-magellan-expedition-clone] + .row {
   margin-top: 50px;

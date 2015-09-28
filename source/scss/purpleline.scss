@@ -602,6 +602,24 @@ button,
     }
 }
 
+// PurpleLine overrides of components/_tables.scss
+table {
+    font-family: $font-family-sans-serif;
+}
+
+th,
+td {
+    padding: 0.5625em 0.625em;
+}
+
+table code {
+    font-family: $font-family-monospace;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: $orange;
+}
+
 // Blueline overrides of components/_forms.scss
 input[type="text"],
 input[type="password"],
@@ -622,6 +640,8 @@ textarea { border-radius: $global-radius; }
 label,
 .prefix,
 .postfix { font-family: $font-family-sans-serif; }
+
+.label { padding: 3px 5px 2px; }
 
 .collapse {
     .postfix.button,

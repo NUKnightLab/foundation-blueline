@@ -108,6 +108,7 @@
             <li role="menuitem"><a href="#alignment">Alignment</a></li>
             <li role="menuitem"><a href="#buttons">Buttons</a></li>
             <li role="menuitem"><a href="#forms">Forms</a></li>
+            <li role="menuitem"><a href="#tables">Tables</a></li>
             <li role="menuitem"><a href="#grid-system">Grid system</a></li>
 
             <li>BRAND</li>
@@ -1096,6 +1097,76 @@
               </div>
               <p>Foundation's <a href="https://foundation.zurb.com/docs/components/range_slider.html">range slider <i class="fa fa-external-link"></i></a> and <a href="https://foundation.zurb.com/docs/components/switch.html">switch <i class="fa fa-external-link"></i></a> (or toggle) styles must be included separately. Use of switches should be carefully considered, as they are <a href="https://ux.stackexchange.com/questions/63884/checkbox-vs-toggle">often considered less usable than checkboxes. <i class="fa fa-external-link"></i></a></p>
 
+            </section>
+            <section class="clearfix">
+            <hr/>
+            <h4 id="tables">Tables</h4>
+            <p>Tables are useful for referencing lists of attributes or variables, along with other tabular data. If you put <code>code</code> tags around code references, PurpleLine will turn them a nice highlight color and render them in monospace font. Here's an example from the <a href="//timeline.knightlab.com/docs/options.html">TimelineJS docs.</a> (You can use <code>dt</code> and <code>dd</code> instead of <code>tr</code> and <code>td</code> if you like, and the effects will be the same.)</p>
+            <div class="panel">
+            <h6 class="label">Table layout</h6>
+              <table>
+                <thead>
+                  <th>Class Name</th>
+                  <th>Element Type</th>
+                  <th>Notes</th>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><code>tl-timenav</code></td>
+                  <td><code>div</code></td>
+                  <td>The timeline element. Change the background color here.</td>
+                </tr>
+                <tr>
+                  <td><code>tl-menubar</code></td>
+                  <td><code>div</code></td>
+                  <td>The zoom icons.</td>
+                </tr>
+                <tr>
+                  <td><code>tl-timemarker</code></td>
+                  <td><code>div</code></td>
+                  <td>All of the elements that make up the markers (flags and lines) on the timenav. The marker of the current slide also has the class <code>.tl-timemarker-active</code>.</td>
+                </tr>
+                <tr>
+                  <td><code>tl-timemarker-content-container</code></td>
+                  <td><code>div</code></td>
+                  <td>The flag of the marker. You can set the flag's background color and text color here. When writing styles for this selector, preface this selector with <code>.tl-timemarker</code> (for slides other than the current slide) or <code>.tl-timemarker.tl-timemarker-active</code> (for the current slide).</td>
+                </tr>
+                </tbody>
+              </table>
+<h6 class="label">HTML</h6>
+<pre><code>
+  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;th&gt;Class Name&lt;/th&gt;
+      &lt;th&gt;Element Type&lt;/th&gt;
+      &lt;th&gt;Notes&lt;/th&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;tl-timenav&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;div&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The timeline element. Change the background color here.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;tl-menubar&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;div&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The zoom icons.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;tl-timemarker&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;div&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;All of the elements that make up the markers (flags and lines) on the timenav. The marker of the current slide also has the class &lt;code&gt;.tl-timemarker-active&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;code&gt;tl-timemarker-content-container&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;code&gt;div&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;The flag of the marker. You can set the flag's background color and text color here. When writing styles for this selector, preface this selector with &lt;code&gt;.tl-timemarker&lt;/code&gt; (for slides other than the current slide) or &lt;code&gt;.tl-timemarker.tl-timemarker-active&lt;/code&gt; (for the current slide).&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+
+</code></pre>
+            </div>
             </section>
             <section class="clearfix">
               <hr />
