@@ -3830,7 +3830,7 @@ table thead tr td {
   color: #222222;
   font-size: 0.875rem;
   font-weight: bold;
-  padding: 0.5rem 0.625rem 0.625rem;
+  padding: 0.5625rem 0.625rem;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tfoot {
@@ -3842,7 +3842,7 @@ table tfoot tr td {
   color: #222222;
   font-size: 0.875rem;
   font-weight: bold;
-  padding: 0.5rem 0.625rem 0.625rem;
+  padding: 0.5625rem 0.625rem;
 }
 /* line 107, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tr th,
