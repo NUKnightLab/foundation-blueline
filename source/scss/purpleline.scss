@@ -588,6 +588,8 @@ button,
     &.inverse {
         @include button($radius: true, $bg: $white, $bg-hover: $medium-blue, $border-color: $base);
         border-width: 1px;
+        line-height: inherit;
+        &.disabled:hover { background-color: $white; }
     }
 
     &.warning span { color: $oil; }
@@ -597,7 +599,7 @@ button,
     &.disabled:hover {
         text-shadow: none;
         box-shadow: none;
-        border-color: transparent;
+        border-color: transparent !important;
         span { color: $oil; text-shadow: none;}
     }
 }
@@ -605,11 +607,6 @@ button,
 // PurpleLine overrides of components/_tables.scss
 table {
     font-family: $font-family-sans-serif;
-}
-
-th,
-td {
-    padding: 0.5625em 0.625em;
 }
 
 table code {
@@ -641,7 +638,12 @@ label,
 .prefix,
 .postfix { font-family: $font-family-sans-serif; }
 
-.label { padding: 3px 5px 2px; }
+.label {
+    padding: 3px 5px 2px;
+    &.warning {
+        @include label-style($oil);
+    }
+}
 
 .collapse {
     .postfix.button,

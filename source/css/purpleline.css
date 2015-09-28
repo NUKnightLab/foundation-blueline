@@ -7984,6 +7984,7 @@ button.inverse,
   border-radius: 2px;
   transition: background-color 300ms ease-out;
   border-width: 1px;
+  line-height: inherit;
 }
 /* line 158, ../bower_components/foundation/scss/foundation/components/_buttons.scss */
 button.inverse:hover, button.inverse:focus,
@@ -7997,25 +7998,30 @@ button.inverse:hover, button.inverse:focus,
 .button.inverse:focus {
   color: #FFFFFF;
 }
-/* line 593, ../scss/purpleline.scss */
+/* line 592, ../scss/purpleline.scss */
+button.inverse.disabled:hover,
+.button.inverse.disabled:hover {
+  background-color: #FFFFFF;
+}
+/* line 595, ../scss/purpleline.scss */
 button.warning span,
 .button.warning span {
   color: #333333;
 }
-/* line 594, ../scss/purpleline.scss */
+/* line 596, ../scss/purpleline.scss */
 button.warning:hover span,
 .button.warning:hover span {
   text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.6);
 }
-/* line 596, ../scss/purpleline.scss */
+/* line 598, ../scss/purpleline.scss */
 button.disabled, button.disabled:hover,
 .button.disabled,
 .button.disabled:hover {
   text-shadow: none;
   box-shadow: none;
-  border-color: transparent;
+  border-color: transparent !important;
 }
-/* line 601, ../scss/purpleline.scss */
+/* line 603, ../scss/purpleline.scss */
 button.disabled span, button.disabled:hover span,
 .button.disabled span,
 .button.disabled:hover span {
@@ -8023,18 +8029,12 @@ button.disabled span, button.disabled:hover span,
   text-shadow: none;
 }
 
-/* line 606, ../scss/purpleline.scss */
+/* line 608, ../scss/purpleline.scss */
 table {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 610, ../scss/purpleline.scss */
-th,
-td {
-  padding: 0.5625em 0.625em;
-}
-
-/* line 615, ../scss/purpleline.scss */
+/* line 612, ../scss/purpleline.scss */
 table code {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
   padding: 0;
@@ -8043,7 +8043,7 @@ table code {
   color: #ce4d28;
 }
 
-/* line 624, ../scss/purpleline.scss */
+/* line 621, ../scss/purpleline.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -8062,32 +8062,37 @@ textarea {
   border-radius: 2px;
 }
 
-/* line 640, ../scss/purpleline.scss */
+/* line 637, ../scss/purpleline.scss */
 label,
 .prefix,
 .postfix {
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 644, ../scss/purpleline.scss */
+/* line 641, ../scss/purpleline.scss */
 .label {
   padding: 3px 5px 2px;
 }
+/* line 643, ../scss/purpleline.scss */
+.label.warning {
+  background-color: #333333;
+  color: #FFFFFF;
+}
 
-/* line 647, ../scss/purpleline.scss */
+/* line 649, ../scss/purpleline.scss */
 .collapse .postfix.button,
 .collapse .postfix button {
   border-radius: 0 2px 2px 0;
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 652, ../scss/purpleline.scss */
+/* line 654, ../scss/purpleline.scss */
 .collapse .prefix.button,
 .collapse .prefix button {
   border-radius: 0 2px 2px 0;
   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-/* line 660, ../scss/purpleline.scss */
+/* line 662, ../scss/purpleline.scss */
 .accordion {
   display: block;
   margin-bottom: 0 !important;
@@ -8109,13 +8114,13 @@ label,
 .accordion > a:hover {
   background: #f2f2f2;
 }
-/* line 662, ../scss/purpleline.scss */
+/* line 664, ../scss/purpleline.scss */
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   margin-top: 2px;
 }
-/* line 666, ../scss/purpleline.scss */
+/* line 668, ../scss/purpleline.scss */
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
   font-size: .7em;
@@ -8126,18 +8131,18 @@ label,
   -webkit-font-smoothing: antialiased;
   color: #ca4d1d;
 }
-/* line 676, ../scss/purpleline.scss */
+/* line 678, ../scss/purpleline.scss */
 .accordion li.active a:before {
   content: "\f068 \0000a0\0000a0";
 }
 
-/* line 681, ../scss/purpleline.scss */
+/* line 683, ../scss/purpleline.scss */
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0;
 }
 
-/* line 684, ../scss/purpleline.scss */
+/* line 686, ../scss/purpleline.scss */
 [data-magellan-expedition] + .row,
 [data-magellan-expedition-clone] + .row {
   margin-top: 50px;
