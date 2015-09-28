@@ -78,10 +78,14 @@ h1.post-title { font-style: normal; line-height: 1.1;}
   font-size: 60px;
   white-space: nowrap;
   line-height: 1em;
+  margin-bottom: 0px;
   &.xl,
   &.xxl {
       font-size: rem-calc(65);
       margin-top: 5px;
+  }
+  & + h2.intro {
+      margin-top: 0px;
   }
 
   // TODO: Adjust this min-width as needed
