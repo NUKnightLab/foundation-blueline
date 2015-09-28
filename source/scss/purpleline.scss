@@ -623,6 +623,19 @@ label,
 .prefix,
 .postfix { font-family: $font-family-sans-serif; }
 
+.collapse {
+    .postfix.button,
+    .postfix button {
+        border-radius: 0 $global-radius $global-radius 0;
+        box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+    .prefix.button,
+    .prefix button {
+        border-radius: 0 $global-radius $global-radius 0;
+        box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
+    }
+}
+
 // Blueline overrides of components/_accordion.scss
 .accordion {
     @include accordion-navigation ($bg: $white-smoke);

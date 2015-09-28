@@ -8050,6 +8050,19 @@ label,
 }
 
 /* line 627, ../scss/purpleline.scss */
+.collapse .postfix.button,
+.collapse .postfix button {
+  border-radius: 0 2px 2px 0;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+/* line 632, ../scss/purpleline.scss */
+.collapse .prefix.button,
+.collapse .prefix button {
+  border-radius: 0 2px 2px 0;
+  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* line 640, ../scss/purpleline.scss */
 .accordion {
   display: block;
   margin-bottom: 0 !important;
@@ -8071,13 +8084,13 @@ label,
 .accordion > a:hover {
   background: #f2f2f2;
 }
-/* line 629, ../scss/purpleline.scss */
+/* line 642, ../scss/purpleline.scss */
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 2px;
   margin-top: 2px;
 }
-/* line 633, ../scss/purpleline.scss */
+/* line 646, ../scss/purpleline.scss */
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
   font-size: .7em;
@@ -8088,18 +8101,18 @@ label,
   -webkit-font-smoothing: antialiased;
   color: #ca4d1d;
 }
-/* line 643, ../scss/purpleline.scss */
+/* line 656, ../scss/purpleline.scss */
 .accordion li.active a:before {
   content: "\f068 \0000a0\0000a0";
 }
 
-/* line 648, ../scss/purpleline.scss */
+/* line 661, ../scss/purpleline.scss */
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
   padding: 0;
 }
 
-/* line 651, ../scss/purpleline.scss */
+/* line 664, ../scss/purpleline.scss */
 [data-magellan-expedition] + .row,
 [data-magellan-expedition-clone] + .row {
   margin-top: 50px;
