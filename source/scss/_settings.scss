@@ -87,6 +87,10 @@ $row-width: rem-calc(1200);
 // $total-columns: 12;
 $column-gutter: rem-calc(30);
 
+
+// SHADOW
+$default-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -119,21 +123,25 @@ $charcoal    : #555555;
 // $oil         : #333333;
  $jet         : #222222;
 // $black       : #000000;
-$lighter-orange: #f7ccb2;
+$lighter-orange: #FFC783;
 $light-orange: #e35a25;
+$light-yellow: #FFECD5;
 $orange: #ce4d28;
 $dark-orange: #c34528;
-$light-green: #eae34a;
+$light-green: #5FB888;
+$lighter-blue: #F4FBFF;
 $light-blue: #5A8CA7;//#1dacd6;
 $medium-blue: #38708F; //#0f9bd1;
-$dark-blue: #1F6083;//#147693;
+$dark-blue: #1F6083;// #147693;
+$link-blue: #097DBB;
+$link-blue-hover: #2577A3;
 
 // We use these as default colors throughout
  $primary-color: $medium-blue;
  $secondary-color: $gainsboro;
  $alert-color: $orange;
  $success-color: #399F68; //#5bb75b;
- $warning-color: $light-green;
+ $warning-color: $lighter-orange;
  $info-color: $medium-blue;
 
 // We use these to control various global styles
@@ -271,8 +279,8 @@ $dark-blue: #1F6083;//#147693;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
- $anchor-font-color: $light-blue;
- $anchor-font-color-hover: $dark-blue;
+ $anchor-font-color: $link-blue;//$light-blue;
+ $anchor-font-color-hover: $link-blue-hover;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
