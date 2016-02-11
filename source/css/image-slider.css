@@ -1,523 +1,71 @@
-/*$button-border-width: 3px;*/
-/*$button-border-style: solid;*/
-/* line 348, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-version {
-  font-family: "/5.5.1/";
-}
+/*
+Error: File to import not found or unreadable: foundation/functions.
+       Load paths:
+         /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss
+         /Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets
+         /Users/zach/Desktop/WebDev/Projects/purpleline/source/bower_components/foundation/scss
+         /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss
+         Compass::SpriteImporter
+         Sass::Globbing::Importer
+        on line 62 of /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/_settings.scss
+        from line 33 of /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/image-slider.scss
 
-/* line 352, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small {
-  font-family: "/only screen/";
-  width: 0;
-}
-
-/* line 357, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-small-only {
-  font-family: "/only screen and (max-width: 40em)/";
-  width: 0;
-}
-
-/* line 362, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:40.0625em)/";
-  width: 40.0625em;
-}
-
-/* line 367, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
-  width: 40.0625em;
-}
-
-/* line 372, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:64.0625em)/";
-  width: 64.0625em;
-}
-
-/* line 377, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-large-only {
-  font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
-  width: 64.0625em;
-}
-
-/* line 382, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:90.0625em)/";
-  width: 90.0625em;
-}
-
-/* line 387, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xlarge-only {
-  font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
-  width: 90.0625em;
-}
-
-/* line 392, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:120.0625em)/";
-  width: 120.0625em;
-}
-
-/* line 397, ../bower_components/foundation/scss/foundation/components/_global.scss */
-meta.foundation-data-attribute-namespace {
-  font-family: false;
-}
-
-/* line 404, ../bower_components/foundation/scss/foundation/components/_global.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 407, ../bower_components/foundation/scss/foundation/components/_global.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 410, ../bower_components/foundation/scss/foundation/components/_global.scss */
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-/* line 416, ../bower_components/foundation/scss/foundation/components/_global.scss */
-html,
-body {
-  font-size: 100%;
-}
-
-/* line 420, ../bower_components/foundation/scss/foundation/components/_global.scss */
-body {
-  background: #fff;
-  color: #222;
-  cursor: auto;
-  font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-/* line 433, ../bower_components/foundation/scss/foundation/components/_global.scss */
-a:hover {
-  cursor: pointer;
-}
-
-/* line 436, ../bower_components/foundation/scss/foundation/components/_global.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 438, ../bower_components/foundation/scss/foundation/components/_global.scss */
-img {
-  -ms-interpolation-mode: bicubic;
-}
-
-/* line 443, ../bower_components/foundation/scss/foundation/components/_global.scss */
-#map_canvas img,
-#map_canvas embed,
-#map_canvas object,
-.map_canvas img,
-.map_canvas embed,
-.map_canvas object,
-.mqa-display img,
-.mqa-display embed,
-.mqa-display object {
-  max-width: none !important;
-}
-
-/* line 450, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.left {
-  float: left !important;
-}
-
-/* line 451, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.right {
-  float: right !important;
-}
-
-/* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table;
-}
-/* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.clearfix:after {
-  clear: both;
-}
-
-/* line 455, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.hide {
-  display: none;
-}
-
-/* line 460, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.invisible {
-  visibility: hidden;
-}
-
-/* line 466, ../bower_components/foundation/scss/foundation/components/_global.scss */
-.antialiased {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* line 469, ../bower_components/foundation/scss/foundation/components/_global.scss */
-img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* line 479, ../bower_components/foundation/scss/foundation/components/_global.scss */
-textarea {
-  height: auto;
-  min-height: 50px;
-}
-
-/* line 482, ../bower_components/foundation/scss/foundation/components/_global.scss */
-select {
-  width: 100%;
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-/* Orbit Graceful Loading */
-/* line 81, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper {
-  position: relative;
-}
-/* line 84, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul {
-  list-style-type: none;
-  margin: 0;
-}
-/* line 90, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul li,
-.slideshow-wrapper ul li .orbit-caption {
-  display: none;
-}
-/* line 94, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper ul li:first-child {
-  display: block;
-}
-/* line 97, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container {
-  background-color: transparent;
-}
-/* line 100, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container li {
-  display: block;
-}
-/* line 102, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container li .orbit-caption {
-  display: block;
-}
-/* line 104, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .orbit-container .orbit-bullets li {
-  display: inline-block;
-}
-/* line 110, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.slideshow-wrapper .preloader {
-  border-radius: 1000px;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-name: rotate;
-  animation-timing-function: linear;
-  border-color: #555555 #FFFFFF;
-  border: solid 3px;
-  display: block;
-  height: 40px;
-  left: 50%;
-  margin-left: -20px;
-  margin-top: -20px;
-  position: absolute;
-  top: 50%;
-  width: 40px;
-}
-
-/* line 130, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container {
-  background: none;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-/* line 136, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0);
-}
-/* line 149, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container img {
-  display: block;
-  max-width: 100%;
-}
-/* line 151, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > * {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  margin-left: 100%;
-}
-/* line 162, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > *:first-child {
-  margin-left: 0;
-}
-/* line 171, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slides-container > * .orbit-caption {
-  bottom: 0;
-  position: absolute;
-  background-color: rgba(51, 51, 51, 0.8);
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  padding: 0.625rem 0.875rem;
-  width: 100%;
-}
-/* line 188, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slide-number {
-  left: 10px;
-  background: transparent;
-  color: #FFFFFF;
-  font-size: 12px;
-  position: absolute;
-  top: 10px;
-  z-index: 10;
-}
-/* line 194, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-slide-number span {
-  font-weight: 700;
-  padding: 0.3125rem;
-}
-/* line 199, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer {
-  height: 6px;
-  position: absolute;
-  top: 12px;
-  width: 100px;
-  z-index: 10;
-  right: 10px;
-}
-/* line 207, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer .orbit-progress {
-  background-color: rgba(255, 255, 255, 0.3);
-  display: block;
-  height: 3px;
-  position: relative;
-  right: 20px;
-  top: 5px;
-  width: 0;
-}
-/* line 220, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer > span {
-  border-bottom: none;
-  border-top: none;
-  border: solid 4px #FFFFFF;
-  display: none;
-  height: 14px;
-  position: absolute;
-  top: 0;
-  width: 11px;
-  right: 0;
-}
-/* line 234, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer.paused > span {
-  border-color: transparent;
-  border-left-color: #FFFFFF;
-  border-left-style: solid;
-  border: inset 8px;
-  height: 14px;
-  top: 0;
-  width: 11px;
-  right: -4px;
-}
-/* line 244, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-timer.paused > span.dark {
-  border-left-color: #333333;
-}
-/* line 253, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container:hover .orbit-timer > span {
-  display: block;
-}
-/* line 256, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev,
-.orbit-container .orbit-next {
-  background-color: transparent;
-  color: white;
-  height: 60px;
-  line-height: 50px;
-  margin-top: -25px;
-  position: absolute;
-  text-indent: -9999px !important;
-  top: 45%;
-  width: 36px;
-  z-index: 10;
-}
-/* line 269, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev:hover,
-.orbit-container .orbit-next:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-/* line 273, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev > span,
-.orbit-container .orbit-next > span {
-  border: inset 10px;
-  display: block;
-  height: 0;
-  margin-top: -10px;
-  position: absolute;
-  top: 50%;
-  width: 0;
-}
-/* line 283, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev {
-  left: 0;
-}
-/* line 284, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev > span {
-  border-right-style: solid;
-  border-color: transparent;
-  border-right-color: #FFFFFF;
-}
-/* line 289, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-prev:hover > span {
-  border-right-color: #FFFFFF;
-}
-/* line 293, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next {
-  right: 0;
-}
-/* line 294, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next > span {
-  border-color: transparent;
-  border-left-style: solid;
-  border-left-color: #FFFFFF;
-  left: 50%;
-  margin-left: -4px;
-}
-/* line 301, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-container .orbit-next:hover > span {
-  border-left-color: #FFFFFF;
-}
-
-/* line 307, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets-container {
-  text-align: center;
-}
-
-/* line 308, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets {
-  display: block;
-  float: none;
-  margin: 0 auto 30px auto;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  top: 10px;
-}
-/* line 317, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li {
-  background: #CCCCCC;
-  cursor: pointer;
-  display: inline-block;
-  float: none;
-  height: 0.5625rem;
-  margin-right: 6px;
-  width: 0.5625rem;
-  border-radius: 1000px;
-}
-/* line 329, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li.active {
-  background: #999999;
-}
-/* line 333, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.orbit-bullets li:last-child {
-  margin-right: 0;
-}
-
-/* line 339, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.touch .orbit-container .orbit-prev,
-.touch .orbit-container .orbit-next {
-  display: none;
-}
-/* line 343, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-.touch .orbit-bullets {
-  display: none;
-}
-
-@media only screen and (min-width: 40.0625em) {
-  /* line 351, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .touch .orbit-container .orbit-prev,
-  .touch .orbit-container .orbit-next {
-    display: inherit;
-  }
-  /* line 355, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .touch .orbit-bullets {
-    display: block;
-  }
-}
-@media only screen and (max-width: 40em) {
-  /* line 362, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slides-container {
-    height: auto !important;
-  }
-  /* line 363, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slides-container > * {
-    margin: 0  !important;
-    opacity: 1 !important;
-    position: relative;
-  }
-  /* line 369, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-stack-on-small .orbit-slide-number {
-    display: none;
-  }
-
-  /* line 375, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-timer {
-    display: none;
-  }
-
-  /* line 378, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-next, .orbit-prev {
-    display: none;
-  }
-
-  /* line 381, ../bower_components/foundation/scss/foundation/components/_orbit.scss */
-  .orbit-bullets {
-    display: none;
-  }
-}
+Backtrace:
+/Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/_settings.scss:62
+/Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/image-slider.scss:33
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:45:in `import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:88:in `with_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:209:in `each'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/sass_compiler.rb:40:in `compile!'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/update_project.rb:49:in `perform'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/base.rb:18:in `execute'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/project_base.rb:19:in `execute'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:52:in `block in <main>'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `call'
+/Applications/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: foundation/functions.\A        Load paths:\A          /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss\A          /Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets\A          /Users/zach/Desktop/WebDev/Projects/purpleline/source/bower_components/foundation/scss\A          /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss\A          Compass::SpriteImporter\A          Sass::Globbing::Importer\A         on line 62 of /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/_settings.scss\A         from line 33 of /Users/zach/Desktop/WebDev/Projects/purpleline/source/scss/image-slider.scss"; }
