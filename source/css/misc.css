@@ -136,7 +136,7 @@ kbd {
   font-size: inherit;
   margin: 0;
   padding: 0.125rem 0.25rem 0;
-  border-radius: 2px; }
+  border-radius: 4px; }
 
 /* Pricing Tables */
 .pricing-table {

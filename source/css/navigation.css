@@ -290,17 +290,17 @@ select {
     font-weight: normal;
     margin: 0 0 0.4375rem 0; }
     .side-nav li a:not(.button) {
-      color: #38708F;
+      color: #155A8F;
       display: block;
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
         background: rgba(0, 0, 0, 0.025);
-        color: #63a0c2; }
+        color: #2c92e0; }
       .side-nav li a:not(.button):active {
-        color: #63a0c2; }
+        color: #2c92e0; }
     .side-nav li.active > a:first-child:not(.button) {
-      color: #63a0c2;
+      color: #2c92e0;
       font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
@@ -310,7 +310,7 @@ select {
       list-style: none;
       padding: 0; }
     .side-nav li.heading {
-      color: #38708F;
+      color: #155A8F;
       font-size: 0.875rem;
       font-weight: bold;
       text-transform: uppercase; }

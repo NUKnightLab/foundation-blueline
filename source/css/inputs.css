@@ -155,30 +155,30 @@ select {
       width: 0.875rem; }
   .range-slider.radius {
     background: #FAFAFA;
-    border-radius: 2px; }
+    border-radius: 4px; }
     .range-slider.radius .range-slider-handle {
-      background: #38708F;
-      border-radius: 2px; }
+      background: #155A8F;
+      border-radius: 4px; }
       .range-slider.radius .range-slider-handle:hover {
-        background: #31637e; }
+        background: #124f7e; }
   .range-slider.round {
     background: #FAFAFA;
     border-radius: 1000px; }
     .range-slider.round .range-slider-handle {
-      background: #38708F;
+      background: #155A8F;
       border-radius: 1000px; }
       .range-slider.round .range-slider-handle:hover {
-        background: #31637e; }
+        background: #124f7e; }
   .range-slider.disabled, .range-slider[disabled] {
     background: #FAFAFA;
     cursor: not-allowed;
     opacity: 0.7; }
     .range-slider.disabled .range-slider-handle, .range-slider[disabled] .range-slider-handle {
-      background: #38708F;
+      background: #155A8F;
       cursor: default;
       opacity: 0.7; }
       .range-slider.disabled .range-slider-handle:hover, .range-slider[disabled] .range-slider-handle:hover {
-        background: #31637e; }
+        background: #124f7e; }
 
 .range-slider-active-segment {
   background: #dbdbdb;
@@ -197,9 +197,9 @@ select {
   z-index: 1;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  background: #38708F; }
+  background: #155A8F; }
   .range-slider-handle:hover {
-    background: #31637e; }
+    background: #124f7e; }
 
 .switch {
   border: none;
@@ -250,7 +250,7 @@ select {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .switch input:checked + label {
-    background: #38708F; }
+    background: #155A8F; }
   .switch input:checked + label:after {
     left: 2.25rem; }
   .switch label {
@@ -267,7 +267,7 @@ select {
   .switch label:after {
     background: #FFFFFF; }
   .switch input:checked + label {
-    background: #38708F; }
+    background: #155A8F; }
   .switch.large label {
     height: 2.5rem;
     width: 5rem; }

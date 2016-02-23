@@ -120,19 +120,26 @@ $smoke       : #EEEEEE;
 // $steel       : #666666;
 $charcoal    : #555555;
 // $tuatara     : #444444;
-// $oil         : #333333;
- $jet         : #222222;
+$oil         : #333333;
+$jet         : #222222;
 // $black       : #000000;
-$lighter-orange: #FFC783;
-$light-orange: #e35a25;
+
+$orange: #DF4E13; //#ce4d28;
+$light-orange: #F07341;//#e35a25;
+$lighter-orange: #FFC06C;//#FF966C;//#FFC783;
+$dark-orange: $orange; //#B23706;//#c34528;
+
+$blue: #155A8F;
+$medium-blue: $blue;//#155A8F; //#38708F; //#0f9bd1;
+$light-blue: #5085AD;//#316D9B;//#5A8CA7;//#1dacd6;
+$lighter-blue: #5085AD;//#F4FBFF;
+$dark-blue: #053559;//#1F6083;// #147693;
+
 $light-yellow: #FFECD5;
-$orange: #ce4d28;
-$dark-orange: #c34528;
-$light-green: #5FB888;
-$lighter-blue: #F4FBFF;
-$light-blue: #5A8CA7;//#1dacd6;
-$medium-blue: #38708F; //#0f9bd1;
-$dark-blue: #1F6083;// #147693;
+$light-green: #4EB78A;//#5FB888;
+
+
+
 $link-blue: #097DBB;
 $link-blue-hover: #2577A3;
 
@@ -140,9 +147,9 @@ $link-blue-hover: #2577A3;
  $primary-color: $medium-blue;
  $secondary-color: $gainsboro;
  $alert-color: $orange;
- $success-color: #399F68; //#5bb75b;
+ $success-color: #2CA571;//#399F68; //#5bb75b;
  $warning-color: $lighter-orange;
- $info-color: $medium-blue;
+ $info-color: $light-blue;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -161,7 +168,7 @@ $link-blue-hover: #2577A3;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
- $global-radius: 2px;
+ $global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.

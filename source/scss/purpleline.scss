@@ -238,15 +238,20 @@ blockquote {
 	padding: 1em 1em 0;
 	margin: 0 0 22px;
 	overflow: auto;
-	font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
+	font-family: $font-family-serif;
 	font-style: italic;
 	background-color: $ghost;
 	p {
-		font-size: rem-calc(17.5);
-		line-height: rem-calc(26.5);
+		font-size: rem-calc(19);
+		line-height: rem-calc(30);
+		//font-size: rem-calc(17.5);
+		//line-height: rem-calc(26.5);
 		color: $charcoal;
 		&.source {
 			text-align: right;
+			font-family:$font-family-sans-serif;
+			font-style: normal;
+			font-size: rem-calc(14);
 		}
 	}
 }
@@ -311,6 +316,18 @@ hr {
 	margin: 22px 0;
 	border: none;
 	border-top: 4px double $smoke;
+}
+
+.well {
+	font-family:$font-family-sans-serif;
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: $vapor;
+    border: 1px solid $smoke;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
 
 .editors-note {
@@ -706,16 +723,20 @@ button,
 .button {
 	@include button($radius: true);
 	line-height: inherit;
+	background-color:transparent;
 	border-width: 1px;
 	border-style: solid;
-	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	//box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: none;
 	&:focus {
 		outline: none;
 	}
 	&:hover,
 	&:active,
 	&:focus {
+		color: #fff;
 		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, 0pt -10px 10pt rgba(0, 0, 0, 0.075) inset;
+		background-color:$charcoal;
 		span {
 			color: #fff;
 			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
@@ -724,10 +745,10 @@ button,
 	&.success,
 	&.alert,
 	&.info {
-		text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+		//text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 	}
 	&.inverse {
-		@include button($radius: true, $bg: $white, $bg-hover: $medium-blue, $border-color: $base);
+		@include button($radius: true, $bg: $white, $bg-hover: $charcoal, $border-color: $base);
 		border-width: 1px;
 		line-height: inherit;
 		&.disabled:hover {
@@ -748,6 +769,33 @@ button,
 		span {
 			color: $oil;
 			text-shadow: none;
+		}
+	}
+	&.split {
+		&:hover {
+			//color: #fff;
+			span {
+				border-left-color: rgba(255, 255, 255, 0.5);
+				&:after {
+					border-color: #FFF transparent transparent transparent;
+				}
+			}
+		}
+		span {
+			border-left-color: rgba(127, 127, 127, 0.5);
+			&:after {
+				border-color: #999999 transparent transparent transparent;
+			}
+		}
+	}
+	&.dropdown {
+		&:hover {
+			&:after {
+				border-color: #FFF transparent transparent transparent;
+			}
+		}
+		&:after {
+			border-color: #999999 transparent transparent transparent;
 		}
 	}
 }
