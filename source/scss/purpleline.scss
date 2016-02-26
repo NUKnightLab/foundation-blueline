@@ -723,23 +723,41 @@ button,
 .button {
 	@include button($radius: true);
 	line-height: inherit;
+	//background-color:$smoke;
+	//border-color: transparent;
 	background-color:transparent;
+	border-color: $gainsboro;
 	border-width: 1px;
 	border-style: solid;
+	color:$charcoal;
 	//box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	box-shadow: none;
+	transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	//box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+	span {
+		transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	}
 	&:focus {
 		outline: none;
 	}
 	&:hover,
 	&:active,
 	&:focus {
-		color: #fff;
-		box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, 0pt -10px 10pt rgba(0, 0, 0, 0.075) inset;
-		background-color:$charcoal;
+
+		//color: #fff;
+		//color:$charcoal;
+		border-color: $gainsboro;
+		//box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset, 0pt -10px 10pt rgba(0, 0, 0, 0.075) inset;
+		box-shadow:0 6px 10px 0 rgba(0, 0, 0, 0.14),
+	                  0 1px 18px 0 rgba(0, 0, 0, 0.12),
+	                  0 3px 5px -1px rgba(0, 0, 0, 0.4);
+		//background-color:$white-smoke;
+		background-color:transparent;
 		span {
-			color: #fff;
+			//color: #fff;
+			//color:$charcoal;
 			text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+			//text-shadow: none;
 		}
 	}
 	&.success,
@@ -747,20 +765,76 @@ button,
 	&.info {
 		//text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
 	}
-	&.inverse {
-		@include button($radius: true, $bg: $white, $bg-hover: $charcoal, $border-color: $base);
-		border-width: 1px;
-		line-height: inherit;
+
+	&.light {
+		@include button($radius: true, $bg: $white, $bg-hover: $ghost, $border-color: $gainsboro);
+		color:$charcoal;
+		&:hover {
+			border-color: $gainsboro;
+		}
 		&.disabled:hover {
 			background-color: $white;
 		}
 	}
-	&.warning span {
-		color: $oil;
+	&.inverse {
+		@include button($radius: true, $bg: $charcoal, $bg-hover: $oil, $border-color: $jumbo);
+		&:hover {
+			border-color: $charcoal;
+		}
+		&.disabled:hover {
+			background-color: $white;
+		}
 	}
-	&.warning:hover span {
-		text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.6);
+	&.success {
+		@include button($radius: true, $bg: $light-green, $bg-hover: darken( $light-green, 5% ), $border-color: $light-green);
+		text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+		&:hover {
+			border-color: darken( $light-green, 10% );
+			span {
+				text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+			}
+		}
 	}
+	&.warning {
+		
+		@include button($radius: true, $bg: $lighter-orange, $bg-hover: darken( $lighter-orange, 5% ), $border-color: $lighter-orange);
+		color: $dark-orange;
+		span {
+			color: darken( $dark-orange, 10% );
+		}
+		&:hover {
+			border-color: darken( $lighter-orange, 5% );
+		}
+	}
+	&.alert {
+		
+		@include button($radius: true, $bg: $orange, $bg-hover: darken( $orange, 5% ), $border-color: $orange);
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			border-color: darken( $orange, 5% );
+			span {
+				text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+			}
+		}
+	}
+	&.info {
+		
+		@include button($radius: true, $bg: $light-blue, $bg-hover: $blue, $border-color: $light-blue);
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			border-color: $blue;
+			span {
+				text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+			}
+		}
+	}
+
 	&.disabled,
 	&.disabled:hover {
 		text-shadow: none;
@@ -771,31 +845,51 @@ button,
 			text-shadow: none;
 		}
 	}
+	&.light, &.inverse, &.success, &.warning, &.disabled, &.alert, &.info {
+		transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+		border-width: 1px;
+		&.postfix.button {
+			border: none;
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-top: 0;
+			text-align: center;
+		}
+		//line-height: inherit;
+		&:hover {
+			span {
+				//text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+			}
+		}
+	}
 	&.split {
 		&:hover {
 			//color: #fff;
 			span {
-				border-left-color: rgba(255, 255, 255, 0.5);
+				border-left-color: $gainsboro;
 				&:after {
-					border-color: #FFF transparent transparent transparent;
+					border-color: $charcoal transparent transparent transparent;
 				}
 			}
 		}
 		span {
-			border-left-color: rgba(127, 127, 127, 0.5);
+			border-left-color: $gainsboro;
+			transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 			&:after {
-				border-color: #999999 transparent transparent transparent;
+				transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+				border-color: $charcoal transparent transparent transparent;
 			}
 		}
 	}
 	&.dropdown {
 		&:hover {
 			&:after {
-				border-color: #FFF transparent transparent transparent;
+				border-color: $charcoal transparent transparent transparent;
 			}
 		}
 		&:after {
-			border-color: #999999 transparent transparent transparent;
+			border-color: $charcoal transparent transparent transparent;
 		}
 	}
 }
