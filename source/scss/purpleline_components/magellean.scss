@@ -1,0 +1,9 @@
+[data-magellan-expedition],
+[data-magellan-expedition-clone] {
+	padding: 0;
+}
+
+[data-magellan-expedition] + .row,
+[data-magellan-expedition-clone] + .row {
+	margin-top: 50px;
+}

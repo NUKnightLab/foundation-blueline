@@ -1,0 +1,202 @@
+footer,
+#footer {
+	padding: 10px 80px 0;
+	font-size: 14px;
+	background-color: #F3F3F3;
+	border-bottom: 12px solid #520063;
+	font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer {
+	a,
+	a:link,
+	a:visited {
+		color: #666;
+		text-decoration: underline;
+		border: none;
+		display: inline;
+	}
+	.col-940 {
+		display: none;
+	}
+	ul {
+		list-style: none outside none;
+		margin: 0;
+		&.social {
+			text-align: center;
+			padding: 10px 0;
+			/* override for old Bootstrap blueline */
+			margin: 0 auto;
+			float: none;
+			width: 100%;
+			li {
+				float: none;
+				display: inline;
+				font-size: 18px;
+				line-height: 1.4em;
+				padding-bottom: 3px;
+				margin: 0 10px;
+				color: $jet;
+				a:hover {
+					text-decoration: none;
+					opacity: .9;
+				}
+			}
+			a {
+				border: none;
+				text-decoration: none;
+			}
+		}
+		&.logos {
+			margin-top: 25px;
+			border-left: 1px solid #CCCCCC;
+			li {
+				display: block;
+				float: right;
+				&:hover {
+					opacity: .85;
+				}
+				a {
+					background: url("images/footer-logosheet.png") no-repeat scroll center top transparent;
+					display: block;
+					text-indent: -9999px;
+					&.northwestern {
+						background-position: -42px -106px;
+						height: 174px;
+						margin-bottom: 17px;
+						margin-left: 30px;
+						width: 290px;
+					}
+					&.knightfoundation {
+						background-position: 22px -283px;
+						height: 83px;
+						margin-bottom: 23px;
+						margin-top: 14px;
+						width: 383px;
+					}
+					&.medill {
+						background-position: -221px -385px;
+						height: 52px;
+						margin-bottom: 20px;
+						margin-left: 11px;
+						width: 111px;
+					}
+					&.mccormick {
+						background-position: -19px -385px;
+						float: right;
+						height: 52px;
+						margin-bottom: 20px;
+						width: 185px;
+					}
+					&.mccormickfound {
+						background-position: -6px -462px;
+						height: 68px;
+						margin-bottom: 51px;
+						margin-right: 34px;
+						margin-top: 23px;
+						width: 218px;
+					}
+					&.nsf {
+						background-position: right -448px;
+						float: right;
+						height: 84px;
+						margin: 0;
+						width: 131px;
+					}
+				}
+			}
+		}
+	}
+	.contact,
+	.copyright {
+		clear: both;
+		color: #a8a4a3;
+		font-size: 12px;
+		padding-bottom: 20px;
+		padding-top: 70px;
+		text-align: center;
+	}
+	.contact a {
+		color: #a8a4a3;
+		text-decoration: none;
+	}
+	address,
+	address span.address,
+	address span.tel {
+		padding-left: 0;
+		display: inline;
+		width: auto;
+		float: none;
+		font-size: 12px;
+		color: #a8a4a3;
+	}
+}
+#knightlab-logo-column {
+	width: 25%;
+	float: left;
+	margin-right: 30px;
+}
+
+#knightlab-description {
+	width: 65%;
+	float: left;
+	border-left: solid 1px #d0d0d0;
+	padding-left: 20px;
+}
+
+.about-knightlab {
+	max-width: 840px;
+	margin: auto;
+	padding-top: 60px;
+	@media (max-width: 767px) {
+		padding-top: 30px;
+	}
+}
+
+@media (max-width: 767px) {
+	footer {
+		padding: 10px 30px;
+	}
+	footer p {
+		font-size: 12px;
+	}
+	#knightlab-logo-column,
+	#knightlab-description {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	#knightlab-logo-column img {
+		max-width: 100px;
+		margin: auto;
+	}
+	#knightlab-description {
+		border-left: 0;
+		text-align: left;
+	}
+	address {
+		display: none;
+	}
+	footer ul.contact-icons {
+		margin: 10px auto;
+	}
+	footer .contact {
+		padding-top: 20px;
+	}
+}
+
+#footer-outer {
+	border-top: 4px solid #474748;
+	background-image: linear-gradient(top, rgb(50, 33, 63) 14%, rgb(83, 0, 99) 66%, rgb(83, 0, 99) 44%);
+	background-image: -o-linear-gradient(top, rgb(50, 33, 63) 14%, rgb(83, 0, 99) 66%, rgb(83, 0, 99) 44%);
+	background-image: -moz-linear-gradient(top, rgb(50, 33, 63) 14%, rgb(83, 0, 99) 66%, rgb(83, 0, 99) 44%);
+	background-image: -webkit-linear-gradient(top, rgb(50, 33, 63) 14%, rgb(83, 0, 99) 66%, rgb(83, 0, 99) 44%);
+	background-image: -ms-linear-gradient(top, rgb(50, 33, 63) 14%, rgb(83, 0, 99) 66%, rgb(83, 0, 99) 44%);
+	background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.14, rgb(50, 33, 63)), color-stop(0.66, rgb(83, 0, 99)), color-stop(0.44, rgb(83, 0, 99)));
+	height: 14px;
+}
+
+.ie9 #footer-outer {
+	background-image: none;
+	background-color: #530063;
+}

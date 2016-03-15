@@ -1,0 +1,16 @@
+.tabs {
+	li {
+		padding: 0;
+		margin-right: 10px;
+		&.active {
+			border-left: 1px solid $base;
+			border-top: 1px solid $base;
+			border-right: 1px solid $base;
+		}
+	}
+}
+
+.tabs-content {
+	border-top: 1px solid $base;
+	margin-top: -1px;
+}

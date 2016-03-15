@@ -1,0 +1,54 @@
+.top-bar {
+	color: $jet;
+	-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+	box-shadow: 0 1px 10px rgba(0, 0, 0, .1);
+	background-image: -moz-linear-gradient(top, #fff, #f2f2f2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #fff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #fff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+	background-repeat: repeat-x;
+	//filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	border: 1px solid #d4d4d4;
+	.row {
+		max-width: rem-calc(1200);
+	}
+	.name {
+		margin-top: -1px;
+	} // to adjust for border bottom
+	ul li {
+		padding: 0;
+	}
+}
+
+.top-bar-section {
+	li {
+		padding: 0;
+		&.logo:hover > a:not(.button):hover {
+			background: transparent;
+			background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+		}
+		&.active:not(.has-form) {
+			a:not(.button) {
+				color: $white;
+				&:hover,
+				&:active,
+				&:focus {
+					color: $smoke;
+				}
+			}
+		}
+		&:not(.has-form) a:not(.button) {
+			background-color: $ghost;
+			background-image: -moz-linear-gradient(top, #fff, #f2f2f2);
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#f2f2f2));
+			background-image: -webkit-linear-gradient(top, #fff, #f2f2f2);
+			background-image: -o-linear-gradient(top, #fff, #f2f2f2);
+			background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+			background-repeat: repeat-x;
+			border-bottom: 1px solid #d4d4d4;
+			height: rem-calc(49); // 1px less than $topbar-height in _settings.scss to adjust for border bottom
+		}
+	}
+}

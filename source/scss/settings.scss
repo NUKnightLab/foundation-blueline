@@ -84,12 +84,14 @@ $include-html-global-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
 $row-width: rem-calc(1200);
-// $total-columns: 12;
+$total-columns: 12;
 $column-gutter: rem-calc(30);
 
 
 // SHADOW
-$default-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+$default-shadow: 	0 2px 2px 0 rgba(0, 0, 0, 0.14),
+					0 1px 5px 0 rgba(0, 0, 0, 0.12),
+					0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -102,28 +104,29 @@ $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
 $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-bold: bold;
 
- $white       : #FFFFFF;
- $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
 $vapor       : #F6F6F6;
 $white-smoke : #F3F3F3; // modified from #F5F5F5
-// $silver      : #EFEFEF;
+$silver      : #EFEFEF;
 $smoke       : #EEEEEE;
- $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
- $base        : #AAAAAA;
-// $aluminum    : #999999;
- $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
 $charcoal    : #555555;
-// $tuatara     : #444444;
+$tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
-// $black       : #000000;
+$black       : #000000;
 
+// KNIGHT LAB SPECIFIC COLORS
 $orange: #DF4E13; //#ce4d28;
 $light-orange: #F07341;//#e35a25;
 $lighter-orange: #FFC06C;//#FF966C;//#FFC783;
@@ -144,17 +147,17 @@ $link-blue: #097DBB;
 $link-blue-hover: #2577A3;
 
 // We use these as default colors throughout
- $primary-color: $medium-blue;
- $secondary-color: $gainsboro;
- $alert-color: $orange;
- $success-color: #2CA571;//#399F68; //#5bb75b;
- $warning-color: $lighter-orange;
- $info-color: $light-blue;
+$primary-color: $medium-blue;
+$secondary-color: $gainsboro;
+$alert-color: $orange;
+$success-color: #2CA571;//#399F68; //#5bb75b;
+$warning-color: $lighter-orange;
+$info-color: $light-blue;
 
 // We use these to control various global styles
 // $body-bg: $white;
 // $body-font-color: $jet;
- $body-font-family: $font-family-serif;
+$body-font-family: $font-family-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -168,7 +171,7 @@ $link-blue-hover: #2577A3;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
- $global-radius: 4px;
+$global-radius: 4px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -224,9 +227,9 @@ $link-blue-hover: #2577A3;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
- $primary-header-font-family: $font-family-display-serif;
- $secondary-header-font-family: $font-family-serif;
- $header-font-weight: $font-weight-normal;
+$primary-header-font-family: $font-family-display-serif;
+$secondary-header-font-family: $font-family-serif;
+$header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 // $header-font-color: $jet;
 // $header-line-height: 1.4;
@@ -236,12 +239,12 @@ $link-blue-hover: #2577A3;
 
 
 // We use these to control header font sizes
- $h1-font-size: rem-calc(44);
- $h2-font-size: rem-calc(35);
- $h3-font-size: rem-calc(27.2);
- $h4-font-size: rem-calc(20);
- $h5-font-size: 1rem;
- $h6-font-size: rem-calc(13.6);
+$h1-font-size: rem-calc(44);
+$h2-font-size: rem-calc(35);
+$h3-font-size: rem-calc(27.2);
+$h4-font-size: rem-calc(20);
+$h5-font-size: 1rem;
+$h6-font-size: rem-calc(13.6);
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
@@ -259,7 +262,7 @@ $link-blue-hover: #2577A3;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
- $small-font-size: 85%;
+$small-font-size: 85%;
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
@@ -286,8 +289,8 @@ $link-blue-hover: #2577A3;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
- $anchor-font-color: $link-blue;//$light-blue;
- $anchor-font-color-hover: $link-blue-hover;
+$anchor-font-color: $link-blue;//$light-blue;
+$anchor-font-color-hover: $link-blue-hover;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -312,7 +315,7 @@ $link-blue-hover: #2577A3;
 // We use these to style blockquotes
 // $blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
 // $blockquote-padding: rem-calc(9 20 0 19);
- $blockquote-border: 4px solid $white-smoke;
+$blockquote-border: 4px solid $white-smoke;
 // $blockquote-cite-font-size: rem-calc(13);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
@@ -351,7 +354,7 @@ $link-blue-hover: #2577A3;
 // $include-html-accordion-classes: $include-html-classes;
 
 // $accordion-navigation-padding: rem-calc(16);
- $accordion-navigation-bg-color: #fff;
+$accordion-navigation-bg-color: #fff;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
 // $accordion-navigation-font-color: $jet;
@@ -482,19 +485,19 @@ $link-blue-hover: #2577A3;
 // We use these to control button border styles.
  /*$button-border-width: 3px;*/
  /*$button-border-style: solid;*/
- $button-bg-color: $gainsboro;
+$button-bg-color: $gainsboro;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
- $button-border-color: scale-color($button-bg-color, $lightness: -20%);
- $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
- $secondary-button-border-color: scale-color($secondary-button-bg-hover, $lightness: -20%);
- $success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
- $success-button-border-color: scale-color($success-button-bg-hover, $lightness: -20%);
- $alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
- $alert-button-border-color: scale-color($alert-button-bg-hover, $lightness: -20%);
- $warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor);
- $warning-button-border-color: scale-color($warning-button-bg-hover, $lightness: -20%);
- $info-button-bg-hover: scale-color($info-color, $lightness: $button-function-factor);
- $info-button-border-color: scale-color($info-button-bg-hover, $lightness: -20%);
+$button-border-color: scale-color($button-bg-color, $lightness: -20%);
+$secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
+$secondary-button-border-color: scale-color($secondary-button-bg-hover, $lightness: -20%);
+$success-button-bg-hover: scale-color($success-color, $lightness: $button-function-factor);
+$success-button-border-color: scale-color($success-button-bg-hover, $lightness: -20%);
+$alert-button-bg-hover: scale-color($alert-color, $lightness: $button-function-factor);
+$alert-button-border-color: scale-color($alert-button-bg-hover, $lightness: -20%);
+$warning-button-bg-hover: scale-color($warning-color, $lightness: $button-function-factor);
+$warning-button-border-color: scale-color($warning-button-bg-hover, $lightness: -20%);
+$info-button-bg-hover: scale-color($info-color, $lightness: $button-function-factor);
+$info-button-border-color: scale-color($info-button-bg-hover, $lightness: -20%);
 
 // We use this to set the default radius used throughout the core.
 // $button-radius: $global-radius;
@@ -662,7 +665,7 @@ $link-blue-hover: #2577A3;
 // $form-label-font-color: scale-color($black, $lightness: 30%);
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
- $input-font-family: $font-family-sans-serif;
+$input-font-family: $font-family-sans-serif;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: $white;
@@ -671,7 +674,7 @@ $link-blue-hover: #2577A3;
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
 // $input-border-style: solid;
 // $input-border-width: 1px;
- $input-border-radius: $global-radius;
+$input-border-radius: $global-radius;
 // $input-disabled-bg: $gainsboro;
 // $input-disabled-cursor: $cursor-default-value;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -833,7 +836,7 @@ $link-blue-hover: #2577A3;
 // $label-font-weight: $font-weight-normal;
 // $label-font-color: $oil;
 // $label-font-color-alt: $white;
- $label-font-family: $font-family-sans-serif;
+$label-font-family: $font-family-sans-serif;
 
 // 17. Magellan
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1194,8 +1197,8 @@ $link-blue-hover: #2577A3;
 // $side-nav-font-size: rem-calc(14);
 // $side-nav-font-weight: $font-weight-normal;
 // $side-nav-font-weight-active: $side-nav-font-weight;
- $side-nav-font-family: $font-family-sans-serif;
- $side-nav-font-family-active: $side-nav-font-family;
+$side-nav-font-family: $font-family-sans-serif;
+$side-nav-font-family-active: $side-nav-font-family;
 
 // We use these to control heading styles.
 // $side-nav-heading-color: $side-nav-link-color;
@@ -1257,7 +1260,7 @@ $link-blue-hover: #2577A3;
 // $sub-nav-list-padding-top: rem-calc(4);
 
 // We use this to control the definition
- $sub-nav-font-family: $font-family-sans-serif;
+$sub-nav-font-family: $font-family-sans-serif;
 // $sub-nav-font-size: rem-calc(14);
 // $sub-nav-font-color: $aluminum;
 // $sub-nav-font-weight: $font-weight-normal;
@@ -1319,7 +1322,7 @@ $link-blue-hover: #2577A3;
 // $table-head-font-size: rem-calc(14);
 // $table-head-font-color: $jet;
 // $table-head-font-weight: $font-weight-bold;
- $table-head-padding: rem-calc(9 10);
+$table-head-padding: rem-calc(9 10);
 
 // These control the table foot styles
 // $table-foot-bg: $table-head-bg;
@@ -1335,7 +1338,7 @@ $link-blue-hover: #2577A3;
 // $table-caption-font-weight: bold;
 
 // These control the row padding and font styles
- $table-row-padding: rem-calc(9 10);
+$table-row-padding: rem-calc(9 10);
 // $table-row-font-size: rem-calc(14);
 // $table-row-font-color: $jet;
 // $table-line-height: rem-calc(18);
@@ -1352,18 +1355,18 @@ $link-blue-hover: #2577A3;
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
- $tabs-navigation-bg-color: $white;
- $tabs-navigation-active-bg-color: $white;
- $tabs-navigation-hover-bg-color: $smoke;
+$tabs-navigation-bg-color: $white;
+$tabs-navigation-active-bg-color: $white;
+$tabs-navigation-hover-bg-color: $smoke;
 // $tabs-navigation-font-color: $jet;
 // $tabs-navigation-active-font-color: $tabs-navigation-font-color;
- $tabs-navigation-font-size: rem-calc(14);
- $tabs-navigation-font-family: $font-family-sans-serif;
+$tabs-navigation-font-size: rem-calc(14);
+$tabs-navigation-font-family: $font-family-sans-serif;
 
 // $tabs-content-margin-bottom: rem-calc(24);
 // $tabs-content-padding: ($column-gutter/2);
 
- $tabs-vertical-navigation-margin-bottom: 0;
+$tabs-vertical-navigation-margin-bottom: 0;
 
 // 32. Thumbnails
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1414,11 +1417,11 @@ $link-blue-hover: #2577A3;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
- $topbar-bg-color: $ghost;
- $topbar-bg: $topbar-bg-color;
+$topbar-bg-color: $ghost;
+$topbar-bg: $topbar-bg-color;
 
 // Height and margin
- $topbar-height: rem-calc(50);
+$topbar-height: rem-calc(50);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
@@ -1426,19 +1429,19 @@ $link-blue-hover: #2577A3;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
- $topbar-link-color: $jet;
- $topbar-link-color-hover: $jumbo;
- $topbar-link-color-active: $jumbo;
- $topbar-link-color-active-hover: $jumbo;
+$topbar-link-color: $jet;
+$topbar-link-color-hover: $jumbo;
+$topbar-link-color-active: $jumbo;
+$topbar-link-color-active-hover: $jumbo;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
- $topbar-link-bg: transparent;
- $topbar-link-bg-hover: $gainsboro;
- $topbar-link-bg-color-hover: $gainsboro;
+$topbar-link-bg: transparent;
+$topbar-link-bg-hover: $gainsboro;
+$topbar-link-bg-color-hover: $gainsboro;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
- $topbar-link-font-family: $font-family-sans-serif;
+$topbar-link-font-family: $font-family-sans-serif;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);
 // $topbar-back-link-size: rem-calc(18);
@@ -1447,7 +1450,7 @@ $link-blue-hover: #2577A3;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
- $topbar-dropdown-bg: $ghost;
+$topbar-dropdown-bg: $ghost;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
 // $topbar-dropdown-link-bg: $oil;

@@ -1,0 +1,21 @@
+.accordion {
+	@include accordion-navigation ($bg: $white-smoke);
+	li {
+		border: 1px solid $gainsboro;
+		border-radius: $global-radius;
+		margin-top: $global-radius;
+		a:before {
+			content: "\f067 \0000a0\0000a0";
+			font-size: .7em;
+			font-family: FontAwesome;
+			font-weight: normal;
+			font-style: normal;
+			text-decoration: inherit;
+			-webkit-font-smoothing: antialiased;
+			color: #ca4d1d;
+		}
+		&.active a:before {
+			content: "\f068 \0000a0\0000a0";
+		}
+	}
+}
