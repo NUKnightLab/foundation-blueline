@@ -52,18 +52,19 @@
 
 /* Purpleline Components
 ================================================== */
-@import "purpleline_components/colors", 		// Knight Lab Colors
-		"purpleline_components/typography", 	// Typography
-		"purpleline_components/buttons", 		// Buttons
-		"purpleline_components/tables", 		// Tables
-		"purpleline_components/subnav", 		// Sub Nav
-		"purpleline_components/tabs", 			// Tabs
-		"purpleline_components/top-bar", 		// Top Bar
-		"purpleline_components/forms", 			// Forms
-		"purpleline_components/accordion", 		// Accordion
-		"purpleline_components/magellean", 		// Magellean
-		"purpleline_components/thumbnail", 		// Magellean
-		"purpleline_components/footer"; 		// Footer
+@import	"purpleline_components/purpleline-mixins", 	// Mixins
+		"purpleline_components/colors", 			// Knight Lab Colors
+		"purpleline_components/typography", 		// Typography
+		"purpleline_components/buttons", 			// Buttons
+		"purpleline_components/tables", 			// Tables
+		"purpleline_components/subnav", 			// Sub Nav
+		"purpleline_components/tabs", 				// Tabs
+		"purpleline_components/top-bar", 			// Top Bar
+		"purpleline_components/forms", 				// Forms
+		"purpleline_components/accordion", 			// Accordion
+		"purpleline_components/magellean", 			// Magellean
+		"purpleline_components/thumbnail", 			// Thumbnail
+		"purpleline_components/footer"; 			// Footer
 
 
  

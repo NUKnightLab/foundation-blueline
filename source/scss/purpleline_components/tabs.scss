@@ -1,4 +1,7 @@
 .tabs {
+	dd > a, dd > a:active, .tab-title > a, .tab-title > a:active {
+		outline:0;
+	}
 	li {
 		padding: 0;
 		margin-right: 10px;

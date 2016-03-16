@@ -16,6 +16,12 @@ footer {
 		border: none;
 		display: inline;
 	}
+	p {
+		a, a:link,a:visited {
+			@include linkstyle($color:#666, $hover-color:$link-blue-hover, $background:#F3F3F3, $weight:1px, $offset:2px )
+		}
+	}
+
 	.col-940 {
 		display: none;
 	}

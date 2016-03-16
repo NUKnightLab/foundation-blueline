@@ -41,6 +41,9 @@ $include-html-off-canvas-classes: true;
 // Overrides for side nav
 .side-nav {
     padding: 1.875rem;
+    li {
+      font-size:rem-calc(14);
+    }
     @media screen and (max-width: 880px) {
         padding: 1.5rem;
         li a:not(.button){

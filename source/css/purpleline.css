@@ -85,8 +85,8 @@ body {
 }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #FFFFFF;
+  color: #222222;
   cursor: auto;
   font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
   font-style: normal;
@@ -2258,7 +2258,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #222222;
   cursor: help;
 }
 
@@ -6055,6 +6055,9 @@ meta.foundation-mq-topbar {
 }
 
 .logo-mark {
+  font-family: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: normal;
   font-size: 60px;
   white-space: nowrap;
   line-height: 1em;
@@ -6064,7 +6067,7 @@ meta.foundation-mq-topbar {
   font-size: 3.61111rem;
   margin-top: 5px;
 }
-.logo-mark + h2.intro {
+.logo-mark + .intro {
   margin-top: 0px;
 }
 @media all and (min-width: 767px) {
@@ -6220,7 +6223,7 @@ h1.post-title {
   line-height: 1.1;
 }
 
-h2.intro {
+h2.intro, h3.intro, h4.intro, h5.intro, h6.intro {
   color: #DF4E13;
   font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -6245,8 +6248,43 @@ p aside {
   line-height: 1.35;
 }
 
+a img {
+  border: none;
+}
+
+/* Better Underline Links
+================================================== */
 a {
-  transition: color 0.3s ease-in-out;
+  -moz-transition: color 200ms ease;
+  -o-transition: color 200ms ease;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+  line-height: inherit;
+}
+
+p a, p a:link, p a:visited {
+  text-decoration: none;
+  position: relative;
+  text-shadow: -1px -1px 0 #FFFFFF, 1px -1px 0 #FFFFFF, -1px 1px 0 #FFFFFF, 1px 1px 0 #FFFFFF;
+  color: #222222;
+  background-image: linear-gradient(to top, transparent, transparent 2px, #222222 2px, #222222 3px, transparent 3px);
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  p a, p a:link, p a:visited {
+    background-image: linear-gradient(to top, transparent, transparent 2px, #222222 2px, #222222 2.5px, transparent 2.5px);
+  }
+}
+p a:hover, p a:focus, p a:link:hover, p a:link:focus, p a:visited:hover, p a:visited:focus {
+  color: #2577A3;
+  background-image: linear-gradient(to top, transparent, transparent 2px, #2577A3 2px, #2577A3 3px, transparent 3px);
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  p a:hover, p a:focus, p a:link:hover, p a:link:focus, p a:visited:hover, p a:visited:focus {
+    background-image: linear-gradient(to top, transparent, transparent 2px, #2577A3 2px, #2577A3 2.5px, transparent 2.5px);
+  }
+}
+p a img, p a:link img, p a:visited img {
+  background-image: none;
 }
 
 .drop-hed,
@@ -6694,6 +6732,9 @@ table code {
   padding: 10px 0;
 }
 
+.tabs dd > a, .tabs dd > a:active, .tabs .tab-title > a, .tabs .tab-title > a:active {
+  outline: 0;
+}
 .tabs li {
   padding: 0;
   margin-right: 10px;
@@ -6727,6 +6768,11 @@ table code {
 }
 .top-bar .name {
   margin-top: -1px;
+}
+.top-bar .name h1 a {
+  font-family: "Salvo Serif Cond", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: bold;
 }
 .top-bar ul li {
   padding: 0;
@@ -6818,10 +6864,17 @@ label,
 .accordion > a:hover {
   background: #f2f2f2;
 }
+.accordion .accordion-navigation > a, .accordion dd > a {
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
 .accordion li {
   border: 1px solid #DDDDDD;
   border-radius: 4px;
   margin-top: 4px;
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7222222222rem;
 }
 .accordion li a:before {
   content: "\f067 \0000a0\0000a0";
@@ -6880,6 +6933,30 @@ footer a:visited {
   text-decoration: underline;
   border: none;
   display: inline;
+}
+footer p a, footer p a:link, footer p a:visited {
+  text-decoration: none;
+  position: relative;
+  text-shadow: -1px -1px 0 #F3F3F3, 1px -1px 0 #F3F3F3, -1px 1px 0 #F3F3F3, 1px 1px 0 #F3F3F3;
+  color: #666;
+  background-image: linear-gradient(to top, transparent, transparent 2px, #666 2px, #666 3px, transparent 3px);
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  footer p a, footer p a:link, footer p a:visited {
+    background-image: linear-gradient(to top, transparent, transparent 2px, #666 2px, #666 2.5px, transparent 2.5px);
+  }
+}
+footer p a:hover, footer p a:focus, footer p a:link:hover, footer p a:link:focus, footer p a:visited:hover, footer p a:visited:focus {
+  color: #2577A3;
+  background-image: linear-gradient(to top, transparent, transparent 2px, #2577A3 2px, #2577A3 3px, transparent 3px);
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  footer p a:hover, footer p a:focus, footer p a:link:hover, footer p a:link:focus, footer p a:visited:hover, footer p a:visited:focus {
+    background-image: linear-gradient(to top, transparent, transparent 2px, #2577A3 2px, #2577A3 2.5px, transparent 2.5px);
+  }
+}
+footer p a img, footer p a:link img, footer p a:visited img {
+  background-image: none;
 }
 footer .col-940 {
   display: none;

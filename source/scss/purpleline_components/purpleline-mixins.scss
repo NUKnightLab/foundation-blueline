@@ -1,0 +1,25 @@
+@mixin linkstyle($color:#222, $hover-color:#2577A3, $background:#FFF, $weight:1px, $offset:2px ) {
+	text-decoration: none;
+	position: relative;
+	text-shadow: -1px -1px 0 $background, 1px -1px 0 $background, -1px 1px 0 $background, 1px 1px 0 $background;
+	color:$color;
+	@include linkborder($color:$color, $weight:$weight, $offset:$offset);
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+		@include linkborder($color:$color, $weight:0.5px, $offset:$offset);
+	}
+	&:hover, &:focus {
+		color:$hover-color;
+		@include linkborder($color:$hover-color, $weight:$weight, $offset:$offset);
+		@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+			@include linkborder($color:$hover-color, $weight:0.5px, $offset:$offset);
+		}
+	}
+	img {
+		background-image:none;
+	}
+}
+
+@mixin linkborder($color:#222, $weight:1px, $offset:2px) {
+	background-image: linear-gradient(to top, transparent, transparent $offset, $color $offset, $color ($offset+$weight), transparent ($offset+$weight));
+	//background-image: linear-gradient(bottom, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight));
+}

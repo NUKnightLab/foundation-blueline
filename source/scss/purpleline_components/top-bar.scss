@@ -16,6 +16,13 @@
 	}
 	.name {
 		margin-top: -1px;
+		h1 {
+			a {
+				font-family:$font-family-display-serif;
+				font-style:italic;
+				font-weight:bold;
+			}
+		}
 	} // to adjust for border bottom
 	ul li {
 		padding: 0;
