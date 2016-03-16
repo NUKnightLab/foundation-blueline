@@ -4,7 +4,9 @@ $include-html-type-classes: false;
 $include-html-accordion-classes: false;
 $include-html-alert-classes: false;
 $include-html-block-grid-classes: false;
+$include-html-button-classes: false;
 $include-html-clearing-classes: false;
+$include-html-form-classes: false;
 $include-html-inline-list-classes: false;
 $include-html-keystroke-classes: false;
 $include-html-label-classes: false;
@@ -12,6 +14,7 @@ $include-html-magellan-classes: false;
 $include-pagination-classes: false;
 $include-html-panel-classes: false;
 $include-html-pricing-classes: false;
+$include-html-range-slider-classes: false;
 $include-html-reveal-classes: false;
 $include-html-table-classes: false;
 $include-html-tabs-classes: false;
@@ -23,15 +26,10 @@ $include-html-dropdown-classes: false;
 $include-html-joyride-classes: false;
 $include-html-off-canvas-classes: false;
 $include-html-media-classes: false;
-$include-html-orbit-classes: false;
-$include-html-button-classes: false;
 
-// Forms
-$include-html-form-classes: true;
-$include-html-range-slider-classes: true;
+// Orbit image slider
+$include-html-orbit-classes: true;
 
-@import "settings";
+@import "purpleline-settings";
 
-@import
-    "foundation/components/range-slider", // min-max slider controls
-    "foundation/components/switches"; // sliding form controls
+@import "foundation/components/orbit";

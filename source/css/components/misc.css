@@ -57,7 +57,7 @@ html {
 
 html,
 body {
-  font-size: 100%; }
+  font-size: 20px; }
 
 body {
   background: #fff;
@@ -66,7 +66,7 @@ body {
   font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 1.5;
+  line-height: 150%;
   margin: 0;
   padding: 0;
   position: relative; }
@@ -135,14 +135,14 @@ kbd {
   font-family: "Consolas", "Menlo", "Courier", monospace;
   font-size: inherit;
   margin: 0;
-  padding: 0.125rem 0.25rem 0;
+  padding: 0.1rem 0.2rem 0;
   border-radius: 4px; }
 
 /* Pricing Tables */
 .pricing-table {
   border: solid 1px #DDDDDD;
   margin-left: 0;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1rem; }
   .pricing-table * {
     list-style: none;
     line-height: 1; }
@@ -150,36 +150,36 @@ kbd {
     background-color: #333333;
     color: #EEEEEE;
     font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: normal;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.75rem 1rem;
     text-align: center; }
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
     font-family: "Turnip RE", Georgia, "Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: normal;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.75rem 1rem;
     text-align: center; }
   .pricing-table .description {
     background-color: #FFFFFF;
     border-bottom: dotted 1px #DDDDDD;
     color: #777777;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     font-weight: normal;
     line-height: 1.4;
-    padding: 0.9375rem;
+    padding: 0.75rem;
     text-align: center; }
   .pricing-table .bullet-item {
     background-color: #FFFFFF;
     border-bottom: dotted 1px #DDDDDD;
     color: #333333;
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     font-weight: normal;
-    padding: 0.9375rem;
+    padding: 0.75rem;
     text-align: center; }
   .pricing-table .cta-button {
     background-color: #FFFFFF;
-    padding: 1.25rem 1.25rem 0;
+    padding: 1rem 1rem 0;
     text-align: center; }

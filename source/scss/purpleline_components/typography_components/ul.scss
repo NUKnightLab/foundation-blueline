@@ -1,0 +1,39 @@
+ul {
+	list-style-type: square;
+	&.contact-icons {
+		list-style-type: none;
+		margin-left: 0;
+		margin-bottom: 0;
+		display: table;
+		content: "";
+		clear: both;
+		li {
+			display: inline-block;
+			float: left;
+			padding-top: 7px;
+			min-height: 33px;
+			padding: 8px 12px 0 0px;
+			margin: 0 -1px;
+			&:first-child {
+				padding-left: 12px;
+			}
+			a,
+			a:link,
+			a:visited {
+				color: $charcoal;
+			}
+			a:hover,
+			a:active {
+				color: $light-blue;
+			}
+			i {
+				width: rem-calc(20);
+				text-align: center;
+			}
+		}
+	}
+	li {
+		line-height: 22px;
+		padding: 2px 0 6px;
+	}
+}

@@ -1,0 +1,55 @@
+.logo-mark {
+	font-size: 60px;
+	white-space: nowrap;
+	line-height: 1em;
+	margin-bottom: 0px;
+	&.xl,
+	&.xxl {
+		font-size: rem-calc(65);
+		margin-top: 5px;
+	}
+	& + h2.intro {
+		margin-top: 0px;
+	}
+	// TODO: Adjust this min-width as needed
+	@media all and (min-width: 767px) {
+		&.xl {
+			font-size: rem-calc(90);
+			margin-top: 35px;
+		}
+		&.xxl {
+			font-size: rem-calc(120);
+			margin-top: 35px;
+		}
+	}
+	&.bg-white span:before {
+		border-color: #0f9bd1 #fff;
+	}
+	span {
+		background: none repeat scroll 0 0 $light-blue;
+		border-radius: 3px 0px 3px 3px;
+		color: #FFFFFF;
+		font-size: 0.5em;
+		line-height: 0.5em;
+		margin: 5px 6px 0;
+		overflow: hidden;
+		padding: 0.35em 0.45em 0.2em;
+		position: relative;
+		vertical-align: text-top;
+		display: inline-block;
+		&:before {
+			border-color: $light-blue #f3f3f3;
+			border-style: solid;
+			border-width: 0 16px 16px 0;
+			content: "";
+			position: absolute;
+			right: 0;
+			top: -1px;
+		}
+	}
+	@media screen and (-webkit-min-device-pixel-ratio: 0) {
+		span {
+			padding: 0.35em .47em .3em .36em;
+		}
+	}
+}

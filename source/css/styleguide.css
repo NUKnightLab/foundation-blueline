@@ -17,12 +17,12 @@
   #style-guide .panel {
     padding-bottom: 0; }
   #style-guide section {
-    margin: 3.75rem 0;
+    margin: 3rem 0;
     clear: both; }
 
 .side-nav {
   background: #EEEEEE;
-  padding: 1.875rem; }
+  padding: 1.5rem; }
 
 h6.label {
   display: block;
@@ -65,7 +65,7 @@ h6.label {
     border-top: 1px solid #DDDDDD; }
     .paint-chip .color-deets p {
       margin: 2px 0;
-      font-size: 0.75rem;
+      font-size: 0.6rem;
       font-family: Consolas, "Liberation Mono", Courier, monospace; }
 
 .fa-external-link {
