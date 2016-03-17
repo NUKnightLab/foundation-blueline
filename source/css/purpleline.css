@@ -6419,6 +6419,59 @@ button.light.disabled:hover,
 .button.light.disabled:hover {
   background-color: #FFFFFF;
 }
+button.ghost,
+.button.ghost {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.11111rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.88889rem 1.77778rem 0.94444rem 1.77778rem;
+  font-size: 0.88889rem;
+  background-color: transparent;
+  border-color: #555555;
+  color: #FFFFFF;
+  border-radius: 4px;
+  transition: background-color 300ms ease-out;
+  color: #555555;
+}
+button.ghost:hover, button.ghost:focus,
+.button.ghost:hover,
+.button.ghost:focus {
+  background-color: #FFFFFF;
+}
+button.ghost:hover, button.ghost:focus,
+.button.ghost:hover,
+.button.ghost:focus {
+  color: #333333;
+}
+button.ghost span,
+.button.ghost span {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+button.ghost:hover,
+.button.ghost:hover {
+  border-color: #555555;
+}
+button.ghost:hover span,
+.button.ghost:hover span {
+  text-shadow: none;
+}
+button.ghost.disabled:hover,
+.button.ghost.disabled:hover {
+  background-color: #FFFFFF;
+}
 button.inverse,
 .button.inverse {
   -webkit-appearance: none;
@@ -6641,44 +6694,87 @@ button.info:hover span,
 .button.info:hover span {
   text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
 }
-button.disabled, button.disabled:hover,
-.button.disabled,
-.button.disabled:hover {
+button.disabled,
+.button.disabled {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  font-family: "Apres RE", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.11111rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.88889rem 1.77778rem 0.94444rem 1.77778rem;
+  font-size: 0.88889rem;
+  background-color: #DDDDDD;
+  border-color: #DDDDDD;
+  color: #333333;
+  border-radius: 4px;
+  transition: background-color 300ms ease-out;
   text-shadow: none;
   box-shadow: none;
-  border-color: transparent !important;
+  border-color: #DDDDDD !important;
 }
-button.disabled span, button.disabled:hover span,
-.button.disabled span,
-.button.disabled:hover span {
+button.disabled:hover, button.disabled:focus,
+.button.disabled:hover,
+.button.disabled:focus {
+  background-color: #DDDDDD;
+}
+button.disabled:hover, button.disabled:focus,
+.button.disabled:hover,
+.button.disabled:focus {
+  color: #333333;
+}
+button.disabled span,
+.button.disabled span {
   color: #333333;
   text-shadow: none;
 }
-button.light, button.inverse, button.success, button.warning, button.disabled, button.alert, button.info,
+button.disabled:hover,
+.button.disabled:hover {
+  border-color: #DDDDDD;
+}
+button.disabled:hover span,
+.button.disabled:hover span {
+  text-shadow: none;
+}
+button.light, button.inverse, button.success, button.warning, button.disabled, button.alert, button.info, button.ghost,
 .button.light,
 .button.inverse,
 .button.success,
 .button.warning,
 .button.disabled,
 .button.alert,
-.button.info {
+.button.info,
+.button.ghost {
   transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   border-width: 1px;
 }
-button.light.postfix.button, button.inverse.postfix.button, button.success.postfix.button, button.warning.postfix.button, button.disabled.postfix.button, button.alert.postfix.button, button.info.postfix.button,
+button.light.postfix.button, button.inverse.postfix.button, button.success.postfix.button, button.warning.postfix.button, button.disabled.postfix.button, button.alert.postfix.button, button.info.postfix.button, button.ghost.postfix.button,
 .button.light.postfix.button,
 .button.inverse.postfix.button,
 .button.success.postfix.button,
 .button.warning.postfix.button,
 .button.disabled.postfix.button,
 .button.alert.postfix.button,
-.button.info.postfix.button {
+.button.info.postfix.button,
+.button.ghost.postfix.button {
   border: none;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
   padding-top: 0;
   text-align: center;
+}
+button.ghost,
+.button.ghost {
+  border-width: 3px;
 }
 button.split:hover span,
 .button.split:hover span {

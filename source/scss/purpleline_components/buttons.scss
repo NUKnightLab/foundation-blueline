@@ -56,6 +56,27 @@ button,
 			background-color: $white;
 		}
 	}
+
+	&.ghost {
+		@include button($radius: true, $bg: transparent, $bg-hover: $white, $border-color: $charcoal);
+		color:$charcoal;
+		span {
+			color: $oil;
+			text-transform: uppercase;
+			font-weight:bold;
+		}
+		&:hover {
+			border-color: $charcoal;
+			span {
+				text-shadow:none;
+			}
+			
+		}
+		&.disabled:hover {
+			background-color: $white;
+		}
+	}
+
 	&.inverse {
 		@include button($radius: true, $bg: $charcoal, $bg-hover: $oil, $border-color: $jumbo);
 		&:hover {
@@ -65,6 +86,7 @@ button,
 			background-color: $white;
 		}
 	}
+
 	&.success {
 		@include button($radius: true, $bg: $light-green, $bg-hover: darken( $light-green, 5% ), $border-color: $light-green);
 		text-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -115,17 +137,23 @@ button,
 		}
 	}
 
-	&.disabled,
-	&.disabled:hover {
+	&.disabled {
+		@include button($radius: true, $bg: $gainsboro, $bg-hover: $gainsboro, $border-color: $gainsboro);
 		text-shadow: none;
 		box-shadow: none;
-		border-color: transparent !important;
+		border-color: $gainsboro !important;
 		span {
 			color: $oil;
 			text-shadow: none;
 		}
+		&:hover {
+			border-color: $gainsboro;
+			span {
+				text-shadow: none;
+			}
+		}
 	}
-	&.light, &.inverse, &.success, &.warning, &.disabled, &.alert, &.info {
+	&.light, &.inverse, &.success, &.warning, &.disabled, &.alert, &.info, &.ghost {
 		transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 		border-width: 1px;
 		&.postfix.button {
@@ -143,6 +171,11 @@ button,
 			}
 		}
 	}
+
+	&.ghost {
+		border-width: 3px;
+	}
+
 	&.split {
 		&:hover {
 			//color: #fff;

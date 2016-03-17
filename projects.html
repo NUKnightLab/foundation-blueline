@@ -8,6 +8,7 @@
 		<!-- for local dev -->
 		<link href="//cloud.webtype.com/css/d4767ecb-457a-4677-8761-72f890add836.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="source/css/purpleline.css" />
+		<!-- <link rel="stylesheet" href="source/css/components/navigation.css" /> -->
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
@@ -62,52 +63,99 @@
 				line-height:1.2;
 			}
 
+			header {
+				text-align:center;
+			}
+
+			.center.logo img {
+				max-width:80px;
+			}
+
 		</style>
 	</head>
 	<body>
+
+		<nav class="top-bar" data-topbar role="navigation">
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="#">PurpleLine</a></h1>
+				</li>
+				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<!-- Right Nav Section -->
+				<ul class="right">
+					<li><a href="https://knightlab.northwestern.edu/">Northwestern University Knight Lab</a></li>
+				</ul>
+
+				<!-- Left Nav Section -->
+				<ul class="left">
+					<li class="active"><a href="/index.html">Components</a></li>
+					<li><a href="/usage.html">Style guide</a></li>
+				</ul>
+			</section>
+		</nav>
+
 		<header class="panel">
-			<div class="row">
-				<h1 class="logo-mark xl">
-					Our Work
-				</h1>
-				<h2 class="intro">
-					Products and prototypes for everyone
-				</h2>
-				<p class="lead">
-					We help make information meaningful and promote quality journalism, storytelling and content on the internet.
-				</p>
+			
+			<div class="center logo">
+				<a href="http://knightlab.com">
+					<img src="//cdn.knightlab.com/libs/purpleline/latest/img/logos/logo_diamond_256x256_transparent_padded.png">
+				</a>
 			</div>
+			<div class="row">
+				<div class="medium-10 medium-centered columns">
+					<h1 class="logo-mark xl">
+						Our Work
+					</h1>
+					<h2 class="intro">
+						Products and prototypes for everyone
+					</h2>
+					<p class="lead">
+						We help make information meaningful and promote quality journalism, storytelling and content on the internet.
+					</p>
+				</div>
+			</div>
+			<dl class="sub-nav">
+				<dt>Filter:</dt>
+				<dd class="active"><a href="#">All</a></dd>
+				<dd><a href="#">Active</a></dd>
+				<dd><a href="#">Pending</a></dd>
+				<dd class="hide-for-small-only"><a href="#">Suspended</a></dd>
+			</dl>
 		</header>
 		<article>
 			<section id="storytelling-tools">
 				<div class="row">
-					<div class="medium-12 large-centered columns">
+					<div class="medium-12 medium-centered columns">
 						<h2>Storytelling Tools</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="medium-6 columns">
+					<div class="medium-6 large-6 columns">
 						<a class="project-box panel">
 							<h3 class="logo-mark">Timeline <span><em>JS</em></span></h3>
 							<h4 class="intro">Easy-to-make, beautiful timelines.</h4>
 							<img src="source/img/storymap.png">
 						</a>
 					</div>
-					<div class="medium-6 columns">
+					<div class="medium-6 large-6 columns">
 						<a class="project-box panel">
 							<h3 class="logo-mark">StoryMap <span><em>JS</em></span></h3>
 							<h4 class="intro">Maps that tell stories.</h4>
 							<img src="source/img/storymap.png">
 						</a>
 					</div>
-					<div class="medium-6 columns">
+					<div class="medium-6 large-6 columns">
 						<a class="project-box panel">
 							<h3 class="logo-mark">Juxtapose <span><em>JS</em></span></h3>
 							<h4 class="intro">Frame comparisons. Easy to make. Seamless to publish.</h4>
 							<img src="source/img/storymap.png">
 						</a>
 					</div>
-					<div class="medium-6 columns">
+					<div class="medium-6 large-6 columns">
 						<a class="project-box panel">
 							<h3 class="logo-mark">SoundCite <span><em>JS</em></span></h3>
 							<h4 class="intro">Inline audio players. Easy to make. Seamless to publish.</h4>
@@ -118,7 +166,7 @@
 			</section>
 			<section id="research-report">
 				<div class="row">
-					<div class="large-12 large-centered columns">
+					<div class="large-12 medium-centered columns">
 						<h2>Research and Report</h2>
 					</div>
 				</div>
@@ -141,7 +189,7 @@
 			</section>
 			<section id="teach">
 				<div class="row">
-					<div class="medium-12 large-centered columns">
+					<div class="medium-12 medium-centered columns">
 						<h2>Teach</h2>
 					</div>
 				</div>
